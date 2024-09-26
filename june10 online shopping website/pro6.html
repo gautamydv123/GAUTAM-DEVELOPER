@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ninth{
+               position:absolute;
+               height: 450px;
+               width: 660px;
+               overflow: hidden;
+               border: 5px solid green;
+               border-radius: 20px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               top: 0px;
+               left: 0px;
+           }
+           .newd {
+               position:relative;
+               width: 100%;
+               height: 100%;
+           }
+           .ninth .newd img {
+               width: 100%;
+               height: 100%;
+               transition: all 1s;
+           }
+           .newd:hover img {
+               transform: scale(1.2);  
+           }
+           .darklay4 {
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               background-color: rgba(0, 0, 0, 0.5);
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               color: white;
+               opacity: 0;
+               transition: opacity 0.5s;
+           }
+            
+           .newd:hover .darklay4 {
+               opacity: 1;
+           }
+           
+           .text4 {
+               text-align: center;
+               font-size: 24px;
+           }
+   </style>
+</head>
+ 
+<body>
+    <div class="ninth">
+        <div class="newd">
+                 <img src="300-SM1077314.jpg" alt="">
+            <div class="darklay4"> 
+                <div class="text4">
+                   show time 
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>

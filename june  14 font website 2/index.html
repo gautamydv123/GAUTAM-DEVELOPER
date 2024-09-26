@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+      
+        /* .main{
+            height:auto;
+            width: 100%;
+            background-color: yellow;
+            border: 2px solid black;
+            box-sizing: border-box;
+        } */
+
+        .frist{
+            height: 50px;
+            width: 100%;
+            background-color:white;
+            border-radius: 15px;
+        }
+        .frist ul li{
+            display: inline;
+        }
+        .frist ul li a {
+            font-size: 15px;
+            color:black;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .frist ul {
+            position: absolute;
+            left: 200px;
+            top: 5px;
+        }
+        .frist ul li  :hover{
+            background-color: blue;
+        }
+        .icons{
+            position: absolute;
+            top: 0;
+            left: 20px;
+        }
+        .country ul li{
+            display: inline;
+
+        }
+        .country ul{
+            position: absolute;
+            top: 5px;
+            left: 750px;
+        }
+        .country ul li a
+        {
+            font-size: 15px;
+            color: black;
+            text-decoration: none;
+            padding: 5px;
+
+        }
+        .country ul li :hover{
+            background-color:yellowgreen;
+        }
+        .them{
+            position: absolute;
+            top: 180px;
+            left: 200px;
+
+        }
+        .them ul li {
+            display: inline;
+        }
+        .them ul li a{
+            font-size: 20px;
+            color: black;
+            text-decoration: none;
+            padding: 7px;
+        }
+        .them ul li:hover{
+            background-color: tomato;
+        }
+        .searchbox{
+            position: absolute;
+            top:185px ;
+            left: 1080px;
+        }
+        .top{
+            position: absolute;
+            top: 210px;
+            left: 200px;
+        }
+        .top ul li{
+            display: inline;
+        }
+        .top ul li a{
+            font-size: 20px;
+            color: black;
+            text-decoration: none;
+            padding: 8px;
+        }
+        .az{
+            position: absolute;
+            top: 214px;
+            left: 820px;
+        }
+        .az ul li{
+            display: inline;
+
+        }
+        .az ul li a{
+            font-size: 20px;
+            color: black;
+            text-decoration: none;
+
+        }
+        .main2{
+            height:300px;
+            width: 83%;
+            position: absolute;
+            top: 270px;
+            left: 200px;
+            border: 5px solid darkred;
+            
+            
+        }
+        .fancy{
+            position: absolute;
+            top:40px ;
+            left:23px ;
+        }
+        .fancy ul li {
+            display:  inline;
+        }
+        .fancy ul li a{
+            font-size: 15px;
+            color:white;
+            text-decoration: none;
+            padding: 40px;
+            background-color:darkred;
+        }
+        .fancy ul :hover {
+            background-color:navy;
+
+        }
+
+        .carton{
+            position: absolute;
+            top: 100px;
+            left: 23px;
+        }
+        .carton ul li a{
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+            
+        }
+        .carton ul {
+            list-style: none;
+        
+        }
+        .carton ul li :hover{
+            background-color: darkcyan;
+        }
+        .Chinese{
+            position: absolute;
+            top: 100px;
+            left: 145px;
+        }
+        .Chinese ul  {
+            list-style: none;
+        }
+        .Chinese ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .Chinese ul li :hover{
+            background-color: darkcyan;
+        }
+
+        .Square{
+            position: absolute;
+            top: 100px;
+            left: 305px;
+        }
+        .Square ul  {
+            list-style: none;
+        }
+        .Square ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .Square ul li :hover{
+            background-color: darkcyan;
+        }
+
+        .bitmap{
+            position: absolute;
+            top:220px ;
+            left:305px ;
+        }
+        .bitmap  ul{
+        list-style: none;
+        }
+        .bitmap ul :hover {
+            background-color:navy;
+
+        }
+    
+        
+        .bitmap ul li a{
+            font-size: 15px;
+            color:white;
+            text-decoration: none;
+            padding: 40px;
+            background-color:darkred;}
+
+        .pixel{
+            position: absolute;
+            top: 280px;
+            left: 305px;
+        }
+        .pixel ul  {
+            list-style: none;
+        }
+        .pixel ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .pixel ul li :hover{
+            background-color: darkcyan;
+        }
+
+        .medieval{
+            position: absolute;
+            top: 100px;
+            left: 435px;
+        }
+        .medieval ul  {
+            list-style: none;
+        }
+        .medieval ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .medieval ul li :hover{
+            background-color: darkcyan;
+        }
+
+        .sans{
+            position: absolute;
+            top: 100px;
+            left: 560px;
+        }
+        .sans ul  {
+            list-style: none;
+        }
+        .sans ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .sans ul li :hover{
+            background-color: darkcyan;
+        }
+        
+        .calligraphy{
+            position: absolute;
+            top: 100px;
+            left: 675px;
+        }
+        .calligraphy ul  {
+            list-style: none;
+        }
+        .calligraphy ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .calligraphy ul li :hover{
+            background-color: darkcyan;
+        }
+
+        .alien{
+            position: absolute;
+            top: 100px;
+            left: 795px;
+        }
+        .alien ul  {
+            list-style: none;
+        }
+        .alien ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .alien ul li :hover{
+            background-color: darkcyan;
+        }
+        
+        
+        .valentine{
+            position: absolute;
+            top: 100px;
+            left: 935px;
+        }
+        .valentine ul  {
+            list-style: none;
+        }
+        .valentine ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .valentine ul li :hover{
+            background-color: darkcyan;
+        }
+        .main3{
+            height: 50px;
+            width:84%;
+            border: 1px solid red;
+            background-color:lightgrey;
+            position:absolute;
+            top:590px;
+            left: 200px;
+        }
+        .fraud ul{
+            list-style: none;
+        } 
+        .fraud ul li a{
+            font-size: 20px;
+            text-decoration: none;
+            position: absolute;
+            left: 5px;
+        }
+        .num ul{
+            list-style: none;
+        }
+        .num ul li a{
+            font-size: 20px;
+            text-decoration: none;
+            position: absolute;
+            top: 25px;
+            left: 5px;
+            color: black;
+        }
+        .text{
+            position: absolute;
+            height: 50px;
+            width: 88%;
+            top:660px ;
+            left: 200px;
+        }
+        .text ul {
+            list-style: none;
+        }
+        .text ul li a {
+            font-size: 20px;
+            color: black;
+            text-decoration: none;
+
+        }
+        .text2{
+            position: absolute;
+            height: 50px;
+            width: 88%;
+            top:660px ;
+            left: 430px;  
+        }
+        .text2 ul {
+            list-style: none;
+        }
+        .text2 ul li a {
+            font-size: 20px;
+            color: black;
+            text-decoration: none;
+
+        }
+        .text3{
+            position: absolute;
+            height: 50px;
+            width: 88%;
+            top:683px ;
+            left: 500px;  
+        }
+        .text4{
+            position: absolute;
+            height: 50px;
+            width: 88%;
+            top:660px ;
+            left: 630px;  
+        }
+        .text4 ul {
+            list-style: none;
+        }
+        .text4 ul li a {
+            font-size: 20px;
+            color: black;
+            text-decoration: none;
+
+        }
+
+        .text5{
+            position: absolute;
+            height: 50px;
+            width: 88%;
+            top:660px ;
+            left: 725px;  
+        }
+        .text5 ul {
+            list-style: none;
+        }
+        .text5 ul li a {
+            font-size: 20px;
+            color: black;
+            text-decoration: none;
+
+        }
+
+        .text6{
+            position: absolute;
+            height: 50px;
+            width: 88%;
+            top:682px ;
+            left: 830px;  
+        }
+        .fl1{
+            position: absolute;
+            height: 30px;
+            width: 84%;
+            top: 750px;
+            left: 200px;
+            background-color: darkred;
+        }
+        .fl1 ul {
+            list-style: none;
+        }
+        .fl1 ul li a{
+            font-size: 15px;
+            color: white;
+            text-decoration: none;
+            position: absolute; 
+            top: 3px;
+            left: 6px;
+
+        }
+        .mini1{
+          position: absolute;
+          top: 780px;
+          left: 828px;  
+        }
+        .down1{
+            position: absolute;
+          top: 820px;
+          left: 1210px;  
+        }
+        @font-face {
+            font-family:  'UrbanJungleDEMO';
+            src: url(/fonts/UrbanJungleDEMO.woff);
+        }
+        .font1{
+            font-family: 'UrbanJungleDEMO' ;
+            position: absolute;
+            height: 60px;
+            width: 100%;
+            font-size: 100px;
+            top: 800px;
+            left: 200px;
+        }
+
+        .fl2{
+            position: absolute;
+            height: 30px;
+            width: 84%;
+            top: 950px;
+            left: 200px;
+            background-color: darkred;
+        }
+        .fl2 ul {
+            list-style: none;
+        }
+        .fl2  ul li a{
+            font-size: 15px;
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            top: 3px;
+            left: 6px;
+
+        }
+        .mini2{
+          position: absolute;
+          top: 980px;
+          left: 828px;  
+        }
+        .down2{
+          position: absolute;
+          top: 1020px;
+          left: 1210px;  
+        }
+
+        @font-face {
+            font-family:'PlaneCrash' ;
+            src: url(/font2/PlaneCrash.woff);
+        }
+        .font2{
+            font-family:  'PlaneCrash' ;
+            position: absolute;
+            height: 60px;
+            width: 100%;
+            font-size: 100px;
+            top:1020px;
+            left: 200px;
+        }
+
+        .fl3{
+            position: absolute;
+            height: 30px;
+            width: 84%;
+            top: 1150px;
+            left: 200px;
+            background-color: darkred;
+        }
+        .fl3 ul {
+            list-style: none;
+        }
+        .fl3 ul li a{
+            font-size: 15px;
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            top: 3px;
+            left: 6px;
+
+        }
+
+        .mini3{
+          position: absolute;
+          top: 1180px;
+          left: 840px;  
+        }
+
+        .down3{
+          position: absolute;
+          top: 1220px;
+          left: 1210px;  
+        }
+
+        @font-face {
+            font-family: 'WAKENNINGPersonalUse' ;
+            src: url(/font3/AWAKENNINGPersonalUse.woff);
+        }
+        .font3{
+            font-family: 'WAKENNINGPersonalUse' ;
+            position: absolute;
+            height: 60px;
+            width: 100%;
+            font-size: 100px;
+            top:1200px;
+            left: 200px;
+        }
+
+        .fl4{
+            position: absolute;
+            height: 30px;
+            width: 84%;
+            top: 1350px;
+            left: 200px;
+            background-color: darkred;
+        }
+        .fl4 ul {
+            list-style: none;
+        }
+        .fl4 ul li a{
+            font-size: 15px;
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            top: 3px;
+            left: 6px;
+
+        }
+
+        .mini4{
+          position: absolute;
+          top: 1380px;
+          left: 928px;  
+        }
+
+        .down4{
+          position: absolute;
+          top: 1420px;
+          left: 1210px;  
+        }
+
+        @font-face {
+            font-family: 'WhiteOnBlack' ;
+            src: url(/font4/WhiteOnBlack.woff);
+        }
+        .font4{
+            font-family: 'WhiteOnBlack' ;
+            position: absolute;
+            height: 60px;
+            width: 100%;
+            font-size: 100px;
+            top:1420px;
+            left: 200px;
+        }
+      
+
+        .fl5{
+            position: absolute;
+            height: 30px;
+            width: 84%;
+            top: 1580px;
+            left: 200px;
+            background-color: darkred;
+        }
+        .fl5 ul {
+            list-style: none;
+        }
+        .fl5 ul li a{
+            font-size: 15px;
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            top: 3px;
+            left: 6px;
+
+        }
+
+        .mini5{
+          position: absolute;
+          top: 1610px;
+          left: 900px;  
+        }
+
+        .down5{
+          position: absolute;
+          top: 1650px;
+          left: 1210px;  
+        }
+
+        @font-face {
+            font-family: 'DCC-Ash' ;
+            src: url(/font5/DCC-Ash.woff);
+        }
+        .font5{
+            font-family: 'DCC-Ash' ;
+            position: absolute;
+            height: 60px;
+            width: 100%;
+            font-size: 100px;
+            top:1630px;
+            left: 200px;
+        }
+
+        
+        .fl6{
+            position: absolute;
+            height: 30px;
+            width: 84%;
+            top: 1780px;
+            left: 200px;
+            background-color: darkred;
+        }
+
+        .fl6 ul {
+            list-style: none;
+        }
+        .fl6 ul li a{
+            font-size: 15px;
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            top: 3px;
+            left: 6px;
+
+        }
+
+        
+        .mini6{
+          position: absolute;
+          top: 1810px;
+          left: 830px;  
+        }
+
+        .down6{
+          position: absolute;
+          top: 1850px;
+          left: 1210px;  
+        }
+        
+
+        @font-face {
+            font-family: 'ALoveofThunder' ;
+            src: url(/font6/ALoveofThunder.woff);
+        }
+        .font6{
+            font-family: 'ALoveofThunder' ;
+            position: absolute;
+            height: 60px;
+            width: 100%;
+            font-size: 100px;
+            top:1850px;
+            left: 200px;
+        }
+
+        .fl7{
+            position: absolute;
+            height: 30px;
+            width: 84%;
+            top: 1980px;
+            left: 200px;
+            background-color: darkred;
+        }
+
+        .fl7 ul {
+            list-style: none;
+        }
+        .fl7 ul li a{
+            font-size: 15px;
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            top: 3px;
+            left: 6px;
+
+        }
+
+        
+        .mini7{
+          position: absolute;
+          top: 2010px;
+          left: 850px;  
+        }
+
+        .down7{
+          position: absolute;
+          top: 2050px;
+          left: 1210px;  
+        }
+        
+
+        @font-face {
+            font-family: 'GhostFactory' ;
+            src: url(/font8/GhostFactory.woff);
+        }
+        .font7{
+            font-family: 'GhostFactory' ;
+            position: absolute;
+            height: 60px;
+            width: 100%;
+            font-size: 100px;
+            top:2050px;
+            left: 200px;
+        }
+       
+        .fl8{
+            position: absolute;
+            height: 30px;
+            width: 84%;
+            top: 2200px;
+            left: 200px;
+            background-color: darkred;
+        }
+
+        .fl8 ul {
+            list-style: none;
+        }
+        .fl8 ul li a{
+            font-size: 15px;
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            top: 3px;
+            left: 6px;
+
+        }
+
+        
+        .mini8{
+          position: absolute;
+          top: 2230px;
+          left: 945px;  
+        }
+
+        .down8{
+          position: absolute;
+          top: 2270px;
+          left: 1210px;  
+        }
+        
+
+        @font-face {
+            font-family: 'ALLAGESDEMO' ;
+            src: url(/font10/ALLAGESDEMO.woff);
+        }
+        .font8{
+            font-family: 'ALLAGESDEMO' ;
+            position: absolute;
+            height: 60px;
+            width: 100%;
+            font-size: 100px;
+            top:2280px;
+            left: 200px;
+        }
+
+        .fl9{
+            position: absolute;
+            height: 30px;
+            width: 84%;
+            top: 2430px;
+            left: 200px;
+            background-color: darkred;
+        }
+
+        .fl9 ul {
+            list-style: none;
+        }
+        .fl9 ul li a{
+            font-size: 15px;
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            top: 3px;
+            left: 6px;
+
+        }
+
+        
+        .mini9{
+          position: absolute;
+          top: 2460px;
+          left: 925px;  
+        }
+
+        .down9{
+          position: absolute;
+          top: 2500px;
+          left: 1210px;  
+        }
+        
+
+        @font-face {
+            font-family: 'PersonalServices' ;
+            src: url(/font11/PersonalServices.woff);
+        }
+        .font9{
+            font-family: 'PersonalServices' ;
+            position: absolute;
+            height: 60px;
+            width: 100%;
+            font-size: 100px;
+            top:2500px;
+            left: 200px;
+        }
+
+
+        .arrow{
+            position: absolute;
+            top:2650px ;
+            left: 200px;
+            height: 50px;
+            width: 85%;
+            background-color:skyblue;
+            border: 10px solid  black;
+            box-sizing: border-box;
+        }
+
+         .LINK{
+            position: absolute;
+            top: 2665px;
+            left: 220px;
+        } 
+      
+    </style>
+</head>
+<body> 
+  
+<div class="main"> 
+    <div class="frist">
+        <ul>
+             <li><a href="">Login </a></li>
+             <li><a href="">| </a></li>
+            <li><a href="">Register</a></li> <br>
+             <li> ................................................................................................................................................................................................................................................................................</li>
+
+        </ul>
+    </div> 
+    <div class="icons">
+        <img src="/images/WhatsApp Image 2024-06-13 at 21.18.14_041a1e78.jpg"   style="width: 150px;" alt="">
+    </div>
+    <div class="country">
+        <ul>
+            <li><a href=""><img src="/images/WhatsApp Image 2024-06-15 at 10.12.38_fbd3b6f8.jpg"  alt="">  English</a></li>
+            <li><a href=""> <img src="/images/WhatsApp Image 2024-06-15 at 10.20.43_6a11e9a7.jpg" alt="">  Francais</a></li>
+            <li><a href=""> <img src="/images/WhatsApp Image 2024-06-15 at 10.22.14_efc29e77.jpg" alt="">Espanol</a></li>
+            <li><a href=""> <img src="/images/WhatsApp Image 2024-06-15 at 10.23.45_927dd469.jpg" alt=""> Deutsch</a></li>
+            <li><a href=""> <img src="/images/WhatsApp Image 2024-06-15 at 10.25.09_46e837db.jpg" alt=""> Italiano</a></li>
+            <li><a href=""> <img src="/images/WhatsApp Image 2024-06-15 at 10.26.10_85fc9024.jpg" alt=""> Portugues</a></li>
+        </ul>
+    </div>
+    <div class="them">
+        <ul>
+            <li><a href="">Themes</a></li>
+            <li><a href="">Authors</a></li>
+            <li><a href="">Forum</a></li>
+            <li><a href="">Submit a font</a></li>
+        </ul>
+    </div>
+    <div class="searchbox">
+        <input type="text" name="" id="" size="20"><input type="submit" value="Search">
+    </div> 
+    <div class="top">
+        <ul>
+            <li><a href="">New fonts</a></li>
+            <li><a href>Top</li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Tools</a></li>
+        </ul>
+    </div>
+    <div class="az">
+        <ul> 
+             <li><a href=""> A B C D E F G H I J K L M N O P Q R S T U V W X Y Z #</a></li>
+        </ul>   
+    </div>
+    <div class="main2">
+        <div class="fancy">
+            <ul>
+                <li><a href="">Fancy</a></li>
+                <li><a href="">Foreign look</a></li>
+                <li><a href="">Techno</a></li>
+                <li><a href="">Gothic</a></li>
+                <li><a href="">Basic</a></li>
+                <li><a href="">Script</a></li>
+                <li><a href="">Dingbats</a></li>
+                <li><a href="">Holidays</a></li>
+            </ul>
+        </div>
+        <div class="carton">
+            <ul>
+                <li><a href="">Cartoon</a></li>
+                <li><a href="">Comic</a></li>
+                <li><a href="">Groovy</a></li>
+                <li><a href="">Old School</a></li>
+                <li><a href="">Curly</a></li>
+                <li><a href="">Western</a></li>
+                <li><a href=""> <font color="red">Eroded</font></a></li>
+                <li><a href="">Distorted</a></li>
+                <li><a href="">Destroy</a></li>
+                <li><a href="">Horror</a></li>
+                 
+            </ul>
+        </div>
+
+        <div class="Chinese">
+            <ul>
+                <li><a href="">Chinese,Jpn</a></li>
+                <li><a href="">Arabic</a></li>
+                <li><a href="">Mexican</a></li>
+                <li><a href="">Roman,Greek</a></li>
+                <li><a href="">Russian</a></li>
+                <li><a href="">Various</a></li>
+                
+                 
+            </ul>
+        </div>
+        <div class="Square">
+            <ul>
+                <li><a href="">Square</a></li>
+                <li><a href="">LCD</a></li>
+                <li><a href="">Sci-fi</a></li>
+                <li><a href="">Various</a></li>
+                
+                 
+            </ul>
+        </div>
+
+        <div class="bitmap">
+            <ul><li><a href="">Bitmap</a></li></ul>
+        </div>
+        <div class="pixel">
+            <ul>
+                <li><a href="">Pixel,Bitmap</a></li>
+            </ul>
+        </div>
+
+        <div class="medieval">
+            <ul>
+                <li><a href="">Medieval</a></li>
+                <li><a href="">Modern</a></li>
+                <li><a href="">Celtic</a></li>
+                <li><a href="">Initials</a></li>
+                <li><a href="">Various</a></li>
+            </ul>
+        </div>
+
+        
+        <div class="sans">
+            <ul>
+                <li><a href=""> Sans serif</a></li>
+                <li><a href="">Serif</a></li>
+                <li><a href="">Fixed width</a></li>
+               <li><a href="">Various</a></li>
+            </ul>
+        </div>
+        <div class="calligraphy">
+            <ul>
+                <li><a href="">Calligraphy</a></li>
+                <li><a href="">School</a></li>
+                <li><a href="">Handwritten</a></li>
+                <li><a href="">Brush</a></li>
+                <li><a href="">Trash</a></li>
+                <li><a href="">Graffiti</a></li>
+                <li><a href="">Old School</a></li>
+                <li><a href="">Various</a></li>
+                
+                 
+            </ul>
+        </div>
+
+        <div class="alien">
+            <ul>
+                <li><a href="">Alien</a></li>
+                <li><a href="">Animals</a></li>
+                <li><a href="">Asian</a></li>
+                <li><a href="">Ancient</a></li>
+                <li><a href="">Runes,Elvish</a></li>
+                <li><a href="">Esoteric</a></li>
+                <li><a href="">Fantastic</a></li>
+                <li><a href=""> Horror</a></li>
+                <li><a href="">Games</a></li>
+                <li><a href="">Shapes</a></li>
+                
+                 
+            </ul>
+        </div>
+
+        <div class="valentine">
+            <ul>
+                <li><a href="">Valentine</a></li>
+                <li><a href="">Easter</a></li>
+                <li><a href="">Halloween</a></li>
+                <li><a href="">Christmas</a></li>
+                <li><a href="">Various</a></li>
+            </ul>
+        </div>
+
+</div>
+
+<div class="main3">
+    <div class="fraud">
+            <ul>
+                <li><a href=""> <font color="red"> <strong>Fancy > Eroded</strong></font></a></li>
+            </ul>
+    </div>
+    <div class="num">
+        <ul>
+            <li><a href=""><font color="red"><strong>1</strong></font> <strong>2 3 4 5 6 7 8 9 10 .....83</strong> </a></li>
+        </ul>
+    </div>
+    
+</div>
+
+ 
+    <div class="text">
+        <ul>
+            <li><a href=""> <strong>Preview</strong></a></li> 
+            <input type="text" name="" id="" size="25" placeholder="Type your text here">
+        </ul>
+    </div>
+    <div class="text2">
+        <ul>
+            <li><a href=""> <strong>Fonts</strong></a></li>
+            <select>
+                <option>25</option>
+                <option>50</option>
+                <option>100</option>
+                <option>200</option>
+            </select>
+        </ul>
+    </div>
+    <div class="text3">
+        <input type="checkbox" name="" id=""> 
+        <input type="submit" value="Show variants">
+    </div>
+    
+    <div class="text4">
+        <ul>
+            <li><a href=""> <strong>Size</strong></a></li> 
+            <select>
+                <option>Tiny</option>
+                <option>Medium</option>
+                <option>Small</option>
+                <option>Large</option>
+            </select>
+        </ul>
+    </div>
+
+    <div class="text5">
+        <ul>
+            <li><a href=""> <strong>Sort by</strong></a></li> 
+            <select>
+                <option>Name</option>
+                <option>Popularity</option>
+                <option>Newest</option>
+                
+            </select>
+        </ul>
+    </div>
+
+    <div class="text6">
+        
+        <input type="submit" value="Submit">
+    </div>
+ 
+    <div class="fl1">
+        <ul>
+            <li><a href="">Urban Jungle by KC Fonts <img src="/images/WhatsApp Image 2024-06-15 at 22.31.54_7ad3e5fa.jpg" alt=""></a></li>
+        </ul>
+    </div>
+    <div class="mini1">
+        
+        5,229,497 downloads (681 yesterday) <font color="red">36 comments</font> Free for personal use
+        
+    </div>
+
+    <div class="down1">
+        <a href="/fonts/UrbanJungleDEMO.woff" download><button type="Download"><strong>DOWNLOAD</strong></button></a>
+    </div>
+ 
+    <div class="font1">
+            URBAN JUNGLE
+    </div>
+    
+    <div class="fl2">
+        <ul>
+            <li><a href="">Plane Crash <img src="/images/WhatsApp Image 2024-06-16 at 00.07.44_c0e4cc9b.jpg" alt=""> by The Wondermaker <img src="/images/WhatsApp Image 2024-06-15 at 22.31.54_7ad3e5fa.jpg" alt=""></a></li>
+        </ul>
+    </div>
+
+    <div class="mini2">
+        
+        2,865,686 downloads (465 yesterday) <font color="red">10 comments</font> Free for personal use
+        
+    </div>
+
+    
+    <div class="down2">
+        <a href="" download><button type="Download"><strong>DOWNLOAD</strong></button></a>
+    </div>
+ 
+    <div class="font2">
+            dsfkljg
+    </div>
+
+       
+    <div class="fl3">
+        <ul>
+            <li><a href="">Awakenning<img src="/images/WhatsApp Image 2024-06-16 at 00.37.00_f37e078a.jpg" alt=""><img src=" /images/WhatsApp Image 2024-06-16 at 00.07.44_c0e4cc9b.jpg" alt=""> by Billy Argel Fonts <img src="/images/WhatsApp Image 2024-06-16 at 00.37.39_9aa6c657.jpg" alt=""> <img src="/images/WhatsApp Image 2024-06-15 at 22.31.54_7ad3e5fa.jpg " alt=""></a></li>
+        </ul>
+    </div>
+
+    <div class="mini3">
+        
+        271,629 downloads (437 yesterday) Free for personal use - 2 font files
+        
+    </div>
+    <div class="down3">
+        <a href="" download><button type="Download"><strong>DOWNLOAD</strong></button></a>
+    </div>
+
+    <div class="font3">
+        JAI HIND
+</div>
+
+<div class="fl4">
+    <ul>
+        <li><a href="">White On Black<img src="/images/WhatsApp Image 2024-06-16 at 00.37.00_f37e078a.jpg" alt=""> by imagex <img src="/images/WhatsApp Image 2024-06-15 at 22.31.54_7ad3e5fa.jpg " alt=""></a></li>
+    </ul>
+</div>
+
+<div class="mini4">
+        
+    981,862 downloads (310 yesterday) Free for personal use 
+    
+</div>
+
+<div class="down4">
+    <a href="" download><button type="Download"><strong>DOWNLOAD</strong></button></a>
+</div>
+
+    
+<div class="font4">
+    WHITE ON BLACK
+</div>
+
+<div class="fl5">
+    <ul>
+        <li><a href="">DCC Ash by dccanim<img src="/images/WhatsApp Image 2024-06-15 at 22.31.54_7ad3e5fa.jpg " alt=""></a></li>
+    </ul>
+</div>
+<div class="mini5">
+        
+    657,922 downloads (271 yesterday)  <font color=red>12 comments</font> 100% Free
+    
+</div>
+
+<div class="down5">
+    <a href="" download><button type="Download"><strong>DOWNLOAD</strong></button></a>
+</div>
+
+            
+<div class="font5">
+    RAO SHAB
+</div>
+
+
+<div class="fl6">
+    <ul>
+        <li><a href="">A Love  of Thunder <img src="/images/WhatsApp Image 2024-06-16 at 00.37.00_f37e078a.jpg" alt="">
+        by Cumberland Fontworks<img src="/images/WhatsApp Image 2024-06-15 at 22.31.54_7ad3e5fa.jpg " alt=""></a></li>
+    </ul>
+</div>
+<div class="mini6">
+        
+    1,411,740 downloads (252 yesterday)  <font color=red>10 comments</font>Free for personal use
+    
+</div>
+
+<div class="down6">
+    <a href="" download><button type="Download"><strong>DOWNLOAD</strong></button></a>
+</div>
+
+           
+<div class="font6">
+    A LOVE OF THUNDER
+</div>
+
+
+<div class="fl7">
+    <ul>
+        <li><a href="">Ghost Factory<img src="/images/WhatsApp Image 2024-06-16 at 00.37.00_f37e078a.jpg" alt="">
+        by imagex<img src="/images/WhatsApp Image 2024-06-15 at 22.31.54_7ad3e5fa.jpg " alt=""></a></li>
+    </ul>
+</div>
+<div class="mini7">
+        
+    381,040 downloads (210 yesterday)  <font color=red> 2 comments</font>Free for personal use
+    
+</div>
+
+<div class="down7">
+    <a href="" download><button type="Download"><strong>DOWNLOAD</strong></button></a>
+</div>
+
+           
+<div class="font7">
+    GHOST FACTORY
+</div>
+
+<div class="fl8">
+    <ul>
+        <li><a href=""> ALL Ages by KC Fonts<img src="/images/WhatsApp Image 2024-06-15 at 22.31.54_7ad3e5fa.jpg " alt=""></a></li>
+    </ul>
+</div>
+<div class="mini8">
+        
+    722,803  downloads (118 yesterday)   Demo-3 font files
+    
+</div>
+
+<div class="down8">
+    <a href="" download><button type="Download"><strong>DOWNLOAD</strong></button></a>
+</div>
+
+           
+<div class="font8">
+    ALL AGES
+</div>
+
+
+<div class="fl9">
+    <ul>
+        <li><a href="">Personal Services <img src="/images/WhatsApp Image 2024-06-16 at 14.38.00_98a4be40.jpg" alt="">
+            <img src="/images/WhatsApp Image 2024-06-16 at 00.07.44_c0e4cc9b.jpg" alt=""> by imagex <img src="/images/WhatsApp Image 2024-06-15 at 22.31.54_7ad3e5fa.jpg " alt=""></a></li>
+    </ul>
+</div>
+<div class="mini9">
+        
+    370,664  downloads (156 yesterday)   Free for personal use
+    
+</div>
+
+<div class="down9">
+    <a href="" download><button type="Download"><strong>DOWNLOAD</strong></button></a>
+</div>
+
+           
+<div class="font9">
+    PERSONAL SERVICES
+</div>
+
+
+
+
+</div>
+
+
+<div class="arrow">
+
+</div>
+     <div class="LINK">
+
+       <font  ><strong size="4">  Links : On snot and fonts</strong></font>
+    </div>
+
+
+</body>
+</html> 

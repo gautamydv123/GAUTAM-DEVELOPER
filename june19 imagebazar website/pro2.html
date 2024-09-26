@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        .main {
+            height: auto;
+            width: 100%;
+            border: 2px solid black;
+            position: relative; /* Added position relative */
+        }
+
+        .frist {
+            height: 80px;
+            width: 100%;
+            background-color: black;
+            border: 2px solid black;
+            position: relative; /* Added position relative */
+        }
+
+        .frist ul {
+            list-style: none;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .frist ul li {
+            display: inline;
+        }
+
+        .frist ul li a {
+            font-size: 20px;
+            color: white;
+            padding: 35px;
+            text-decoration: none;
+        }
+
+        /* New box styling */
+        .new-box {
+            position: absolute;
+            bottom: -400px; /* Initially at the bottom */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Center horizontally */
+            width: 100px; /* Adjust width as needed */
+            height: 100px; /* Adjust height as needed */
+            background-color: lightgray;
+            border: 2px solid black;
+            transition: bottom 0.3s ease; /* Smooth transition */
+            display: none; /* Hidden by default */
+        }
+
+        /* Show the new box when hovering over the "More..." link */
+        .frist ul li:last-child:hover .new-box /* More... */
+        {
+            bottom: -110px; /* Adjust the bottom position */
+            display: block; /* Show on hover */
+        }
+    </style>
+</head>
+<body>
+<div class="main"> 
+    <div class="frist">
+        <ul>
+            <li><a href=""><img src="/shopping icon/WhatsApp Image 2024-06-10 at 22.35.23_07684ff6.jpg" alt=""></a></li>
+            <li><a href="">Video</a>
+                <div class="new-box"></div> <!-- New box for Video -->
+            </li>
+            <li><a href="">Photos</a>
+                <div class="new-box"></div> <!-- New box for Photos -->
+            </li>
+            <li><a href="">lllustrations</a>
+                <div class="new-box"></div> <!-- New box for Illustrations -->
+            </li>
+            <li><a href="">AI Generator</a>
+                <div class="new-box"></div> <!-- New box for AI Generator -->
+            </li>
+            <li><a href="">More...</a>
+                <div class="new-box"></div> <!-- New box for More -->
+            </li>
+            <li><a href=""><input type="search" name="" id="" placeholder="Search Here "></a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

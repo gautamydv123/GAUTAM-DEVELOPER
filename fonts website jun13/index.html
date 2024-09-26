@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        /* .main{
+            
+            height: auto;
+            width: 100%;
+            border: 2px solid black;
+            position: relative;
+
+        } */
+        
+        .frist{
+            height: 100px;
+            width: 100%;
+            background-color:white;
+            border-radius: 200px; 
+        }
+        .frist ul li{
+            display: inline;
+           
+        }
+        .frist ul{
+            
+            list-style: none;
+            position: absolute;
+            left: 130px;
+            top: 10px;
+         }
+         .frist ul li a {
+            font-size: 20px;
+            color:black;
+            padding: 35px;
+            text-decoration: none;
+         }
+         /* .c1
+         {
+            height: 30px;
+            width: 100%;
+           
+           
+         } */
+         .c1 ul li{
+            display: inline;
+
+         }
+         .c1 ul
+         {
+            position: absolute;
+            top: 10px;
+            left: 870px;
+         
+           
+         }
+         .c1 ul li a{
+           text-decoration: none;
+           padding: 5px;
+           font-size: 20p;
+           color: black;
+           
+
+         }
+         .logo{
+            position: absolute;
+            top: 0;
+           left: 10px;
+         }
+         .second{
+            position: absolute;
+            left:125px;
+            top: 145px;
+
+         }
+         .second ul li a{
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            padding: 20px;
+         }
+         .second ul li {
+            display: inline;
+         }
+         .searchbox{
+            position: absolute;
+            top:150px ;
+            left: 1250px;
+         }
+         .third{
+            position: absolute;
+            top: 175px;
+            left: 130px;
+
+         }
+         .third ul li{
+            display: inline;
+        }
+        .third ul li a{
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            padding: 13px;
+        }
+        .az{
+            position: absolute;
+            top: 182px;
+            left: 950px;
+            font-size: 20px;
+            color: black;
+        }
+        .table{
+            position: absolute;
+            top:220px ;
+            left: 130px;
+            border: 2 solid red;
+         
+        }
+        .table fieldset{
+            height: 200px;
+            width: 100%;
+            padding: 20px;
+           
+        }
+        .set1{
+            position: absolute;
+            top: 466px;
+            left:130px ;
+        }
+        .set2{
+            position: absolute;
+            top:466px;
+            left:320px ;
+        }
+        .check{
+            position: absolute;
+            top:486px;
+            left:390px ; 
+        }
+        .set3{
+            position: absolute;
+            top:466px;
+            left:516px ;  
+        }
+        .set4{
+            position: absolute;
+            top:466px;
+            left:613px ; 
+        }
+        .set5{
+            position: absolute;
+            top:486px;
+            left:715px ;   
+        }
+        
+        .pf1{
+            height: 30px;
+            width: 89%;
+            background-color:red;
+            position: absolute;
+            top: 530px;
+            left:130px ;
+            font-size: 15px;
+            color: white;
+            padding: 10px;
+        }
+        @font-face {
+            font-family:UrbanJungleDEMO;
+            src: url(/UrbanJungleDEMO.otf);
+        }
+        .font1
+        {
+            font-family: UrbanJungleDEMO;
+            height: 60px;
+            width: 100%;
+            font-size: 100px;  
+            position: absolute;
+            top: 600px; 
+            left: 130px;
+        }
+        .download1{
+            position: absolute;
+            top: 630px;
+            left:1320px ;
+        }
+        @font-face {
+            font-family:'Plane Crash' ;
+            src: url(/plane_crash/Plane\ Crash.woff);
+        }
+        .font2{
+            font-family:'Plane Crash' ;
+            height: 60px;
+            width: 100%;
+            font-size: 100px;
+            position: absolute;
+            top: 800px;
+            left: 130px;
+        }
+        .pf2{
+            height: 30px;
+            width: 89%;
+            background-color:red;
+            position: absolute;
+            top: 730px;
+            left:130px ;
+            font-size: 15px;
+            color: white;
+            padding: 10px;
+        }
+        .download2{
+            position: absolute;
+            top: 830px;
+            left:1320px ;
+        }
+        @font-face {
+            font-family:white_on_black ;
+            src: url(/white_on_black/White\ On\ Black.woff);
+        }
+        .font3{
+            font-family: white_on_black;
+            position: absolute;
+            height: 60px;
+            width: 100%;
+            font-size: 100px;
+            top: 1000px;
+            left: 130px;
+        }
+        .pf3{
+            height: 30px;
+            width: 89%;
+            background-color:red;
+            position: absolute;
+            top: 930px;
+            left:130px ;
+            font-size: 15px;
+            color: white;
+            padding: 10px;
+        }
+        .download3{
+            position: absolute;
+            top: 1020px;
+            left:1320px ;
+        }
+        @font-face {
+            font-family:a_love_of_thunder ;
+            src: url(/a_love_of_thunder/ALoveofThunder.woff);
+        }
+        .font4{
+            font-family: a_love_of_thunder;
+            position: absolute;
+            height: 60px;
+            width: 100%;
+            font-size: 100px;
+            top: 1200px;
+            left: 130px;
+        }
+        .pf4{
+            height: 30px;
+            width: 89%;
+            background-color:red;
+            position: absolute;
+            top: 1150px;
+            left:130px ;
+            font-size: 15px;
+            color: white;
+            padding: 10px;
+        }
+        .download4{
+            position: absolute;
+            top: 1240px;
+            left:1320px ;
+        }
+        /* @font-face {
+            font-family:'ghost_factory' ;
+            src: url(/ghost_factory/GhostFactory.woff);
+        }
+       .font5{
+             font-family:'ghost_factory' ;
+             position: absolute;
+            height: 60px;
+            width: 100%;
+            font-size: 100px;
+            top: 1600px;
+            left: 130px;
+       } */
+       
+        
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="main"> 
+        <div class="frist">
+            <ul>
+                 <li><a href="">Login</a></li> |
+                <li><a href="">Register</a></li>
+                <br>
+                ............................................................................................................................................................................................................................................................................................................................................
+            </ul>
+    </div>
+    <div class="c1">
+        <ul>
+            <li><a href=""> <img src="WhatsApp Image 2024-06-13 at 22.09.08_7fcca541.jpg" alt=""> English</a></li>
+            <li><a href=""> <img src="WhatsApp Image 2024-06-13 at 22.10.03_3f726419.jpg" alt=""> Francias</a></li>
+            <li><a href=""> <img src="WhatsApp Image 2024-06-13 at 22.10.42_0a19b0a6.jpg" alt=""> Espanol</a></li>
+            <li><a href=""> <img src="WhatsApp Image 2024-06-13 at 22.12.37_bba65192.jpg" alt=""> Deutsch</a></li>
+            <li><a href=""> <img src="WhatsApp Image 2024-06-13 at 22.13.33_1b7221d2.jpg" alt=""> Italiano</a></li>
+            <li><a href=""> <img src="WhatsApp Image 2024-06-13 at 22.14.11_9a7c0ad7.jpg" alt=""> Portugues</a></li>
+        </ul>
+    </div>
+    <div class="logo">
+        <img src="WhatsApp Image 2024-06-13 at 21.18.14_076db4ba.jpg" alt="">
+    </div> 
+    <div class="second">
+        <ul>
+            <li><a href="">Themes</a></li>
+            <li><a href="">Authors</a></li>
+            <li><a href="">Forum</a></li>
+            <li><a href="">Submit a font</a></li>
+        </ul>
+    </div>
+     <div class="searchbox">
+        <input type="text" size="15"> <input type="button" value="Search" size="20">
+    </div>
+    <div class="third">
+        <ul>
+            <li><a href="">New fonts </a></li>
+            <li><a href="">Top</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Tools</a></li>
+        </ul>
+    </div>
+    <div class="az">
+        A B C D E F G H I J K L M N O P Q R S T U V W X Y Z #
+    </div>
+    <div class="table">  
+     <fieldset>
+        <select>
+            <option>Fancy</option>|
+            <option>Cartoon</option>
+            <option>Comic</option>
+            <option>Groovy</option>
+            <option>Old School</option>
+            <option>Curly</option>
+            <option>Western</option>
+            <option>Eroded</option>
+            <option>Distorted</option>
+            <option>Destroy</option>
+            <option>Horror</option>
+
+        </select>
+        <select>
+            <option>Foreign look</option>|
+            <option>Chinese,Jpn</option>
+            <option>Arabic</option>
+            <option>Mexican</option>
+            <option>Roman,Greek</option>
+            <option>Russian</option>
+            <option>Various</option>
+        </select>
+
+        <select>
+            <option>Bitmap</option>|
+            <option>Pixel,Bitmap</option>
+        </select>
+
+        
+        <select>
+            <option>Heads</option>|
+            <option>Kids</option>
+            <option>Logos</option>
+            <option>Sexy</option>
+            <option>Army</option>
+            <option>Various</option>
+        </select>
+
+         
+        <select>
+            <option>Initials</option>|
+            <option>typewriter</option>
+            <option>Fire,Ice</option>
+            <option>Stencil,Army</option>
+            <option>Grid</option>
+            <option>Various</option>
+        </select>
+
+
+        <select>
+            <option>TV,Movie</option>|
+            <option>typewriter</option>
+        </select>
+
+        
+        <select>
+            <option>Esoteric</option>|
+            <option> Horror</option>
+        </select>
+
+        <select>
+            <option>Shapes</option>|
+            <option>Games</option>
+        </select>
+
+        <select>
+            <option>Techno</option>|
+            <option>Square</option>
+            <option>LCD</option>
+            <option>Sci-fi</option>
+            <option>Various</option>
+        </select>
+
+        <select>
+            <option>Gothic</option>|
+            <option>Medieval</option>
+            <option>Modern</option>
+            <option>Celtic</option>
+            <option>Initials</option>
+            <option>Various</option>
+        </select>
+        <select>
+            <option>Basic</option>|
+            <option>Sans serif</option>
+            <option>Serif</option>
+            <option>Fixed width</option>
+            <option>Various</option>
+        </select>
+        <select>
+            <option>Script</option>|
+            <option>Calligraphy</option>
+            <option>School</option>
+            <option>Handwritten</option>
+            <option>Brush</option>
+            <option>Trash</option>
+            <option>Graffiti</option>
+            <option>Old School</option>
+            <option>Various</option>
+        </select>
+        <select>
+            <option>Dingbats</option>|
+            <option>Alien</option>
+            <option>Animals</option>
+            <option>Asian</option>
+            <option>Ancient</option>
+            <option>Runes,Elvish</option>
+            <option>Esoteric</option>
+            <option>Fantastic</option>
+            <option>Horror</option>
+            <option>Games</option>
+            <option>Shapes</option>
+        </select>
+        <select>
+            <option>Holiday</option>|
+            <option>Valentine</option>
+            <option>Easter</option>
+            <option>Halloween</option>
+            <option>Christmas</option>
+            <option>Various</option>
+        </select>
+     </fieldset>
+    </div>
+     <div class="set1">
+        <fieldset>
+            <label for="Preview"><strong>Preview</strong></label> 
+           <br>
+            <input type="text" name="" id="Preview" placeholder="Type your text here">  
+        </fieldset>
+     </div>
+      <div class="set2">
+        <fieldset> 
+        <label for="Fonts"> <strong>Fonts</strong></label> <br>
+         <select>
+            <option>25</option>
+            <option>50</option>
+            <option>100</option>
+            <option>200</option>
+         </select>
+     </fieldset>
+      </div>
+      <div class="check">
+        <input type="checkbox" name="" id=""  size="10"><input type="submit" value="Show variansts">
+      </div>
+      <div class="set3">
+        <fieldset>
+            <label for="Size"><strong>Size</strong></label> <br>
+            <select>
+                <option>Tiny</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+            </select>
+
+        </fieldset>
+      </div>
+      <div class="set4">
+        <fieldset> 
+        <label for="Sort by"><strong>Sort by</strong></label> <br>
+        <select >
+            <option>Popularity</option>
+            <option>Name</option>
+            <option>Newest</option>
+        </select>
+    </fieldset>
+      </div>
+      <div class="set5">
+        <input type="submit" value="Submit">
+      </div>
+      <div class="pf1">
+        Urban Jungle by KC Fonts <img src="WhatsApp Image 2024-06-14 at 01.17.51_170ace4a.jpg" alt="">
+      </div>
+      <div class="font1">
+        RAO SHAB 
+      </div>
+      <div class="download1">
+        <input type="button" value="Download"  style="height: 50px; width: 100px;">
+      </div>
+      <div class="pf2">
+        Plane Crash <img src="WhatsApp Image 2024-06-14 at 01.55.36_9db643b6.jpg" alt=""> by The Wondermaker <img src="WhatsApp Image 2024-06-14 at 01.17.51_170ace4a.jpg" alt="">
+      </div>
+      <div class="font2">
+     gjfdjgdkjd
+      </div>
+      <div class="download2">
+        <input type="button" value="Download"  style="height: 50px; width: 100px;">
+      </div>
+      
+      <div class="pf3">
+        White On Black <img src="WhatsApp Image 2024-06-14 at 01.55.36_9db643b6.jpg" alt=""> by imagex <img src="WhatsApp Image 2024-06-14 at 01.17.51_170ace4a.jpg" alt="">
+      </div>
+      <div class="font3">
+           mncxmxbvc 
+      </div>
+      <div class="download3">
+        <input type="button" value="Download"  style="height: 50px; width: 100px;">
+      </div>
+      <div class="pf4">
+        A Love of Thunder <img src="WhatsApp Image 2024-06-14 at 01.17.51_170ace4a.jpg" alt=""> by Cumerland Fontworks <img src="WhatsApp Image 2024-06-14 at 01.17.51_170ace4a.jpg" alt="">
+      </div> 
+      <div class="font4">
+        fkkdfkljbv
+      </div>
+      <div class="download4">
+        <input type="button" value="Download"  style="height: 50px; width: 100px;">
+      </div>
+
+      <!-- <div class="font5">
+        asdfgtre
+      </div>
+  -->
+</div>
+
+ 
+</body>
+</html>

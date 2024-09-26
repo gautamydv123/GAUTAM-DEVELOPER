@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/2409013c9b.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .protfolio-container{
+            width: 100%;
+            display: flex;
+        }
+        .protfolio-container .navlist {
+            display: flex;
+            gap: 4rem;
+            height: 15vh;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+
+        }
+        .protfolio-container .navlist li{
+            list-style: none;
+        } 
+        .protfolio-container .navlist li a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+        }
+        .frist-left,.second-right{
+           height: 100vh;
+        }
+         .frist-left{
+            background-color: #262525;
+            width: 70%;
+            padding-left: 40px;
+            display: flex;
+            align-items: center;
+        }
+        .frist-left .contain{
+                margin-left: 40px;
+        }
+        .frist-left .contain h2{
+            font-size: 20px;
+            color: white;
+        }
+        .frist-left .contain h1{
+           color: #5DB9EE;
+        }
+        .frist-left .contain p{
+           color:white;
+        }
+        .second-right{
+            background:linear-gradient(-45deg, #3877ff,#262525 70%);
+            width: 30%;
+        }
+         .icon .fb{
+            color: white;
+            font-size: 30px;
+        }
+        .icon .tw{
+            color: white;
+            font-size: 30px;
+        }
+        .icon .in{
+            color: white;
+            font-size: 30px;
+        }
+        .icon .ln{
+            color: white; 
+            font-size: 30px;
+
+        } 
+        .icon{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .contain{
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+        }
+        .btn button{
+            border: 2px solid #5DB9EE;
+            font-size: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .btn .b1{
+            background-color: #3877ff;
+        }
+        .btn .b1:hover{
+            background-color: transparent;
+            color: #5DB9EE;
+        }
+        .btn .b2{
+            background: transparent;
+            color: #5DB9EE;
+            margin-left: 30px;
+            top: 50px;
+            left: 200p;
+        }
+        .btn .b2:hover{
+            background-color: #5DB9EE;
+            
+            color:#262525;
+        }
+        .design .circle1{
+            height: 200px;
+            width: 200px;
+            background-color:#262525 ;
+            position: absolute;
+            left: 830px;
+            top: 150px;
+            border-radius: 50%;
+            background: linear-gradient( 90deg transparent 50%,#262525 50%);
+           
+        }
+        .design .circle2{
+            height: 150px;
+            width: 150px;
+            background-image: url(/WhatsApp\ Image\ 2024-06-28\ at\ 21.46.27_7ef15d60.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            border: .5rem solid white;
+            
+            position: absolute;
+            left: 855px;
+            top: 175px;
+            border-radius: 50%;
+            box-shadow: 0 0 4rem #fff,inset 0 0 1rem #fff ,0 0  2rem #3877ff,inset 0 0 2rem #3877ff,0 0 4rem #3877ff,inset 0 0 4rem #3877ff;
+            
+        
+
+        }
+     
+        
+        
+       
+
+         
+    </style>
+</head>
+<body>
+    <div class="protfolio-container">
+        <div class="navlist">
+            <li><a href="">Home</a></li>
+            <li><a href="">Work</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Project</a></li>
+            <li><a href="">Service</a></li>
+        </div>
+        <div class="frist-left">
+            <div class="icon">
+                <i class="fa-brands fa-facebook  fb  "></i> 
+                <i class="fa-brands fa-linkedin-in   ln"></i>
+                <i class="fa-brands fa-twitter   tw"></i>
+                <i class="fa-brands fa-instagram   in"></i> 
+            </div>
+            <div class="contain">
+                <h2>Hi I Am  <font color=" #3877ff">Gaurav</font></h2>
+                <h1>Web Developer</h1>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum expedita molestiae!  <br>  Molestiae quae veritatis, quo modi eaque ad, iste, delectus corporis dicta blanditiis ipsam id.  <br> Dolore perferendis quisquam vitae?</p>
+            <div class="btn">
+                <button class="b1">Hire Me</button>
+                <button class="b2">View Project</button>
+            </div>     
+
+            </div>
+
+        </div>
+        <div class="second-right"></div>
+        <div class="design">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+        </div>
+    </div>
+    
+</body>
+</html> 

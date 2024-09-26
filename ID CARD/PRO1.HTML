@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            border: 5px solid blue;
+            height: 100px;
+            width: 200px;
+            background-color: gray;
+            color: black;
+            font-size: 20px;
+        }
+        input{
+            border: 5px solid red;
+            height: 50px;
+            width: 300px;
+            font-size: 20px;
+        }
+        button{
+            border: 3px solid gray;
+            background-color: blue;
+            color: white;
+            height: 50px;
+            width: 200px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" name="" id="empid">
+        <input type="text" name="" id="empname">
+        <input type="text" name="" id="empdesing">
+        <input type="text" name="" id="empsalary">
+    </div>
+    <div>
+        <button id="btn">click here</button>
+    </div>
+    <div>
+        <h2 id="id"></h2>
+        <h2 id="name"></h2>
+        <h2 id="desing"></h2>
+        <h2 id="salary"></h2>
+    </div>
+    <script>
+        const button=document.getElementById('btn');
+        button.addEventListener('click',()=>{
+        let empid= document.getElementById('empid').value
+        let empname=  document.getElementById('empname').value
+        let empdesing=  document.getElementById('empdesing').value
+        let empsalary=  document.getElementById('empsalary').value
+
+        const showid=document.getElementById('id');
+              showid.innerText=empid;
+        
+        const showname=document.getElementById('name');
+             showname.innerText=empname;
+
+        const showdesing=document.getElementById('desing');
+              showdesing.innerText=empdesing;
+
+        const showsalary=document.getElementById('salary');
+             showsalary.innerText=empsalary;
+        })
+
+      
+    </script>
+</body>
+</html>

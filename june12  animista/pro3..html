@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rotate-top {
+	 
+	        animation: rotate-top 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            height: 400px;
+            width: 400px;
+            background-color: tomato;
+}
+ 
+  
+@keyframes rotate-top {
+  0% {
+    
+            transform: rotate(0);
+ 
+            transform-origin: top;
+            background-color: yellow;
+  }
+  100% {
+    
+            transform: rotate(360deg);
+    
+            transform-origin: top;
+            background-color: yellowgreen;
+  }
+}
+
+    </style>
+</head>
+<body>
+     <div class="rotate-top"></div>
+    
+</body>
+</html>

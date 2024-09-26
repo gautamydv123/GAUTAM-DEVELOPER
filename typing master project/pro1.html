@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Master</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            max-width: 600px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        #text-display {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        #text-input {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        #timer {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Master</h1>
+        <p id="timer">Time left: <span id="time">60</span>s</p>
+        <p id="text-display">The quick brown fox jumps over the lazy dog.</p>
+        <textarea id="text-input" placeholder="Start typing here..."></textarea>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const textDisplay = document.getElementById('text-display');
+        const textInput = document.getElementById('text-input');
+        const result = document.getElementById('result');
+        const timerElement = document.getElementById('time');
+        const sampleText = textDisplay.textContent;
+        let timeLeft = 60;
+        let timer;
+
+        function startTimer() {
+            timer = setInterval(() => {
+                timeLeft--;
+                timerElement.textContent = timeLeft;
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                    endTest();
+                }
+            }, 1000);
+        }
+
+        function endTest() {
+            textInput.disabled = true;
+            const inputText = textInput.value;
+            const accuracy = calculateAccuracy(inputText, sampleText);
+            result.innerHTML = `Time's up!<br>Accuracy: ${accuracy}%`;
+            result.style.color = 'blue';
+        }
+
+        function calculateAccuracy(input, sample) {
+            const inputLength = input.length;
+            const sampleLength = sample.length;
+            let correctChars = 0;
+            for (let i = 0; i < Math.min(inputLength, sampleLength); i++) {
+                if (input[i] === sample[i]) {
+                    correctChars++;
+                }
+            }
+            return ((correctChars / sampleLength) * 100).toFixed(2);
+        }
+
+        textInput.addEventListener('focus', () => {
+            if (!timer) {
+                startTimer();
+            }
+        });
+
+        textInput.addEventListener('input', () => {
+            const inputText = textInput.value;
+            if (inputText === sampleText) {
+                clearInterval(timer);
+                result.textContent = 'Well done! You typed it correctly.';
+                result.style.color = 'green';
+                const accuracy = calculateAccuracy(inputText, sampleText);
+                result.innerHTML += `<br>Accuracy: ${accuracy}%`;
+            }
+        });
+    </script>
+</body>
+</html>

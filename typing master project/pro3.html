@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Master</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            max-width: 600px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        #text-display {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        #text-input {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        #timer {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        select {
+            font-size: 16px;
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head> 
+<body>
+    <div class="container">
+        <h1>Typing Master</h1>
+        <select id="time-limit">
+            <option value="30">30 seconds</option>
+            <option value="60" selected>1 minute</option>
+            <option value="120">2 minutes</option>
+        </select>
+        <select id="text-option">
+            <option value="0">Lorem ipsum dolor sit amet...</option>
+            <option value="1">The quick brown fox jumps over the lazy dog...</option>
+            <option value="2">A journey of a thousand miles begins with a single step...</option>
+        </select>
+        <p id="timer">Time left: <span id="time">60</span>s</p>
+        <p id="text-display"></p>
+        <textarea id="text-input" placeholder="Start typing here..."></textarea>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const textDisplay = document.getElementById('text-display');
+        const textInput = document.getElementById('text-input');
+        const result = document.getElementById('result');
+        const timerElement = document.getElementById('time');
+        const timeLimitSelect = document.getElementById('time-limit');
+        const textOptionSelect = document.getElementById('text-option');
+
+        const sampleTexts = [
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint doloribus esse quos quidem natus! Accusantium nesciunt voluptatum magni eveniet. Dolor illo illum incidunt ab enim, quos iste quasi sit libero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores repudiandae, quia voluptatibus dolorem aliquid sunt fuga, in ullam, praesentium nihil dolor. Voluptas esse nisi eius quaerat quae accusamus id voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem repellendus rerum dolores. Quidem recusandae fuga mollitia repellendus distinctio qui praesentium hic veritatis unde, fugit, consectetur, laborum ullam quas quo sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis non corporis quaerat expedita, sed omnis dignissimos, recusandae perspiciatis ducimus quam dolor laborum vero autem maxime aut, delectus eos voluptatem quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam temporibus aperiam corporis, pariatur excepturi laudantium dolorum possimus porro, maxime quaerat culpa magni numquam odio a nesciunt dignissimos beatae in ad.',
+            'The quick brown fox jumps over the lazy dog. This sentence contains every letter in the English alphabet at least once. It is often used for typing practice and keyboard testing. Mastering this sentence can significantly improve your typing speed and accuracy. Keep practicing and soon you will be able to type it quickly and accurately.',
+            'A journey of a thousand miles begins with a single step. This famous quote by Lao Tzu reminds us that even the longest and most challenging ventures have a starting point. It encourages us to take that first step, no matter how daunting it may seem. With each step, we move closer to our goal and gain the strength to continue our journey.'
+        ];
+
+        let timeLeft = parseInt(timeLimitSelect.value);
+        let timer;
+        let timerStarted = false;
+
+        function updateTextDisplay() {
+            const selectedTextIndex = parseInt(textOptionSelect.value);
+            textDisplay.textContent = sampleTexts[selectedTextIndex];
+        }
+
+        timeLimitSelect.addEventListener('change', () => {
+            timeLeft = parseInt(timeLimitSelect.value);
+            timerElement.textContent = timeLeft;
+        });
+
+        textOptionSelect.addEventListener('change', updateTextDisplay);
+
+        function startTimer() {
+            timer = setInterval(() => {
+                timeLeft--;
+                timerElement.textContent = timeLeft;
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                    endTest();
+                }
+            }, 1000);
+        }
+
+        function endTest() {
+            textInput.disabled = true;
+            const inputText = textInput.value;
+            const accuracy = calculateAccuracy(inputText, textDisplay.textContent);
+            result.innerHTML = `Time's up!<br>Accuracy: ${accuracy}%`;
+            result.style.color = 'blue';
+        }
+
+        function calculateAccuracy(input, sample) {
+            const inputLength = input.length;
+            const sampleLength = sample.length;
+            let correctChars = 0;
+            for (let i = 0; i < Math.min(inputLength, sampleLength); i++) {
+                if (input[i] === sample[i]) {
+                    correctChars++;
+                }
+            }
+            return ((correctChars / sampleLength) * 100).toFixed(2);
+        }
+
+        textInput.addEventListener('input', () => {
+            if (!timerStarted) {
+                timerStarted = true;
+                startTimer();
+            }
+            const inputText = textInput.value;
+            if (inputText === textDisplay.textContent) {
+                clearInterval(timer);
+                result.textContent = 'Well done! You typed it correctly.';
+                result.style.color = 'green';
+                const accuracy = calculateAccuracy(inputText, textDisplay.textContent);
+                result.innerHTML += `<br>Accuracy: ${accuracy}%`;
+            }
+        });
+
+        // Initialize the text display with the first sample text
+        updateTextDisplay();
+    </script>
+</body>
+</html>

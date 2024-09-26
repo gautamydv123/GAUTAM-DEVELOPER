@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/2409013c9b.js" crossorigin="anonymous"></script>
+    <style>
+          *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            border: border-box;
+        }
+        header{
+            position: sticky;
+            top: 0px;
+        }
+        .navbar{
+            height: 60px;
+            
+            background-color:black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .navlogo{
+            height: 50px;
+            width: 100px;
+            
+            
+        }
+        .logo{
+            background-image: url( /images.logo/WhatsApp\ Image\ 2024-07-06\ at\ 00.33.57_aaeedca2.jpg);
+            height: 50px;
+            background-size: cover;
+            width: 100%;
+            
+        }
+        .border{
+            border: 2px solid transparent;
+        }
+        .border:hover{
+            border: 1.5px solid white;
+        }
+        /* *************box2************ */
+        .addfirst{
+            color: #cccccc;
+            font-size: 0.85rem;
+            margin-left: 20px;
+        }
+        .addsec{
+            font-size: 1rem;
+            margin-left: 5px;
+        }
+        .addicon{
+            display: flex;
+            align-items: center;
+        }
+
+        /* ***********************box3********************** */
+
+        .navsearch{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: pink;
+            width: 620px;
+            height: 40px;
+            border-radius: 5px;
+        }
+        .searchselect{
+            background-color: #f3f3f3;
+            width: 50px;
+            text-align: center;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border: none;
+        }
+        
+        .searchinput{
+            width: 100%;
+            font-size: 1rem;
+            border: none;
+        }
+        .searchicon{
+            width: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            background-color: rgb(255, 174, 0);
+            border-top-right-radius:5px ;
+            border-bottom-right-radius:5px ;
+            color:#0f1111;
+        }
+        .flag{
+           background-image: url(/images.logo/WhatsApp\ Image\ 2024-07-06\ at\ 10.14.52_bf15fb45.jpg); 
+           height: 15px;
+           width: 20px;
+        }
+        .en{
+            font-size:15px;
+        }
+        
+        
+        .navsearch:hover{
+            border: 2px solid orange;
+        }
+        /* *************************box4************************ */
+        .span{
+            font-size: 0.10rem
+        }
+        .navsec{
+            font-size: 0.95rem;
+        }
+
+        /* ***************************box5****************************** */
+        .navcart i{
+          font-size: 30px;  
+        }
+        .navcart{
+            font-size: 0.85rem;
+        }
+        /* *********************************panel2******************************** */
+        .panel{
+            height: 40px;
+            background-color: #222f3d;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .panelops p{
+            display: inline;
+            margin-left: 15px;
+        }
+        .panelops{
+            width: 70%;
+            font-size: 0.8rem;
+        }
+        .paneldeals{
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+        .main1{
+            height: 50px;
+            background-color:white;
+            display: flex;
+            border: 2px solid gray;
+           
+             
+        }
+        .main1 ul p{
+            font-size: 15px;
+            margin-left: 20px;
+            margin-top: 15px;
+            color: black;
+        }
+        .main2  {
+            margin-left: 800px;
+            border-radius: 20px;
+            height: 30px;
+            margin-top: 13px;
+            background-color: gray;
+            border: 2px solid gray;
+        }
+        .star{
+            height: 150px;
+            border: 2 px solid black;
+            
+        }
+        .star p img{
+            height: 100px;
+            width: 150px;
+             
+        }
+        .star p{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .apple{
+            
+            display: flex;
+            justify-content: center;
+            top: 10px;
+            height: 30px;
+        }
+      
+    </style>
+</head>
+<body>
+    
+        <header>
+           <div class="navbar">
+                <div class="navlogo   border">
+                    <div class="logo">
+
+                    </div>
+                </div>
+                <div class="address   border">
+                    <p class="addfirst">Deliver to</p>
+                    <div class="addicon">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="addsec">India</p>
+                    </div>
+                </div>
+                <div class="navsearch">
+                     <select  class="searchselect">
+                        <option>ALL
+                            <details>
+                                <summary>
+                                    <option>All Categoires</option>
+                                    <option>Alexa Skills</option>
+                                    <option>Amazon Devices</option>
+                                    <option>Amazon Fashion</option>
+                                    <option>Amazon Fresh</option>
+                                    <option>Amazon Pharmacy</option>
+                                    <option>Appliances</option>
+                                    <option>Apps & Games</option>
+                                    <option>Audible Audiobooks</option>
+                                    <option>Baby</option>
+                                    <option>Car & Motorbike</option>
+                                    <option>Clothing & Accessories</option>
+                                    <option>Collectibles</option>
+                                    <option>Computers & Accessories</option>
+                                    <option>Deals</option>
+                                    <option>Electronics</option>
+                                    <option>Fumiture</option>
+                                    <option>Garden & Outdoors</option>
+                                    <option>Jewellery</option>
+                                    <option>Kindle Store</option>
+                                    <option>Luggage & Bags</option>
+                                    <option>Luxury Beauty</option>
+                                    <option>Movies & TV Shows</option>
+                                    <option>MP3 Music</option>
+                                    <option>Music</option>
+                                    <option>Musical Instruments</option>
+                                    <option>Office Products</option>
+                                    <option>Pet Supplies</option>
+                                    <option>Prime Video</option>
+                                    <option>Shoes & Handbags</option>
+                                    <option>Software</option>
+                                    <option>Sports,Fitness & Outdoors</option>
+                                    <option> Subscribe & Save </option>
+                                    <option>Tools & Save  </option>
+                                    <option> Tools & Home Improvement </option>
+                                    <option>Toys & Games  </option>
+                                    <option> Under $500</option>
+                                    <option>Watches  </option>
+                                </summary>
+                            </details>
+                        </option>
+                    
+                    
+                    
+                    
+                    </select>
+                    
+
+                    <input  class="searchinput"  placeholder=" Search Amazon">
+                    <div class="searchicon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="flag   border">
+
+                </div>
+                <div class="en  border">
+                     <details>
+                        <summary>EN</summary>
+                      
+                     </details>
+                </div>
+                <div class="navsigin  border">
+                    <p> <span>Hello, sign in</span></p>
+                    <p class="nacsec"> <b>Account & Lists</b></p>
+                </div>
+
+                <div class="navreturn  border">
+                    <p> <span>Returns</span></p>
+                    <p class="navsec"><b>& Orders</b></p>
+                </div>
+                <div class="navcart  border">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <b> Cart</b>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panelall">
+                    <i class="fa-solid fa-bars"></i>
+                    All
+                </div>
+                <div class="panelops">
+                    <p>Fresh</p>
+                    <p>  Amazon miniTV</p>
+                    <p>   Sell</p>
+                    <p>   Best Sellers</p>
+                    <p>  Mobiles</p>
+                    <p>   Today's Deals</p>
+                    <p>   Prime</p>
+                    <p>  Fashion</p>
+                    <p>  Electronics</p>
+                    <p>  Customer Services </p>
+                </div>
+                <div class="paneldeals">
+                        Shop deals in Electronics
+                </div>
+            </div>
+    </header>
+    <div class="main1">
+        <ul><p>1-16 of over 1,000 results for  <font color="red">"smartphones"</font></p></ul>
+        <select class="main2" >
+            <option>Sort by: Featured
+                <details>
+                    <summary>
+                        <option >Price: Low to High </option>
+                        <option >Price: High to Low </option>
+                        <option >Avg. Customer Review </option>
+                        <option >Newest Arrivals </option>
+                        <option >Best Sellers</option>
+                    </summary>
+                </details> 
+            </option>
+        </select>
+    </div>
+    <div class="star">
+        
+            <p>Recently used filters <br>
+                Customer Review <br>
+                <img   src="/images.logo/download.png" alt="" > 
+            </p>
+        
+        <div class="apple">
+            <img src="/images.logo/WhatsApp Image 2024-07-09 at 16.38.55_e36055f6.jpg" alt="">
+        </div>
+             
+        
+    </div>
+    <div class="hero">
+        <article>
+            <h3>Popular Shopping Ideas</h3>
+            <p>Cellphone</p>
+            <p>Wireless</p>
+            <p>Phone Case</p>
+            <p>Dual Sim</p>
+            <details>
+                    <summary>See more</summary>
+                    <p>Cellular Phone</p>
+                    <p>  Wallet</p>
+                    <p> Camera</p>
+                    <p> Lte</p>
+                    <p>  Portable</p>
+                    <p> Waterproof</p>
+                    <p> Grip</p>
+                    <p> Home</p>
+                    <p> Night </p>
+                    <p> Android</p>
+                    <p>  Ring</p>
+                    <p>  Card Slot</p>
+                    <p>  Travel<p>
+            </details>
+                        
+                        
+                        
+        </article>
+    </div>
+    
+
+  
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .swing-top-left-fwd {
+	 
+	        animation: swing-top-left-fwd 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            height: 600px;
+            width: 600px;
+}
+ 
+@keyframes swing-top-left-fwd {
+  0% {
+     
+            transform: rotate3d(-1, 1, 0, 0deg);
+    
+            transform-origin: 0% 0%;
+            background-color: aqua;
+  }
+  100% {
+    
+            transform: rotate3d(-1, 1, 0, -180deg);
+    
+            transform-origin: 0% 0%;
+            background-color: yellow;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="swing-top-left-fwd"></div>
+</body>
+</html>

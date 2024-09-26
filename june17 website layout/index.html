@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    :root{
+        --bs-red:red;
+        --bs-green:rgb(185, 219, 185);
+    }
+    .background{
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+    }
+    .main{
+        height: 550px;
+        width: 900px;
+        background-color:white;
+      position: absolute;
+      top: 20px;
+      left: 220px;
+      border-radius: 8px;
+       
+    }
+    .fristr1{
+        height: 50px;
+        width: 900px;
+        background-color: skyblue;
+        position: absolute;
+        top: 5px;
+        border-radius: 5px ;
+    }
+    .lay1{
+        height: 30px;
+        width: 120px;
+        background-color:var(--bs-red);
+        position: absolute;
+        top: 8px;
+        left: 30px;
+        border-radius: 10px;
+    } 
+    .lay2{
+        height: 20px;
+        width: 80px;
+        background-color: var(--bs-red);
+        position: absolute;
+        top: 13px;
+        left: 180px;
+        border-radius:7px ;
+    }
+
+    .lay3{
+        height: 20px;
+        width: 80px;
+        background-color: var(--bs-green);
+        position: absolute;
+        top: 13px;
+        left: 280px;
+        border-radius:7px ;
+    }
+    .lay4{
+        height: 20px;
+        width: 80px;
+        background-color: var(--bs-green);
+        position: absolute;
+        top: 13px;
+        left: 380px;
+        border-radius:7px ;
+    }
+    .lay5{
+        height: 20px;
+        width: 80px;
+        background-color: lightgray;
+        position: absolute;
+        top: 13px;
+        left: 700px;
+        border-radius:7px ;
+    }
+
+    .lay6{
+        height: 30px;
+        width: 80px;
+        background-color: lightgray;
+        position: absolute;
+        top: 8px;
+        left: 800px;
+        border-radius:7px ;
+    }
+
+    .secondr2{
+        height: 550px;
+        width: 900px;
+        background-color:white;
+        position: absolute;
+        border-radius: 10px;
+        top: 55px;
+    }
+    .lay01{
+        height: 25px;
+        width: 300px;
+        background-color: gray;
+        position: absolute;
+        border-radius: 8px;
+        top: 40px;
+        left: 30px;
+    }
+    .lay02{
+        height: 25px;
+        width: 350px;
+        background-color:lightgray;
+        position: absolute;
+        border-radius: 8px;
+        top: 80px;
+        left: 30px;
+    }
+    .lay03{
+        height: 25px;
+        width: 280px;
+        background-color: lightgray;
+        position: absolute;
+        border-radius: 8px;
+        top: 120px;
+        left: 30px;
+    } 
+     .lay04{
+        height: 30px;
+        width: 110px;
+        background-color:skyblue;
+        position: absolute;
+        border-radius: 8px;
+        top: 180px;
+        left: 30px;
+    }
+    .lay05{
+        height: 30px;
+        width: 110px;
+        background-color: lightgray;
+        position: absolute;
+        border-radius: 8px;
+        top: 180px;
+        left: 150px;
+    }
+    .lay06{
+        height: 170px;
+        width: 170px;
+        background-color:gray;
+        position: absolute;
+        border-radius: 8px;
+        top: 40px;
+        left: 470px;
+    }
+    .lay07{
+        height: 170px;
+        width: 170px;
+        background-color: gray;
+        position: absolute;
+        border-radius: 8px;
+        top: 40px;
+        left: 670px;
+    }
+    .lay001{
+        height: 25px;
+        width:130px ;
+        background-color: lightgray;
+        position: absolute;
+        border-radius: 8px;
+        top: 30px;
+        left: 20px;
+    }
+    .lay002{
+        height: 25px;
+        width:130px ;
+        background-color: lightgray;
+        position: absolute;
+        border-radius: 8px;
+        top: 70px;
+        left: 20px;
+    }
+    .lay003{
+        height: 25px;
+        width:80px ;
+        background-color: skyblue;
+        position: absolute;
+        border-radius: 8px;
+        top: 110px;
+        left: 20px;
+    }
+    .lay08{
+        height: 10px;
+        width: 810px;
+        background-color: lightgray;
+        position: absolute;
+        border-radius: 8px;
+        top: 250px;
+        left: 35px;
+    }
+    .lay09{
+        height: 120px;
+        width: 200px;
+        background-color: lightgray;
+        position: absolute;
+        border-radius: 8px;
+        top: 300px;
+        left: 35px;
+    }
+    .lay010{
+        height: 120px;
+        width: 200px;
+        background-color: lightgray;
+        position: absolute;
+        border-radius: 8px;
+        top: 300px;
+        left: 340px;
+    }
+    .lay011{
+        height: 120px;
+        width: 200px;
+        background-color: lightgray;
+        position: absolute;
+        border-radius: 8px;
+        top: 300px;
+        left: 650px;
+    }
+    .lay012{
+        height: 25px;
+        width: 180px;
+        background-color: lightgray;
+        position: absolute;
+        border-radius: 8px;
+        top: 450px;
+        left: 35px;
+    }
+    .lay013{
+        height: 25px;
+        width: 180px;
+        background-color: lightgray;
+        position: absolute;
+        border-radius: 8px;
+        top: 450px;
+        left: 340px;
+    }
+    .lay014{
+        height: 25px;
+        width: 180px;
+        background-color: lightgray;
+        position: absolute;
+        border-radius: 8px;
+        top: 450px;
+        left: 650px;
+    }
+    .lay015{
+        height: 25px;
+        width: 200px;
+        background-color: lightgray;
+        position: absolute;
+        border-radius: 8px;
+        top: 500px;
+        left: 35px;
+    }
+    .lay016{
+        height: 25px;
+        width: 200px;
+        background-color: lightgray;
+        position: absolute;
+        border-radius: 8px;
+        top: 500px;
+        left: 340px;
+    }
+    .lay017{
+        height: 25px;
+        width: 200px;
+        background-color: lightgray;
+        position: absolute;
+        border-radius: 8px;
+        top: 500px;
+        left: 650px;
+    }
+   </style>
+</head>
+<body>
+    <div class="background"> 
+    <div class="main">
+           <div class="fristr1">
+                    <div class="lay1"  ></div>
+                    <div class="lay2"></div>
+                    <div class="lay3"></div>
+                    <div class="lay4"></div>
+                    <div class="lay5"></div>
+                    <div class="lay6"></div>
+            </div>
+
+        <div class="secondr2">
+            <div class="lay01"></div>
+            <div class="lay02"></div>
+            <div class="lay03"></div>
+            <div class="lay04"></div>
+            <div class="lay05"></div>
+            <div class="lay06"></div>
+            <div class="lay07">
+                <div class="lay001"></div>
+                <div class="lay002"></div>
+                <div class="lay003"></div>
+            </div>
+            <div class="lay08"></div>
+            <div class="lay09"></div>
+            <div class="lay010"></div>
+            <div class="lay011"></div>
+            <div class="lay012"></div>
+            <div class="lay013"></div>
+            <div class="lay014"></div>
+            <div class="lay015"></div>
+            <div class="lay016"></div>
+            <div class="lay017"></div>
+            
+
+        </div>    
+    </div>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Master Pro</h1>
+        <div class="box"><h3>TIME LEFT </h3> <button><p id="time">60</p>sec</button></div>
+        <div class="text"><p  id="text-display">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam iste aliquid iure labore. Tempore ducimus asperiores necessitatibus eius quod odit maiores perspiciatis? Enim quo nobis ipsam voluptas accusamus commodi corrupti!</p></div>
+        <div class="typing-area"><textarea   id="typing-test"  placeholder="typing start here....."></textarea></div>
+      
+    </div>
+    <script>
+        const textDisplay = document.getElementById('text-display');
+        const textInput = document.getElementById('typing-test');
+        
+         const timerElement = document.getElementById('time');
+         const sampleText = textDisplay.textContent;
+         let timeLeft = 60;
+         let timer;
+
+     
+        function startTimer(){
+            timer = setInterval(()=>{
+                timeLeft--;
+                timerElement.textContent = timeLeft;
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                    endTest();
+                }
+            }, 1000);
+        }
+
+        textInput.addEventListener('focus', () => {
+            if (!timer) {
+                startTimer();
+            }
+        });
+     
+    </script>
+</body>
+</html>

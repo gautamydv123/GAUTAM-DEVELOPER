@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBI.Accounts.loans.cards</title>
+    
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+       
+        
+        
+        .main{
+            height: auto;
+            width:100%;
+            border:2px solid black;
+        }
+        .first{
+             position:fixed;
+             top: 20px;
+            height:50px;
+            width:100%;
+            background-color: navy;
+            border: 2px solid black;
+        }
+        .first ul li {
+            display: inline;
+        } 
+       .first ul{
+        list-style: none;
+        background-color: navy;
+        position: absolute;
+        top: 5px;
+        left: 200px;
+        }
+       .first ul li a{
+        font-size: 20px;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        }
+        li a:hover{
+            background-color:greenyellow;
+        }
+       
+       .second{
+        position:fixed;
+       top: 100;
+        height: 50px;
+        width: 100%;
+        border:2px solid black;
+        background-color: white;
+       }
+       .second ul {
+        margin-left: 200px;
+       }
+       .second ul li {
+            display: inline;
+        } 
+        .second ul li a{
+        font-size: 20px;
+        color: navy;
+        text-decoration: none;
+        margin: 1%;
+        }
+
+        .third{
+            height: auto;
+            width:100% ;
+            position: fixed;
+            bottom: -300pxo;
+            border: 2px solid black;
+            background-color: skyblue;
+        }
+
+        .third ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .third ul li{
+            display: inline;
+            font-size: 20px;
+            position: relative;
+        }
+        .third ul li a{
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .dropdown-box {
+            display: none;
+            position: absolute;
+            width: 200px;
+            padding: 50px;
+            background-color:lightgray;
+            border: 1px solid #ccc;
+            bottom: -200%; 
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom:-420px; 
+        }
+        .third ul li:hover .dropdown-box {
+            display: block;
+        }
+
+         .fourth{
+            height: 500px;
+            width: 100%;
+            background-image: url(/WhatsApp\ Image\ 2024-06-09\ at\ 00.36.40_37301349.jpg);
+            background-size: cover;
+         }
+        .box1p{
+            height: 100px;
+            width: 50px;
+            background-color:lightgrey;
+        }
+        .box3p{
+            height: 100px;
+            width: 50px;
+            background-color:lightgrey;
+        }
+        .box5p{
+            height: 100px;
+            width: 50px;
+            background-color:lightgrey;
+        }
+        .box7p{
+            height: 100px;
+            width: 50px;
+            background-color:lightgrey;
+        }
+        .box9p{
+            height: 100px;
+            width: 50px;
+            background-color:lightgrey
+            
+        }
+        .box2c{
+            width: 500px;
+            height: 100px;
+            background-color:lightslategray;
+            color: #fff;
+            margin-left: -500px;
+            transition: all 2s;}
+        .box2c ul :hover{
+            background-color: yellowgreen;
+        }
+
+        
+        .box4c{
+            width: 500px;
+            height: 100px;
+            background-color:lightslategray;
+            color: #fff;
+            margin-left: -500px;
+            transition: all 1s;
+
+        }
+        .box6c{
+            width: 500px;
+            height: 100px;
+            background-color:lightslategray;
+            color: #fff;
+            margin-left: -500px;
+            transition: all 1s;
+
+        }
+        .box8c{
+            width: 500px;
+            height: 100px;
+            background-color:lightslategray;
+            color: #fff;
+            margin-left: -500px;
+            transition: all 1s;
+
+        }
+        .box10c{
+            width: 500px;
+            height: 100px;
+            background-color:lightslategray;
+            color: #fff;
+            margin-left: -500px;
+            transition: all 1s;
+
+        }
+        .box1p:hover .box2c  {
+            margin-left: 100px;
+        }
+        .box3p:hover .box4c  {
+            margin-left: 100px;
+        }
+        .box5p:hover .box6c  {
+            margin-left: 100px;
+        }
+        .box7p:hover .box8c  {
+            margin-left: 100px;
+        }
+        .box9p:hover .box10c  {
+            margin-left: 100px;
+        }
+
+        .fifth{
+            height: 700px;
+            width: 100%;
+          background-image: url(sbi.jpg);
+          background-size: cover;
+        }
+        .fifth ul li  {
+            display: inline;
+           
+        }
+        .fifth ul{
+            position: absolute;
+           
+            margin: 10%;
+             
+        }
+        .fifth ul li a{
+        font-size: 20px;
+        color:blue;
+        text-decoration: none;
+        padding: 75px;
+        background-color: yellow;
+        transition: all 2s;
+         
+        }
+
+        .fifth ul li a :hover{
+           background-color: yellowgreen; 
+        }
+        
+        .fifth ul li :hover{
+            background-color:violet;
+        }
+        .sixth{
+            height:100px;
+            width: 100%;
+            background-color:navy;
+        }
+        .sixth ul li {
+            display: inline; 
+         
+         }
+         .sixth ul li a {
+            color: #fff;
+            font-size: 20px;
+            padding: 20px;
+            text-decoration: none;
+            background-color:skyblue;
+         
+           transition: all 3s;
+          
+          
+         }
+         .sixth ul{
+            position: absolute;
+            bottom: -733px;
+            left: 50px;
+             
+         }
+         .sixth ul li a:hover{
+            background-color: tomato
+         }
+         .seven{
+            height: 80px;
+            width: 100%;
+            background-color: navy;
+         }
+         .seven ul li{
+            display: inline;
+         }
+         .seven ul li a {
+            color: yellow;
+            font-size: 20px;
+            padding: 50px;
+        }
+        .seven ul{
+            position: absolute;
+            bottom: -830px;
+           
+            left: 70px;
+        }
+        .seven ul li a:hover{
+            background-color: tomato;
+         }
+         .eigth{
+            height: 100px;
+            width: 100%;
+            background-color:red;
+         }
+         .eigth ul li{
+            display: inline;
+
+         }
+         .eigth ul{
+            position:  absolute;
+            bottom: -920px;
+            left: 50px;
+         }
+         .eigth ul li a {
+            font-size: 15px;
+            padding:70px ;
+            color: white;
+         }
+         .nine{
+            height: 100px;
+            width: 100%;
+            background-color: navy;
+
+         }
+         .nine ul li{
+            display: inline;
+         }
+         .nine ul{
+            position: absolute;
+            bottom: -1010px;
+            left: 50px;
+
+         }
+         .nine ul li a{
+            font-size: 15px;
+            padding: 70px;
+            color: white;
+         }
+         .ten{
+            height: 100px;
+            width: 100%;
+            background-color: navy; 
+        }
+        .ten ul li a {
+                font-size: 15px;
+                color: white;
+        }
+        .ten ul{
+            position:absolute;
+            bottom: -1120px;
+        }
+        .eleveen{
+            height: 50px;
+            width: 100%;
+            background-color: skyblue;
+        }
+        .eleveen ul li {
+            display: inline;
+        }
+        .eleveen ul{
+            position: absolute;
+            bottom:-1200px ;
+            margin: 1%;
+        }
+        .eleveen ul li a{
+            font-size: 20px;
+            color: lightslategray;
+        }
+        .twelth{
+            height: 300px;
+           width: 100%;
+            background-color: yellowgreen;
+           
+            background-image: url(india-4th-dec-2019-in-this-photo-illustration-a-government-indian-bank-state-bank-of-india-sbi-logo-seen-displayed-on-a-smartphone-credit-avishek-dassopa-imageszuma-wirealamy-live-news-2ADP9CJ.jpg);
+        
+            background-size: contain;
+            transition: all 4s;
+        }
+        .twelth:hover{
+          background-image:url(brazil-25th-july-2022-in-this-photo-illustration-the-state-bank-of-india-sbi-logo-is-displayed-on-a-smartphone-screen-credit-image-rafael-henriquesopa-images-via-zuma-press-wire-2JJD4BD.jpg) ;
+        
+            height: 300px;
+            width: 1000px;
+            border-radius: 100%;
+            margin-left: 800px;
+          
+
+        }
+       
+        
+     
+       
+
+ </style>
+</head>
+<body>
+    <div class="main">
+        <div class="first">
+            <img src="WhatsApp Image 2024-06-07 at 13.46.04_ee565e33.jpg" alt="">
+             <ul> 
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Subsidiaries</a></li>
+        <li><a href="#">Corporate Governance</a></li>
+        <li><a href="#">Investor Relations</a></li>
+        <li><a href="#">SBI In the News</a></li>
+        <li><a href="#">A A- A+</a></li>
+        <li><a href="#"><font color="yellow">हिंदी</font></a></li>
+        <li><a href="#">Customer Care</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="https://www.onlinesbi.sbi/"><font color="yellow">Banking</font></a></li>
+    </ul>
+        </div>
+
+
+        <div class="second">
+            <ul> 
+                <li><a href="#">PERSONAL</a></li>
+                <li><a href="#">NRI</a></li>
+                <li><a href="#">BUSINESS</a></li>
+                <li><a href="#">AGRICULTURAL & RURAL</a></li>
+                <li><a href="#">INTERNATIONAL BANKING</a></li>
+                <li><a href="#">SBI Wealth</a></li>
+                <li><a href="#"><img src="WhatsApp Image 2024-06-07 at 22.07.06_172fbfd9.jpg" alt=""></a></li>
+                <li><a href="#"><img src="WhatsApp Image 2024-06-07 at 22.07.26_2e625a5b.jpg" alt=""></a></li>
+            </ul>
+        </div>
+
+        <div class="third">
+            <ul>
+                <li>
+                    <a href="#"><img src="WhatsApp Image 2024-06-08 at 12.55.17_2b6a2cc3.jpg" alt="">
+                        Accounts
+                    </a>
+                    <div class="dropdown-box">
+                     <font color="darkyellow">  <strong>Salary Accounts***</strong></font> <br>
+                     <font color="darkblue"><strong> *</strong></font>Corporate/Institutions <br>
+                     <font color="darkblue"><strong> *</strong></font>Central Government<br>
+                     <font color="darkblue"><strong> *</strong></font>  State Government<br>
+                     <font color="darkblue"><strong> *</strong></font> Indian Railways <br>
+                     <font color="darkblue"><strong> *</strong></font> Defence Forces <br>
+                     <font color="darkblue"><strong> *</strong></font> Central Armed Forces <br>
+                     <font color="darkblue"><strong> *</strong></font> Police Forces <br>
+                     <font color="darkblue"><strong> *</strong></font>  Coast Guard <br>
+                     <font color="darkblue"><strong> *</strong></font>  SBI Rishtey <br> <br>
+                       <font color="darkyellow"><strong>Savings Accounts***</strong></font> <br>
+                       <font color="darkblue"><strong> *</strong></font> Savings Plus Account <br>
+                       <font color="darkblue"><strong> *</strong></font>  Savings Bank Accounts <br>
+                       <font color="darkblue"><strong> *</strong></font>  KYC 
+
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="WhatsApp Image 2024-06-08 at 12.56.41_94a2ed7d.jpg" alt="">
+                        Investments & Deposits 
+                    </a>
+                    <div class="dropdown-box">
+                       <font color="darkyellow"><strong>Govt.Schems***</strong></font> <br>
+                       <font color="darkblue"><strong> *</strong></font>  NPS  <br>
+                       <font color="darkblue"><strong> *</strong></font>  PPF <br>
+                       <font color="darkblue"><strong> *</strong></font> Capital Gains account <br>
+                       <font color="darkblue"><strong> *</strong></font> Gold banking <br>
+                       <font color="darkblue"><strong> *</strong></font>  Senior Savings Scheme <br>
+                       <font color="darkblue"><strong> *</strong></font>  RBI Bonds <br><br>
+                       <font color="darkyellow"><strong>Stocks & Securities***</strong></font> <br>
+                       <font color="darkblue"><strong> *</strong></font>  ASBA <br>
+                       <font color="darkblue"><strong> *</strong></font>  Demat Services <br>
+                       <font color="darkblue"><strong> *</strong></font>  Power Demat <br>
+                       <font color="darkblue"><strong> *</strong></font> Equity Fund Scheme <br>
+                       <font color="darkblue"><strong> *</strong></font>  3 In 1 Account with e- <br>
+                       <font color="darkblue"><strong> *</strong></font>  Margin Facility                    
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="WhatsApp Image 2024-06-08 at 12.57.02_0b69ef82.jpg" alt="">
+                        Loan
+                    </a>
+                    <div class="dropdown-box">
+                        <font color="darkyellow"><strong>Personal Finance***</strong></font> <br>
+                       <font color="darkblue"><strong> *</strong></font> Home Loans <br>
+                       <font color="darkblue"><strong> *</strong></font> Personal Loans <br>
+                       <font color="darkblue"><strong> *</strong></font>Auto Loans <br>
+                       <font color="darkblue"><strong> *</strong></font> Education Loan <br>
+                       <font color="darkblue"><strong> *</strong></font> Gold Loan <br>
+                       <font color="darkblue"><strong> *</strong></font>Loans against Securities <br>
+                       <font color="darkblue"><strong> *</strong></font>Calculators <br>
+                       <font color="darkblue"><strong> *</strong></font>OTSC / Compromise <br>
+                       <font color="darkblue"><strong> *</strong></font> IRAC Norms <br>
+                       <font color="darkblue"><strong> *</strong></font>Solar Roof Top <br>
+                       <font color="darkblue"><strong> *</strong></font>  Mode (epay) <br>
+                       <font color="darkblue"><strong> *</strong></font>Field Loan <br>
+                       <font color="darkblue"><strong> *</strong></font> SBI Surya Ghar-Loan <br>
+                        <font color="darkblue"><strong> *</strong></font> Consumer Loans
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="WhatsApp Image 2024-06-08 at 12.57.23_0ca4afea.jpg" alt="">
+                        Card
+                    </a>
+                    <div class="dropdown-box">
+                       <font color="darkyellow"><strong>Debit Card***</strong></font><br>
+                       <font color="darkblue"><strong> *</strong></font>  Business Debit Card <br>
+                       <font color="darkblue"><strong> *</strong></font>  Prepaid Cards <br>
+                       <font color="darkblue"><strong> *</strong></font>  Green Remit Offers <br>
+                       <font color="darkblue"><strong> *</strong></font>  HSBC Debit Card <br>
+                       <font color="darkblue"><strong> *</strong></font>   COFT <br>
+                       <font color="darkblue"><strong> *</strong></font>   TO BLOCK DEBIT CARD <br>
+                       <font color="darkblue"><strong> *</strong></font>   Debit Card Control <br>
+                       <font color="darkblue"><strong> *</strong></font>   Credit Cards <br>
+                       <font color="darkblue"><strong> *</strong></font>   Visa Debit Card <br>
+                       <font color="darkblue"><strong> *</strong></font>   Rupay Debit Card <br>
+                       <font color="darkblue"><strong> *</strong></font>  HDFC Debit Card <br>
+                       <font color="darkblue"><strong> *</strong></font>   SBI Debit Card <br>
+                       <font color="darkblue"><strong> *</strong></font>   ICICI Debit Card <br>
+                       <font color="darkblue"><strong> *</strong></font>   Axis Debit Card 
+                       
+
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="WhatsApp Image 2024-06-08 at 12.57.23_0ca4afea.jpg" alt="">
+                        SBI Rewardz
+                    </a>
+                    <div class="dropdown-box">
+                       <font color="darkyellow"><strong>SBI Rewardz***</strong></font><br>
+                       <br>
+                       <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="WhatsApp Image 2024-06-08 at 12.58.02_c7de59ae.jpg" alt="">
+                        Digital
+                    </a>
+                    <div class="dropdown-box">
+                       <font color="darkyellow"><strong>Digital***</strong></font> <br>
+                       <font color="darkblue"><strong> *</strong></font>    Internet Banking <br>
+                       <font color="darkblue"><strong> *</strong></font>   Digital Lending <br>
+                       <font color="darkblue"><strong> *</strong></font>   WhatsApp Banking <br>
+                       <font color="darkblue"><strong> *</strong></font>   Cyber Security <br>
+                       <font color="darkblue"><strong> *</strong></font>  Bhim SBI Pay <br>
+                       <font color="darkblue"><strong> *</strong></font>   Mobile Banking <br>
+                       <font color="darkblue"><strong> *</strong></font>   Yono <br>
+                       <font color="darkblue"><strong> *</strong></font>   ATM Services <br>
+                       <font color="darkblue"><strong> *</strong></font>   Cash Deposit Machines <br>
+                       <br> <br> <br> <br> <br>
+
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="WhatsApp Image 2024-06-08 at 12.58.25_35bc3dad.jpg" alt="">
+                        Information & Services
+                    </a>
+                    <div class="dropdown-box">
+                        <font color="darkyellow"><strong>Government Business***</strong></font> <br>
+                        <font color="darkblue"><strong> *</strong></font>     Direct Tax <br>
+                        <font color="darkblue"><strong> *</strong></font>     Indirect Taxes <br>
+                      
+                        <font color="darkblue"><strong> *</strong></font>    State Gov Taxes <br>
+                        <font color="darkblue"><strong> *</strong></font>    Online Payment <br>
+                        <font color="darkblue"><strong> *</strong></font>    Pension Payment <br>
+                        <font color="darkblue"><strong> *</strong></font>    RTGS / NEFT <br>
+                        <font color="darkblue"><strong> *</strong></font>    Pension Seva <br>
+                        <font color="darkblue"><strong> *</strong></font>   Interest Rates <br> <br>
+                        <font color="darkyellow"><strong>Misc Services***</strong></font> <br>
+                        <font color="darkblue"><strong> *</strong></font>    DICGC  <br>
+                        <font color="darkblue"><strong> *</strong></font>    KYC Guidelines <br>
+                        <font color="darkblue"><strong> *</strong></font>    Services <br>
+                        <font color="darkblue"><strong> *</strong></font>    SBI FASTag <br>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <div class="fourth">
+               <div class="box1p">
+                <input type="button" value="About">
+                <div class="box2c">
+                    <font color="greenyellow"> <font color="black">State Bank of India (SBI)</font> a Fortune 500 company , is an Indian Multinational, Public Sector Banking and Financial Services statutory body head quartered in Mumbai. The rich heritage and legacy of over 200 years,accredits SBI as the most trusted Bank by Indians through generations.</font> 
+                </div>
+               </div>
+               <div class="box3p">
+                 <input type="button" value="Home">
+                <div class="box4c">
+                    <font color="greenyellow"> <font color="black">SBI HOME</font> Loans offers a one stop solution to a  <font color="black">home </font>buyer.you can browse through our range of <font color="black"> home</font> loan products, check your eligibility and apply online.</font>
+
+                </div>
+               </div>
+               <div class="box5p">
+                <input type="button" value="Contact">
+                <div class="box6c">
+                   <font color="greenyellow">Toll free number: 1800 1234 <br>
+                Toll free number: 1800 2100 <br>
+             Toll number:080-26599990 <br>
+            <font color="black"> For reporting Unauthorised Electronic transactions:</font> <br>
+          *94491 1221( <font color="black">Mobile number ,Toll Free</font> )</font>
+                </div>
+               </div>
+               <div class="box7p">
+                <input type="button" value="Legal">
+                <div class="box8c">
+                    <font COLOR="greenyellow">Customer confidentiality and privay is of utmost concern to <font color="black">SBI</font>  . Our employees treat the information we have concerning your accounts in the same responsible...  <font color="black"> STATE BANK OF INDIA</font>  .ACTIVE.LEI:549000234JZUBBZF6L49. ISSUED. India, MUMBAI, C/O STATE BANK BHAVAN,MADAME CAMA...</font>
+                </div>
+               </div>
+               <div class="box9p">
+                <input type="button" value="Services">
+                <div class="box10c">
+                    <font color="greenyellow"> <font color="black">You're seeing results</font>  <font color="blue"> for services of sbi text information</font>   <font color="black">you originally</font> searched for services of sbi text information</font> <br>
+                    <font color="black"><strong>Service</strong> ****************************** <strong>SMS / Missed Call</strong></font> <br>
+                    <font color="yellowgreen">Balance Enquiry******************"BAL"TO 09223766666 <br>
+                        666 <br>
+                        
+                    </font>
+                </div>
+               </div>
+         </div>
+         <div class="fifth">
+            <ul>
+                <li>
+                    <a href="">TRENDING OFFERS @ SBI</a>
+                </li>
+                
+                <li>
+                    <a href="">STRATEGIC TRANING UNIT</a>
+                    
+                </li>
+                <li>
+                    <a href="">ANNOUNCEMENTS</a>
+                </li>
+            </ul>
+         </div>
+       
+        <div class="sixth">
+            <ul>
+                
+                <li><a href="">About Us</a></li>
+                <li><a href="">Subsidlaries</a></li>
+                <li><a href="">Corporate Governance</a></li>
+                <li><a href="">Investor Relations </a></li>
+                <li><a href="">SBI in the News</a></li>
+                <li><a href="">Contact Us </a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Site Map</a></li>
+                <li><a href="">Disciaimer</a></li>
+            </ul>
+        </div>
+        <div class="seven">
+            <ul>
+                <li><a href=""> Home</a></li>
+                <li><a href="">NRI</a></li>
+                <li><a href="">Personal</a></li>
+                <li><a href="">International Banking </a></li>
+                <li><a href="">Business</a></li>
+                <li><a href="">Wealth Management</a></li>
+            </ul>      
+        </div>
+        <div  class="eigth">
+            <ul>
+                <li><a href="">Forex Card Rates</a></li>
+                <li><a href="">Accounts</a></li>
+                <li><a href="">Savings Account</a></li>
+                <li><a href="">Banking</a></li>
+                <li><a href="">CAG & MCG</a></li>
+                <li><a href="">SBI Wealth</a></li>
+            </ul>
+        </div>
+        <div class="nine">
+            <ul>
+                <li><a href="">Interest Rates</a></li>
+                <li><a href="">Investments/a></li>
+                <li><a href="">Loans</a></li>
+                <li><a href=""> Credit Finance</a></li>
+                <li><a href="">Current Account</a></li>
+            </ul>
+        </div>
+        <div class="ten">
+            <fieldset> 
+            <ul>
+                <li><a href="">IMPORTANT: State Bank of India never ask for your user id / password / pin no. through phone call / SMSes / e-mails asking you to reveal credential or One Time Password through SMS could be attempt to withdraw money from your account.NEVER share these details to anyone . State Bank of India wants you to be secure.If you come across any such instances please inform us through e-mail to the following address <font color="red"> -epg.cms@sbi.com.in</font></a></li>
+            </ul>
+        </fieldset>
+        </div>
+            <div class="eleveen">
+                <fieldset>
+                    <ul>
+                        <li><a href="">@ Copyright State Bank of Indai(APM ID :Webs_Info_875)</a></li>
+                        <li><a href="">Site best viewed at 1420 x 768 resolution In Edge Mozilla 40 +, Google Chrome 45+</a></li>
+                    </ul>
+                </fieldset>
+            </div>
+
+            <div class="twelth">
+               
+      
+            </div>
+    </div>
+  
+</body>
+</html>

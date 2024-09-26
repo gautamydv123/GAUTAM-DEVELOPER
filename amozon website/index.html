@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <script src="https://kit.fontawesome.com/2409013c9b.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            border: border-box;
+        }
+        header{
+position: sticky;
+            top: 0px;
+        }
+        .navbar{
+            height: 60px;
+            
+            background-color:black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .navlogo{
+            height: 50px;
+            width: 100px;
+            
+            
+        }
+        .logo{
+            background-image: url( /images.logo/WhatsApp\ Image\ 2024-07-06\ at\ 00.33.57_aaeedca2.jpg);
+            height: 50px;
+            background-size: cover;
+            width: 100%;
+            
+        }
+        .border{
+            border: 2px solid transparent;
+        }
+        .border:hover{
+            border: 1.5px solid white;
+        }
+        /* *************box2************ */
+        .addfirst{
+            color: #cccccc;
+            font-size: 0.85rem;
+            margin-left: 20px;
+        }
+        .addsec{
+            font-size: 1rem;
+            margin-left: 5px;
+        }
+        .addicon{
+            display: flex;
+            align-items: center;
+        }
+
+        /* ***********************box3********************** */
+
+        .navsearch{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: pink;
+            width: 620px;
+            height: 40px;
+            border-radius: 5px;
+        }
+        .searchselect{
+            background-color: #f3f3f3;
+            width: 50px;
+            text-align: center;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border: none;
+        }
+        
+        .searchinput{
+            width: 100%;
+            font-size: 1rem;
+            border: none;
+        }
+        .searchicon{
+            width: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            background-color: rgb(255, 174, 0);
+            border-top-right-radius:5px ;
+            border-bottom-right-radius:5px ;
+            color:#0f1111;
+        }
+        .flag{
+           background-image: url(/images.logo/WhatsApp\ Image\ 2024-07-06\ at\ 10.14.52_bf15fb45.jpg); 
+           height: 15px;
+           width: 20px;
+        }
+        .en{
+            font-size:15px;
+        }
+        
+        
+        .navsearch:hover{
+            border: 2px solid orange;
+        }
+        /* *************************box4************************ */
+        .span{
+            font-size: 0.10rem
+        }
+        .navsec{
+            font-size: 0.95rem;
+        }
+
+        /* ***************************box5****************************** */
+        .navcart i{
+          font-size: 30px;  
+        }
+        .navcart{
+            font-size: 0.85rem;
+        }
+        /* *********************************panel2******************************** */
+        .panel{
+            height: 40px;
+            background-color: #222f3d;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .panelops p{
+            display: inline;
+            margin-left: 15px;
+        }
+        .panelops{
+            width: 70%;
+            font-size: 0.8rem;
+        }
+         .paneldeals{
+            font-size: 0.9rem;
+            font-weight: 700;
+         }
+/* 
+         ********************************table*************************** */
+         .hero{
+            background-image: url(/images.logo/pngimg.com\ -\ amazon_PNG6.png);
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            box-shadow: 0 0 4rem #fff,inset 0 0 1rem #fff ,0 0  2rem #3877ff,inset 0 0 2rem #3877ff,0 0 4rem #3877ff,inset 0 0 4rem #3877ff;
+            
+        
+           
+            
+         }
+         .heromsg{
+            background-color: white;
+            color: black;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+           
+           width: 80%; 
+           margin-bottom: 25px;
+         }
+
+
+    /* *********************     showsection********************************************** */
+    .shopsection{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #e2e7e6;
+    }
+    .image1{
+        border: 2px solid black;
+        height: 400px;
+        width: 23%;
+        background-color: white;
+        background-image: url(/images.logo/WhatsApp\ Image\ 2024-07-06\ at\ 14.44.06_cca4bcf0.jpg);
+        background-size: cover;
+        border: none;
+       
+    }
+    .image2{
+        border: 2px solid black;
+        height: 400px;
+        width: 23%;
+        background-color: white;
+        background-image: url( /images.logo/WhatsApp\ Image\ 2024-07-06\ at\ 14.43.06_03e202b6.jpg);
+        background-size: cover;
+        border: none;
+       
+    }
+    .image3{
+        border: 2px solid black;
+        height: 400px;
+        width: 23%;
+        background-color: white;
+        background-image: url(/images.logo/WhatsApp\ Image\ 2024-07-06\ at\ 14.42.32_2eea0806.jpg);
+        background-size: cover;
+        border: none;
+       
+    }
+    .image4{
+        border: 2px solid black;
+        height: 400px;
+        width: 23%;
+        background-color: white;
+        background-image: url(/images.logo/WhatsApp\ Image\ 2024-07-06\ at\ 14.41.42_69470295.jpg);
+        background-size: cover;
+        border: none;
+       
+    }
+    .gap{
+        height: 20px;
+        background-color: #e2e7e6;
+        display: flex;
+        justify-content: right;
+        align-items: right;
+        font-size: 20px;
+
+    }
+    /* .gap .b{
+           display: flex;
+           justify-content: right;
+           align-items: right;
+    } */
+    
+    .shopsection2{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #e2e7e6; 
+    }
+    .image5{
+        border: 2px solid black;
+        height: 400px;
+        width: 23%;
+        background-color: white;
+        background-image: url(/images.logo/WhatsApp\ Image\ 2024-07-06\ at\ 15.37.25_9bd5e5af.jpg);
+        background-size: cover;
+        border: none;
+       
+    }
+    .image6{
+        border: 2px solid black;
+        height: 400px;
+        width: 23%;
+        background-color: white;
+        background-image: url(/images.logo/WhatsApp\ Image\ 2024-07-06\ at\ 15.36.51_d6830c91.jpg);
+        background-size: cover;
+        border: none;
+       
+    }
+    .image7{
+        border: 2px solid black;
+        height: 400px;
+        width: 23%;
+        background-color: white;
+        background-image: url(/images.logo/WhatsApp\ Image\ 2024-07-06\ at\ 15.35.33_45dc8e96.jpg);
+        background-size: cover;
+        border: none;
+       
+    }
+    .image8{
+        border: 2px solid black;
+        height: 400px;
+        width: 23%;
+        background-color: white;
+        background-image: url(/images.logo/WhatsApp\ Image\ 2024-07-06\ at\ 15.35.11_97138e57.jpg);
+        background-size: cover;
+        border: none;
+    }
+    .gap2{
+        height: 20px;
+        background-color: #e2e7e6;
+    }
+    .shopsection3{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #e2e7e6; 
+    }
+    .image9{
+        border: 2px solid black;
+        height: 300px;
+        width: 96%;
+        background-color: white;
+        background-image: url(/images.logo/WhatsApp\ Image\ 2024-07-06\ at\ 16.02.25_48d0167e.jpg);
+        background-size: cover;
+        border: none;
+    }
+    .gap3{
+        height: 20px;
+        background-color: #e2e7e6;
+    }
+    .shopsection4{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #e2e7e6; 
+    }
+    .image10{
+        border: 2px solid black;
+        height: 400px;
+        width: 23%;
+        background-color: white;
+        background-image: url(/images.logo/WhatsApp\ Image\ 2024-07-06\ at\ 16.07.42_8c603dc2.jpg);
+        background-size: cover;
+        border: none;
+    }
+    .image11{
+        border: 2px solid black;
+        height: 400px;
+        width: 23%;
+        background-color: white;
+        background-image: url( /images.logo/WhatsApp\ Image\ 2024-07-06\ at\ 16.09.39_896f9aef.jpg);
+        background-size: cover;
+     border: none;
+    }
+    .image12{
+        border: 2px solid black;
+        height: 400px;
+        width: 23%;
+        background-color: white;
+        background-image: url(/images.logo/WhatsApp\ Image\ 2024-07-06\ at\ 16.09.16_d307869e.jpg);
+        background-size: cover;
+        border: none;
+    }
+    .image13{
+        border: 2px solid black;
+        height: 400px;
+        width: 23%;
+        background-color: white;
+        background-image: url(/images.logo/WhatsApp\ Image\ 2024-07-06\ at\ 16.08.16_40a64be5.jpg);
+        background-size: cover;
+        border: none;
+    }
+    .gap5{
+        height: 20px;
+        background-color: #e2e7e6;
+    }
+    .shopsection5{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #e2e7e6; 
+    }
+    .image14{
+        border: 2px solid black;
+        height: 300px;
+        width: 96%;
+        background-color: white;
+        background-image: url(/images.logo/WhatsApp\ Image\ 2024-07-06\ at\ 16.27.46_5d8eb003.jpg);
+        background-size: cover;
+        border: none;
+    }
+    .gap6{
+        height: 20px;
+        background-color: #e2e7e6;
+    }
+    .shopsection6{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #e2e7e6; 
+    }
+    .image15{
+        border: 2px solid black;
+        height: 300px;
+        width: 50%;
+        background-color: white;
+        background-image: url( /images.logo/WhatsApp\ Image\ 2024-07-06\ at\ 16.35.15_6739fb32.jpg);
+        background-size: cover;
+        border: none;
+    }
+    .gap7{
+        height: 20px;
+        background-color: #e2e7e6;
+        font-size: 20px;
+        display: flex;
+        justify-content: right;
+        text-align: right;
+    }
+    .shopsection7{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #e2e7e6; 
+    }
+    .image16{
+        border: 2px solid black;
+        height: 300px;
+        width: 96%;
+        background-color: white;
+        background-image: url( /images.logo/WhatsApp\ Image\ 2024-07-06\ at\ 16.38.53_395c94ef.jpg);
+        background-size: cover;
+        border: none;
+    }
+    .gap01{
+        height: 20px;
+        background-color: #e2e7e6;
+    }
+    .sign{
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid gray ;
+    }
+    .top{
+        height: 50px;
+        background-color: #37475a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+        color: white;
+    }
+    .footpanel2{
+        background-color: #222f3d;
+        color: white;
+        height: 300px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    ul{
+        margin-top: 20px;
+    }
+
+    .footpanel2 ul a{
+        display: block;
+        font: 0.85rem;
+        margin-top: 10px;
+        color: #dddddd;
+    }
+    /* .mini{
+        height: 0.5px;
+        background-color: lightslategray;
+    } */
+    
+
+    .footpanel3{
+        background-color:#222f3d ;
+        color: white;
+        border-top: 0.5px solid white;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        
+        align-items: center;
+        /* flex-direction: row; */
+    }
+    .logo2{
+            background-image: url( /images.logo/WhatsApp\ Image\ 2024-07-08\ at\ 03.51.35_62b9f2ba.jpg);
+            height: 50px;
+            background-size: cover;
+            width: 150px;
+            /* margin-top: 30px; */
+            
+        }
+        .main2{
+            height: 150px;
+            background-color: #1a2027 ;
+            display: flex;
+            justify-content: space-evenly;
+            color: white;
+        }
+        .ul{
+            margin-top: 5px;
+        }
+        .main2 ul a{
+            display: block;
+            font: 0.85rem;
+            margin-top: px;
+            color: gray;
+        }
+
+        .main3{
+            height: 150px;
+            background-color: #1a2027 ;
+            display: flex;
+            justify-content: space-evenly;
+            color: white;
+        }
+        .ul{
+            margin-top: 5px;
+        }
+        .main3 ul a{
+            display: block;
+            font: 0.85rem;
+            margin-top: px;
+            color: gray;
+        }
+
+        .main4{
+            height: 150px;
+            background-color: #1a2027 ;
+            display: flex;
+            justify-content: space-evenly;
+            color: white;
+        }
+        .ul{
+            margin-top: 5px;
+        
+        }
+        .main4 ul a{
+            display: block;
+            font: 0.85rem;
+            margin-top: px;
+            color: gray;
+        }
+
+        .main5{
+            height: 150px;
+            background-color: #1a2027 ;
+            display: flex;
+            justify-content: space-evenly;
+            color: white;
+        }
+        .ul{
+            margin-top: 5px;
+        }
+        .main5 ul a{
+            display: block;
+            font: 0.85rem;
+            margin-top: px;
+            color: gray;
+        }
+        .footpanel4{
+            height: 80px;
+            background-color: #1a2027;
+            color: white;
+            
+             
+        }
+        .pages{
+    font-size: 0.7rem;
+    text-align: center;
+    padding-top: 25px;
+
+        }
+        .copyright{
+            font-size: 0.7rem;
+            text-align: center;
+            padding-top: 5px;
+        }
+
+/* 
+        /
+            color: white;
+        } */
+        /* .main6  a{
+            display: block;
+            font-size: 10px;
+            margin-top: px;
+            color: gray;
+            margin-left: 10px;
+            
+        }
+        .main7{
+            height: 50px;
+            background-color: #1a2027;
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+        }
+        .main7 ul a{
+            font-size:15px;
+            color: gray;
+        } */
+
+
+
+    
+  
+   
+
+    
+
+        
+      
+
+    </style>
+</head>
+<body>
+    <!-- ********************************************************************
+    *************************************
+    **************************
+    *****************
+    **************
+    ******** -->
+    <header>
+            <div class="navbar">
+                <div class="navlogo   border">
+                    <div class="logo">
+
+                    </div>
+                </div>
+                <div class="address   border">
+                    <p class="addfirst">Deliver to</p>
+                    <div class="addicon">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="addsec">India</p>
+                    </div>
+                </div>
+                <div class="navsearch">
+                     <select  class="searchselect">
+                        <option>ALL
+                            <details>
+                                <summary>
+                                    <option>All Categoires</option>
+                                    <option>Alexa Skills</option>
+                                    <option>Amazon Devices</option>
+                                    <option>Amazon Fashion</option>
+                                    <option>Amazon Fresh</option>
+                                    <option>Amazon Pharmacy</option>
+                                    <option>Appliances</option>
+                                    <option>Apps & Games</option>
+                                    <option>Audible Audiobooks</option>
+                                    <option>Baby</option>
+                                    <option>Car & Motorbike</option>
+                                    <option>Clothing & Accessories</option>
+                                    <option>Collectibles</option>
+                                    <option>Computers & Accessories</option>
+                                    <option>Deals</option>
+                                    <option>Electronics</option>
+                                    <option>Fumiture</option>
+                                    <option>Garden & Outdoors</option>
+                                    <option>Jewellery</option>
+                                    <option>Kindle Store</option>
+                                    <option>Luggage & Bags</option>
+                                    <option>Luxury Beauty</option>
+                                    <option>Movies & TV Shows</option>
+                                    <option>MP3 Music</option>
+                                    <option>Music</option>
+                                    <option>Musical Instruments</option>
+                                    <option>Office Products</option>
+                                    <option>Pet Supplies</option>
+                                    <option>Prime Video</option>
+                                    <option>Shoes & Handbags</option>
+                                    <option>Software</option>
+                                    <option>Sports,Fitness & Outdoors</option>
+                                    <option> Subscribe & Save </option>
+                                    <option>Tools & Save  </option>
+                                    <option> Tools & Home Improvement </option>
+                                    <option>Toys & Games  </option>
+                                    <option> Under $500</option>
+                                    <option>Watches  </option>
+                                </summary>
+                            </details>
+                        </option>
+                    
+                    
+                    
+                    
+                    </select>
+                    <input  class="searchinput"  placeholder=" Search Amazon">
+                    <div class="searchicon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="flag   border">
+
+                </div>
+                <div class="en  border">
+                     <details>
+                        <summary>EN</summary>
+                      
+                     </details>
+                </div>
+                <div class="navsigin  border">
+                    <p> <span>Hello, sign in</span></p>
+                    <p class="nacsec"> <b>Account & Lists</b></p>
+                </div>
+
+                <div class="navreturn  border">
+                    <p> <span>Returns</span></p>
+                    <p class="navsec"><b>& Orders</b></p>
+                </div>
+                <div class="navcart  border">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <b> Cart</b>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panelall">
+                    <i class="fa-solid fa-bars"></i>
+                    All
+                </div>
+                <div class="panelops">
+                    <p>Fresh</p>
+                    <p>  Amazon miniTV</p>
+                    <p>   Sell</p>
+                    <p>   Best Sellers</p>
+                    <p>  Mobiles</p>
+                    <p>   Today's Deals</p>
+                    <p>   Prime</p>
+                    <p>  Fashion</p>
+                    <p>  Electronics</p>
+                    <p>  Customer Services </p>
+                </div>
+                <div class="paneldeals">
+                        Shop deals in Electronics
+                </div>
+            </div>
+    </header>
+
+    <!-- *************************************************
+    *******************************
+    ********************
+    **********
+    ***
+    * -->
+    <div class="hero">
+        <div class="heromsg">
+            <img src="" alt="">
+            <p> <b>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.</b><a> <font color="skyblue"> <b>   Click here to go to amazon.in</b></font></a></p>
+        </div>
+    </div>
+    <div class="shopsection">
+        <div class="image1 image">
+             
+            <div class="boximg">
+
+            </div>
+             
+        </div>
+        <div class="image2 image"></div>
+        <div class="image3 image"></div>
+        <div class="image4 image"></div>
+    </div>
+    <div class="gap">
+        <b> <font color="gray">Sponsored       <i class="fa-solid fa-exclamation"></i>          </font></b>
+       
+    </div>
+    <div class="shopsection2">
+        <div class="image5"></div>
+        <div class="image6"></div>
+        <div class="image7"></div>
+        <div class="image8"></div>
+    </div>
+    <div class="gap2">
+
+    </div>
+    <div class="shopsection3">
+        <div class="image9">
+
+        </div>
+    </div>
+    <div class="gap3">
+
+    </div>
+    <div class="shopsection4">
+        <div class="image10"></div>
+        <div class="image11"></div>
+        <div class="image12"></div>
+        <div class="image13"></div>
+    </div>
+    <div class="gap5">
+
+    </div>
+    <div class="shopsection5">
+        <div class="image14"></div>
+    </div>
+    <div class="gap6">
+
+    </div>
+    <div class="shopsection6">
+        <div class="image15"></div>
+    </div>
+     <div class="gap7">
+                     <b> <font color="gray">Sponsored       <i class="fa-solid fa-exclamation"></i>          </font></b>
+    </div>
+    <div class="shopsection7">
+        <div class="image16"></div>
+    </div>
+    <div class="gap01">
+
+    </div>
+    <div class="sign">
+        <p style="font-size: 13px;"> <b>See personalized recommendations</b></p>
+        <button style="background-color:rgb(255, 174, 0); width: 300px; height:50px; border-radius: 10px;">Sign in</button>
+        <p style="font-size: 13px;"> <b>New customer?  <font color="skyblue">Start here.</font></b></p>
+    </div>
+    <div class="top">
+        <p>Back to top</p>
+    </div>
+    <div class="footpanel2">
+        <ul>
+            <p>Get to know Us</p>
+            <a>Careers</a>
+            <a>Blog</a>
+            <a>About Amazon</a>
+            <a>Investor Relations </a>
+            <a>Amazon Devices</a>
+            <a>Amazon Science</a>
+             
+        </ul>
+
+             <ul>
+            <p>Make Money with Us</p>
+            <a>Sell products on Amazon</a>
+            <a>Sell on Amazon Business</a>
+            <a>Sell apps on Amazon</a>
+            <a>Become an Affiliate</a>
+            <a>Advertise Your Proudcts </a>
+            <a>Self-Publish with Us</a>
+            <a>Host an Amazon Hub</a>
+             
+        </ul>
+
+             <ul>
+            <p>Amazon Payment Products</p>
+            <a>Amazon Business Card</a>
+            <a>Shop with Points</a>
+            <a>Reload Your Balance</a>
+            <a>Amazon Currency Converter</a>
+          
+             
+        </ul>
+
+             <ul>
+            <p>Let Us Help You</p>
+            <a>Amazon and COVID-19</a>
+            <a>Your Account</a>
+            <a>Your Orders</a>
+            <a>Shipping Rates & Policies</a>
+            <a>Returns & Replacements</a>
+            <a>Manage Your Content Devices</a>
+            <a>Help</a>
+        
+        </ul>
+    </div>
+
+    <div class="mini"></div>
+    <div class="footpanel3">
+        <div class="logo2"></div>
+        <button  style="height: 50px; width:100px;background-color: transparent;color: white;"><i class="fa-solid fa-earth-americas"></i>.Enligh</button>
+        <button   style="height: 50px; width:100px;background-color: transparent;color: white;">$ USD-U.S. Dollor</button>
+        <button   style="height: 50px; width:100px;background-color: transparent;color: white;"><img src="/images.logo/WhatsApp Image 2024-07-08 at 04.37.43_c302ada4.jpg" alt="">United States</button>
+    </div>
+    <div class="main2">
+        <ul>
+              <p> Amazon Music</p>
+            <a>Stream millions </a>
+            <a>of songs </a>
+        </ul>
+        <ul>
+           <p>  Amazon Ads</p> 
+            <a>Reach Customers </a>
+            <a>Wherever </a>
+            <a>spend their time </a>
+        </ul>
+        <ul>
+              <p>6pm </p>
+            <a>Scroe details </a>
+            <a>on fashion </a>
+            <a>brands </a>
+        </ul>
+        <ul>
+             <p>AbeBooks</p> 
+            <a>Books, art </a>
+            <a>& collections </a>
+        </ul>
+        <ul>
+            <p> ACX </p>
+            <a>Audiobook Publishing </a>
+            <a>Made Easy </a>
+        </ul>
+        <ul>
+            <p> Sell on Amazon</p>  
+            <a>Start a Selling </a>
+            <a>Account </a>
+        </ul>
+        <ul>
+            <p> Amazon </p>
+            <a>Business  </a>
+            <a>Everything  </a>
+            <a> For   </a>
+            <a> Your  </a>
+            <a> Business  </a>
+        </ul>
+    </div>
+    <div class="main3">
+        <ul>
+            <p> Amazon Music</p>
+                <a>Stream millions </a>
+                <a>of songs </a>
+            </ul>
+            <ul>
+               <p>Home Services</p> 
+                <a> Experienced Pros </a>
+                <a>Happiness </a>
+                <a>Guarantee </a>
+            </ul>
+            <ul>
+                  <p>Amazon Web </p>
+                <a>Services </a>
+                <a>Scalable Cloud </a>
+                <a>Computing</a>
+                <a>Services</a>
+            </ul>
+            <ul>
+                 <p>Audible</p> 
+                <a>Listen to Books & </a>
+                <a>Original </a>
+                <a>Audio </a>
+                <a>Performances </a>
+            </ul>
+            <ul>
+                <p> Box Office Mojo</p>
+                <a> Find Movie </a>
+                <a> Box Office Data </a>
+            </ul>
+            <ul>
+                <p>  Goodreads</p>  
+                <a> Book reviews </a>
+                <a> & </a>
+                <a> recomendations</a>
+            </ul>
+            <ul>
+                <p> IMDB  </p>
+                <a>  Movies, TV </a>
+                <a>  & Celebrities </a>
+            </ul>
+        </div>
+
+        <div class="main4">
+            <ul>
+                <p>IMSBPro</p>
+                <a>Get Info</a>
+                <a>Entertainment</a>
+                <a> Professionals</a>
+                <a> Need</a>
+            </ul>
+
+            <ul>
+                <p>Kindle Direct</p>
+                <a> Publishing</a>
+                <a> Indie Digital &</a>
+                <a>  Print Publishing</a>
+                <a>  Made Easy</a>
+            </ul>
+
+            
+            <ul>
+                <p>Prime Video</p>
+                <a> Direct </a>
+                <a>  Video</a>
+                <a>   Distribution</a>
+                <a>  Made Easy</a>
+            </ul>
+
+            <ul>
+                <p> Shopbop</p>
+                <a>  Designer </a>
+                <a>  Fashion Brands</a>
+                 
+            </ul>
+            <ul>
+                <p> Woot!</p>
+                <a>  Desls </a>
+                <a>   Shenanigans</a>
+                 
+            </ul>
+
+            <ul>
+                <p>Zappos</p>
+                <a> Shoes &   </a>
+                <a> Clothing</a>
+                 
+            </ul>
+        </div>
+        <div class="main5">
+            <ul>
+                <p>erro WiFi</p>
+                <a>Stream 4k Video</a>
+                <a>in Every Room</a>
+            </ul>
+
+            <ul>
+                <p>Blink</p>
+                <a> Smart Security</a>
+                <a> for Every</a>
+                <a>  Home</a>
+            </ul>
+
+            <ul>
+                <p>Neighbours</p>
+                <a>Real-Time Crime</a>
+                <a> & Safety</a>
+                 
+            </ul>e
+
+            
+            <ul>
+                <p> Amazon Subscription</p>
+                <a> Boxes</a>
+                <a> Top Subscription boxes</a>
+                <a> -right to your door</a>
+                 
+            </ul>
+        </div>
+        <div class="footpanel4">
+             <div class="pages">
+                <a>conditions of Use </a>
+                <a>Privacy Notice </a>
+                <a>Consumer Health Data Privacy Disclosure </a>
+                <a>Your Ads Privacy Choices <img src="/images.logo/WhatsApp Image 2024-07-08 at 14.11.41_ac3ae153.jpg" alt=""> </a>
+           
+             </div>
+        <div class="copyright">
+            <ul>
+                <a>© 1996-2024, Amazon.com, Inc. or its affiliates</a>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>  

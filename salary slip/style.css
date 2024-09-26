@@ -1,0 +1,143 @@
+.container{
+    border: 5px solid gray;
+    background-color: rgba(194, 128, 128, 0.822);
+}
+.container h1{
+    display: flex;
+    justify-content: center;
+}
+ .detail1 input{
+     height: 50px;
+     width: 200px;
+     margin: 10px;
+     color: navy;
+      
+}
+
+.detail2 input{
+     height: 50px;
+     width: 200px;
+     margin: 10px;
+     color: navy;
+   
+}
+.detail3 input{
+     height: 50px;
+     width: 200px;
+     margin: 10px; 
+}
+
+
+
+
+
+/* fill employee payment */
+
+.container1{
+    border: 5px solid gray;
+    background-color: rgba(194, 128, 128, 0.822); 
+}
+
+.container1 h1{
+    display: flex;
+    justify-content: center;
+}
+
+.detail4 input{
+    height: 50px;
+     width: 200px;
+     margin: 10px; 
+}
+.detail5 input{
+    height: 50px;
+     width: 200px;
+     margin: 10px; 
+}
+.detailtot input{
+    height: 50px;
+     width: 200px;
+     margin: 10px; 
+}
+
+/* fill employee deducation */
+
+.container2{
+
+    border: 5px solid gray;
+    background-color: rgba(194, 128, 128, 0.822); 
+}
+.container2 h1{
+    display: flex;
+    justify-content: center; 
+}
+.detail6 input{
+    height: 50px;
+    width: 200px;
+    margin: 10px; 
+}
+.detail7 input{
+    height: 50px;
+    width: 200px;
+    margin: 10px; 
+}
+.detail8 input{
+    height: 50px;
+    width: 200px;
+    margin: 10px; 
+}
+
+
+/* fill information Projection for Financial Year */
+
+
+.container3{
+    border: 5px solid gray;
+    background-color: rgba(194, 128, 128, 0.822); 
+}
+.container3 h1{
+    display: flex;
+    justify-content: center; 
+}
+.detail9 input{
+    height: 50px;
+    width: 200px;
+    margin: 10px; 
+}
+.detail10 input{
+    height: 50px;
+    width: 200px;
+    margin: 10px; 
+}
+
+
+
+/* Fill Infomation Net Salary */
+
+.container4{
+    border: 5px solid gray;
+    background-color: rgba(194, 128, 128, 0.822);
+}
+.container4 h1{
+    display: flex;
+    justify-content: center; 
+}
+.detail11 input{
+    height: 50px;
+    width: 200px;
+    margin: 10px; 
+} 
+
+/* 
+///button  */
+
+button{
+    height: 50px;
+    width: 200px;
+    background-color: navy;
+    color: white;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: skyblue;
+    color: black;
+}

@@ -1,0 +1,137 @@
+v<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 5px solid gray;
+            height: auto;
+        }
+        th, td {
+            padding: 10px; /* Add padding to all cells */
+            vertical-align: top; /* Align content to the top of cells */
+            text-align: left; /* Align text to the left */
+        }
+        .th1 {
+            padding-left: 20px; /* Specific padding for th1 class */
+            padding-right: 20px;
+             /* Add padding to the right if needed */
+        }
+        .th1 h1{
+            margin-left: 500px;
+        }
+        .th1 p{
+            margin-left: 500px;
+        }
+        .invoice-header {
+            font-size: 50px; /* Adjust font size here */
+            text-align: center; /* Center the text */
+        } 
+        .tr2 th{
+            text-align: center;
+            
+        }
+        .tr2{
+            margin: 20px;
+        }
+        .tr3 th{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>
+                <img src="/download.jpg" alt="">
+            </th>
+            <th colspan="4" class="th1">
+                <h1>Zylker Thread & Weave</h1>  
+               <p>  14B, Northern Street   <br>
+                 Greater South Avenue   <br>
+                New York, New York 10001  <br>
+
+
+                 U.S.A  </p> 
+            </th>
+        </tr>
+        <tr>
+            <th colspan="5" class="invoice-header">INVOICE</th>
+        </tr>
+        <tr>
+            <th>
+                Bill TO  
+              <P id="out_bill"><b>Scott, Melba R.</b> <br>  
+                2476 Blackwell Street  <br>
+                Fairbanks <br>
+                99701 Colorado <br>
+                U.S.A </P>
+            </th>
+            <th colspan="4"></th>
+            <th><h1>INV-00002</h1></th>
+        </tr>
+        <tr>
+            <th colspan="5">
+                <b>Ship To</b> <br>
+                <p id="out_ship">2476 Blackwell Street <br>
+                Fairbanks <br>
+            99701 Colorado <br>
+        U.S.A</p>
+            </th>
+        </tr>
+        <tr class="tr2">
+            <th colspan="2" style="border: 2px solid white;  background-color: 
+            green;">Invocie Date</th>
+            
+            <th colspan="2" style="border: 2px solid   white;  background-color: green;">Terms</th>
+             
+            
+            <th  colspan="2" style="border: 2px solid  white;  background-color: green;">Due Date</th>
+        </tr>
+        <tr class="tr3">
+            <th colspan="2"  id="out_date1">18 may 2024</th>
+            <th colspan="2"  id="out_reciept">Due to Reciept</th>
+            <th colspan="2" id="out_date2">19 April 2024</th>
+        </tr>
+        <tr>
+            <th colspan="6" style="background-color:white;"></th>
+        </tr>
+        <tr class="tr4">
+            <th style="border: 2px solid white; background-color: green; ">#</th>
+            <th colspan="2" style="border: 2px solid white;  background-color: green;" >Item & Descrption</th>
+            
+            <th  style="border: 2px solid white;  background-color: green;">Qty</th>
+            <th  style="border: 2px solid white;  background-color: green;">Rate</th>
+            <th  style="border: 2px solid white;  background-color: green;">Amount</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th colspan="2" id="out_paint1">Pepe jeans</th>
+            <th id="out_itme1">1.00</th>
+            <th  id="out_itme2">24.99</th>
+            <th id="out_itme3">24.99</th>
+        </tr>
+
+        <tr>
+            <th>2</th>
+            <th colspan="2" id="out_paint2">Boys Shirt </th>
+            <th id="out_itme4">1.00</th>
+            <th id="out_itme5">16.99</th>
+            <th id="out_itme6">16.99</th>
+        </tr>
+
+        <tr>
+            <th>3</th>
+            <th colspan="2" id="out_paint3">Men Shirt  </th>
+            <th id="out_itme7">1.00</th>
+            <th id="out_itme8">19.99</th>
+            <th id="out_itme9">19.99</th>
+        </tr>
+    </table>
+</body>
+</html>

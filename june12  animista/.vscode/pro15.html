@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slide-fwd-bottom {
+	 
+	        animation: slide-fwd-bottom 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            height: 600px;
+            width: 600px;
+}
+ 
+@keyframes slide-fwd-bottom {
+  0% {
+     
+            transform: translateZ(0) translateY(0);
+            background-color: yellow;
+  }
+  100% {
+    
+            transform: translateZ(160px) translateY(100px);
+            background-color: brown;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="slide-fwd-bottom">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,2008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/2409013c9b.js" crossorigin="anonymous"></script>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .main2{
+            height: 20px;
+            width: 100%;
+            background-color: skyblue;
+            box-shadow: 20px 30px 40px 50px skyblue;
+           
+        }
+        /* .main2 ul li {
+            font-size: 30px;
+            position: absolute;
+
+        } */
+        .browse{
+            position: absolute;
+            margin-top: 30px;
+            margin-left: 60px;
+            font-size: 30px;
+        }
+        .imagebazar{
+            position: absolute;
+            margin-top: 30px;
+            margin-left: 600px;
+            font-size: 30px;
+        }
+        .price{
+            position: absolute;
+            margin-top: 30px;
+            margin-left:1030px;
+            font-size: 30px;
+        }
+        /* .btn{
+            height: 100px;
+            width: 300px;
+            position: absolute;
+            margin-top: 30px;
+            margin-left:1200px;
+            font-size: 30px;
+           
+        } */
+        .sign{
+            width:100px;
+            height: 40px;
+            font-size:20px;
+            position: absolute;
+            margin-left: 1150px;
+            margin-top:30px ;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+        }
+        .box1{
+            position: absolute;
+            top: 150px;
+            background-color: transparent;
+            left: 200px;
+        }
+        .search{
+            font-size: 30px;
+            position: absolute;
+            top: 180px;
+            left: 220px;
+        }
+        .imagebar{
+            position: absolute;
+            top: 165px;
+            left: 1000px;
+        }
+        
+        
+      
+/* 
+        *****************************************
+        ******************************************** */
+
+        .container{ 
+            width: 100%;
+        }
+        .box{
+            height: 80px;
+            width: 99%;
+            border-radius: 7%;
+            background: radial-gradient(red,green,yellow,blue,skyblue);
+            transition: all 5s;
+            position: absolute;
+            top: 248px;
+        }
+        .text{
+        position: fixed;
+        top: 250px;
+        display: none;
+        color:black;
+        font-size: 100px;
+        left: 400px;
+        }
+       .container:hover .box:hover .text{
+       
+        display: block;
+       }
+        .container:hover .box{
+            margin-left: 1000px;
+        } 
+        .first{
+            position: absolute;
+            height: 350px;
+            width: 99%;
+            overflow: hidden;
+            border: 5px solid white;
+            border-radius: 20px;
+            display: flex;
+            align-items
+            : center;
+            justify-content: center;
+            top: 330px;
+        }
+         
+        .new {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .first .new img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        .new:hover img {
+            transform: scale(1.2);  
+        }
+        .darklay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+         
+        .new:hover .darklay {
+            opacity: 1;
+        }
+        
+        .text { 
+            text-align: center;
+            font-size: 24px;
+        }
+
+
+        .second{
+            position:absolute;
+            height: 350px;
+            width: 400px;
+            overflow: hidden;
+            border: 5px solid white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 790px;
+            left: 0px;
+        }
+        .newb {
+            position:relative;
+            width: 100%;
+            height: 100%;
+        }
+    
+        .second .newb img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        .newb:hover img {
+            transform: scale(1.2);  
+        }
+        .darklay2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+         
+        .newb:hover .darklay2 {
+            opacity: 1;
+        }
+        
+        .text2 {
+            text-align: center;
+            font-size: 24px;
+        }
+        .space{
+            height: 70px;
+            width: 99%;
+            background-color: white;
+            position: absolute;
+            top: 690px;
+        }
+        .space ul li a {
+            text-decoration: none;
+            position: absolute;
+            left: 500px;
+            top: 15px;
+            font-size: 40px;
+            color: black;
+        }
+
+        .third{
+            position:absolute;
+            height: 350px;
+            width: 400px;
+            overflow: hidden;
+            border: 5px solid white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 790px;
+            left: 410px;
+        }
+        .newc {
+            position:relative;
+            width: 100%;
+            height: 100%;
+        }
+    
+        .third .newc img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        .newc:hover img {
+            transform: scale(1.2);  
+        }
+        .darklay3 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+         
+        .newc:hover .darklay3{
+            opacity: 1;
+        }
+        
+        .text3 {
+            text-align: center;
+            font-size: 24px;}
+
+        
+        .fourth{
+            position:absolute;
+            height: 430px;
+            width: 470px;
+            overflow: hidden;
+            border: 5px solid white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 790px;
+            left: 820px;
+        }
+        .newd {
+            position:relative;
+            width: 100%;
+            height: 100%;
+        }
+    
+        .fourth .newd img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        .newd:hover img {
+            transform: scale(1.2);  
+        }
+        .darklay4 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+         
+        .newd:hover .darklay4{
+            opacity: 1;
+        }
+        
+        .text4 {
+            text-align: center;
+            font-size: 24px;}
+
+        .fifth{
+            position:absolute;
+            height: 430px;
+            width: 470px;
+            overflow: hidden;
+            border: 5px solid white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 1150px;
+            left: 0px;
+        }
+        .newe {
+            position:relative;
+            width: 100%;
+            height: 100%;
+        }
+    
+        .fifth .newe img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        .newe:hover img {
+            transform: scale(1.2);  
+        }
+        .darklay5 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+         
+        .newe:hover .darklay5{
+            opacity: 1;
+        }
+        
+        .text5 {
+            text-align: center;
+            font-size: 24px;
+        }
+        .eleveen{
+            position:absolute;
+            height: 430px;
+            width: 450px;
+            overflow: hidden;
+            border: 5px solid white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 1150px;
+            left: 480px;
+        }
+        .newf{
+            position:relative;
+            width: 100%;
+            height: 100%;
+        }
+        .eleveen .newf img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        .newf:hover img {
+            transform: scale(1.2);  
+        }
+        .darklay6{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+         
+        .newf:hover .darklay6{
+            opacity: 1;
+        }
+        
+        .text6 {
+            text-align: center;
+            font-size: 24px;
+        }
+ 
+        .eight{
+            position:absolute;
+            height: 350px;
+            width: 350px;
+            overflow: hidden;
+            border: 5px solid white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 1233px;
+            left: 940px;
+        }
+        .newg{
+            position:relative;
+            width: 100%;
+            height: 100%;
+        }
+        .eight .newg img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        .newg:hover img {
+            transform: scale(1.2);  
+        }
+        .darklay7{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+         
+        .newg:hover .darklay7{
+            opacity: 1;
+        }
+        
+        .text7 {
+            text-align: center;
+            font-size: 24px;
+        }
+
+
+        .nine{
+            position:absolute;
+            height: 350px;
+            width: 350px;
+            overflow: hidden;
+            border: 5px solid white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 1590px;
+            left:0px;
+        }
+        .newh{
+            position:relative;
+            width: 100%;
+            height: 100%;
+        }
+        .nine .newh img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        .newh:hover img {
+            transform: scale(1.2);  
+        }
+        .darklay8{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+         
+        .newh:hover .darklay8{
+            opacity: 1;
+        }
+        
+        .text8 {
+            text-align: center;
+            font-size: 24px;
+        }
+
+         
+
+        
+        .ten{
+            position:absolute;
+            height: 250px;
+            width: 350px;
+            overflow: hidden;
+            border: 5px solid white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 1590px;
+            left:360px;
+        }
+        .newi{
+            position:relative;
+            width: 100%;
+            height: 100%;
+        }
+        .ten .newi img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        .newi:hover img {
+            transform: scale(1.2);  
+        }
+        .darklay9{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+         
+        .newi:hover .darklay9{
+            opacity: 1;
+        }
+        
+        .text9 {
+            text-align: center;
+            font-size: 24px;
+        }
+
+         
+        .elv{
+            position:absolute;
+            height: 450px;
+            width: 570px;
+            overflow: hidden;
+            border: 5px solid white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 1590px;
+            left:720px;
+        }
+        .newj{
+            position:relative;
+            width: 100%;
+            height: 100%;
+        }
+        .elv .newj img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        .newj:hover img {
+            transform: scale(1.2);  
+        }
+        .darklay10{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+         
+        .newj:hover .darklay10{
+            opacity: 1;
+        }
+        
+        .text10 {
+            text-align: center;
+            font-size: 24px;
+        }
+
+
+
+        .tw{
+            position:absolute;
+            height: 250px;
+            width: 350px;
+            overflow: hidden;
+            border: 5px solid white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 1850px;
+            left:360px;
+        }
+        .newk{
+            position:relative;
+            width: 100%;
+            height: 100%;
+        }
+        .tw .newk img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        .newk:hover img {
+            transform: scale(1.2);  
+        }
+        .darklay11{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+         
+        .newk:hover .darklay11{
+            opacity: 1;
+        }
+        
+        .text11 {
+            text-align: center;
+            font-size: 24px;
+        }
+
+         
+        .th{
+            position:absolute;
+            height: 250px;
+            width: 350px;
+            overflow: hidden;
+            border: 5px solid white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 1950px;
+            left:0px;
+        }
+        .newl{
+            position:relative;
+            width: 100%;
+            height: 100%;
+        }
+        .th .newl img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        .newl:hover img {
+            transform: scale(1.2);  
+        }
+        .darklay12{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+         
+        .newl:hover .darklay12{
+            opacity: 1;
+        }
+        
+        .text12 {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .thir{
+            position:absolute;
+            height: 450px;
+            width: 570px;
+            overflow: hidden;
+            border: 5px solid white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 2050px;
+            left:720px;
+        }
+        .newm{
+            position:relative;
+            width: 100%;
+            height: 100%;
+        }
+        .thir .newm img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        .newm:hover img {
+            transform: scale(1.2);  
+        }
+        .darklay13{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+         
+        .newm:hover .darklay13{
+            opacity: 1;
+        }
+        
+        .text13 {
+            text-align: center;
+            font-size: 24px;
+        }
+         
+        .foir{
+            position:absolute;
+            height: 390px;
+            width: 350px;
+            overflow: hidden;
+            border: 5px solid white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 2110px;
+            left:360px;
+        }
+        .newn{
+            position:relative;
+            width: 100%;
+            height: 100%;
+        }
+        .foir .newn img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        .newn:hover img {
+            transform: scale(1.2);  
+        }
+        .darklay14{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+         
+        .newn:hover .darklay14{
+            opacity: 1;
+        }
+        
+        .text14 {
+            text-align: center;
+            font-size: 24px;
+        }
+         
+       
+
+        .fif{
+            position:absolute;
+            height: 300px;
+            width: 350px;
+            overflow: hidden;
+            border: 5px solid white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 2200px;
+            left:0px;
+        }
+        .newz{
+            position:relative;
+            width: 100%;
+            height: 100%;
+        }
+        .fif .newz img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        .newz:hover img {
+            transform: scale(1.2);  
+        }
+        .darklay15{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+         
+        .newz:hover .darklay15{
+            opacity: 1;
+        }
+        
+        .text15 {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .textbox{
+            height: 350px;
+            width: 95%;
+            position: absolute;
+            top: 2550px;
+            left: 40px;
+            border: 2px solid black;
+            border-radius: 10px ;
+            background-color: black;
+            box-shadow: 20px 40px 50px 50px  skyblue;
+           
+            
+        }
+        .textbox ul{
+            list-style: none;
+        }
+        .textbox ul li a{ 
+            font-size: 30px;
+            position: absolute;
+            left: 40px;
+            top: 40px;
+            color: white;
+            text-decoration: none;
+        }
+        .space2{
+            height: 70px;
+            width: 99%;
+            background-color: white;
+            position: absolute;
+            top: 2990px;
+        }
+        .space2 ul li a {
+            text-decoration: none;
+            position: absolute;
+            left: 500px;
+            top: 15px;
+            font-size: 40px;
+            color: black;
+        }
+        .button1{
+            height: 400px;
+            width: 99%;
+            background-color:white;
+            position: absolute;
+            top: 3100px;
+            
+       
+        }
+        .btn1{
+            height: 50px;
+            width: 200px;
+            position: absolute;
+            top: 50px;
+            left: 40px;
+            border-radius: 20px;   
+            font-size: 30px;
+        }
+
+        .btn1 :active{
+            border: 2px solid white;
+            outline: 5px solid black;
+            box-shadow: 10px 20px 30px 40px gray;
+           
+        }
+        /* .btn1 :hover {
+            box-shadow: 10px 20px 30px 40px gray;
+        }
+        */
+             
+        
+         .btn2{
+            height: 50px;
+            width: 200px;
+            position: absolute;
+            top: 50px;
+            left: 290px;
+            border-radius: 20px;
+            font-size: 30px;
+        }
+        .btn2 :active{
+            border: 2px solid white;
+            outline: 5px solid black;
+            box-shadow: 10px 20px 30px 40px gray;
+           
+        }
+        
+          .btn3{
+            height: 50px;
+            width: 200px;
+            position: absolute;
+            top: 50px;
+            left: 540px;
+            border-radius: 20px;
+            font-size: 30px;
+        }
+        .btn3 :active{
+            border: 2px solid white;
+            outline: 5px solid black;
+            box-shadow: 10px 20px 30px 40px gray;
+           
+        }
+         
+         .btn4{
+            height: 50px;
+            width: 200px;
+            position: absolute;
+            top: 50px;
+            left: 790px;
+            border-radius: 20px;
+            font-size: 30px;
+        }
+        .btn4 :active{
+            border: 2px solid white;
+            outline: 5px solid black;
+            box-shadow: 10px 20px 30px 40px gray;
+           
+        }
+
+          .btn5{
+            height: 50px;
+            width: 200px;
+            position: absolute;
+            top: 50px;
+            left: 1040px;
+            border-radius: 20px;
+            font-size: 30px;
+        }
+        .btn5 :active{
+            border: 2px solid white;
+            outline: 5px solid black;
+            box-shadow: 10px 20px 30px 40px gray;
+           
+        }
+
+        /* *************************************************************************
+        ***********************************************************
+        ***********************************************
+        *******************************
+        ********************
+        ************ */
+
+          .btn6{
+            height: 50px;
+            width: 200px;
+            position: absolute;
+            top: 140px;
+            left: 40px;
+            border-radius: 20px;
+            font-size: 30px;
+        }
+        .btn6 :active{
+            border: 2px solid white;
+            outline: 5px solid black;
+            box-shadow: 10px 20px 30px 40px gray;
+           
+        }
+         .btn7{
+            height: 50px;
+            width: 200px;
+            position: absolute;
+            top: 140px;
+            left: 290px;
+            border-radius: 20px;
+            font-size: 30px;
+        }
+        .btn7 :active{
+            border: 2px solid white;
+            outline: 5px solid black;
+            box-shadow: 10px 20px 30px 40px gray;
+           
+        }
+        
+          .btn8{
+            height: 50px;
+            width: 200px;
+            position: absolute;
+            top: 140px;
+            left: 540px;
+            border-radius: 20px;
+            font-size: 30px;
+        }
+        .btn8 :active{
+            border: 2px solid white;
+            outline: 5px solid black;
+            box-shadow: 10px 20px 30px 40px gray;
+           
+        }
+         
+         .btn9{
+            height: 50px;
+            width: 200px;
+            position: absolute;
+            top: 140px;
+            left: 790px;
+            border-radius: 20px;
+            font-size: 30px;
+        }
+        .btn9 :active{
+            border: 2px solid white;
+            outline: 5px solid black;
+            box-shadow: 10px 20px 30px 40px gray;
+           
+        }
+
+          .btn10{
+            height: 50px;
+            width: 200px;
+            position: absolute;
+            top: 140px;
+            left: 1040px;
+            border-radius: 20px;
+            font-size: 30px;
+        }
+        .btn10 :active{
+            border: 2px solid white;
+            outline: 5px solid black;
+            box-shadow: 10px 20px 30px 40px gray;
+           
+        }
+
+        /* ************************************************************
+        ********************************************************
+        ******************************************************
+        ***********************************
+        ***********************
+        ********************
+        ******
+        ***** */
+         .btn11{
+            height: 50px;
+            width: 200px;
+            position: absolute;
+            top: 230px;
+            left: 40px;
+            border-radius: 20px;
+            font-size: 30px;
+        }
+        .btn11 :active{
+            border: 2px solid white;
+            outline: 5px solid black;
+            box-shadow: 10px 20px 30px 40px gray;
+           
+        }
+         .btn12{
+            height: 50px;
+            width: 200px;
+            position: absolute;
+            top: 230px;
+            left: 290px;
+            border-radius: 20px;
+            font-size: 30px;
+        }
+        .btn12 :active{
+            border: 2px solid white;
+            outline: 5px solid black;
+            box-shadow: 10px 20px 30px 40px gray;
+           
+        }
+        
+          .btn13{
+            height: 50px;
+            width: 200px;
+            position: absolute;
+            top: 230px;
+            left: 540px;
+            border-radius: 20px;
+            font-size: 30px;
+        }
+        .btn13 :active{
+            border: 2px solid white;
+            outline: 5px solid black;
+            box-shadow: 10px 20px 30px 40px gray;
+           
+        }
+         
+         .btn14{
+            height: 50px;
+            width: 200px;
+            position: absolute;
+            top: 230px;
+            left: 790px;
+            border-radius: 20px;
+            font-size: 30px;
+        }
+        .btn14 :active{
+            border: 2px solid white;
+            outline: 5px solid black;
+            box-shadow: 10px 20px 30px 40px gray;
+           
+        }
+
+          .btn15{
+            height: 50px;
+            width: 200px;
+            position: absolute;
+            top: 230px;
+            left: 1040px;
+            border-radius: 20px;
+            font-size: 30px;
+        }
+        .btn15 :active{
+            border: 2px solid white;
+            outline: 5px solid black;
+            box-shadow: 10px 20px 30px 40px gray;
+           
+        }
+
+        /* ****************************************************************************
+        *************************************************************
+        **********************************************************
+        ************************************************
+        ****************************
+        ******************** */
+
+          .btn16{
+            height: 50px;
+            width: 200px;
+            position: absolute;
+            top: 320px;
+            left: 40px;
+            border-radius: 20px;
+            font-size: 30px;
+        }
+        .btn16 :active{
+            border: 2px solid white;
+            outline: 5px solid black;
+            box-shadow: 10px 20px 30px 40px gray;
+           
+        }
+         .btn17{
+            height: 50px;
+            width: 200px;
+            position: absolute;
+            top: 320px;
+            left: 290px;
+            border-radius: 20px;
+            font-size: 30px;
+        }
+        .btn17 :active{
+            border: 2px solid white;
+            outline: 5px solid black;
+            box-shadow: 10px 20px 30px 40px gray;
+           
+        }
+        
+          .btn18{
+            height: 50px;
+            width: 200px;
+            position: absolute;
+            top: 320px;
+            left: 540px;
+            border-radius: 20px;
+            font-size: 30px;
+        }
+        .btn18 :active{
+            border: 2px solid white;
+            outline: 5px solid black;
+            box-shadow: 10px 20px 30px 40px gray;
+           
+        }
+         
+         .btn19{
+            height: 50px;
+            width: 200px;
+            position: absolute;
+            top: 320px;
+            left: 790px;
+            border-radius: 20px;
+            font-size: 30px;
+        }
+        .btn19 :active{
+            border: 2px solid white;
+            outline: 5px solid black;
+            box-shadow: 10px 20px 30px 40px gray;
+           
+        }
+
+          .btn20{
+            height: 50px;
+            width: 200px;
+            position: absolute;
+            top: 320px;
+            left: 1040px;
+            border-radius: 20px;
+            font-size: 30px;
+        }
+        .btn20 :active{
+            border: 2px solid white;
+            outline: 5px solid black;
+            box-shadow: 10px 20px 30px 40px gray;
+           
+        }
+
+        .blackbox{
+            height: 500px;
+            width: 100%;
+            position: absolute;
+            background-color: black;
+            top: 3500px;
+            border-radius: 20px ;
+
+        }
+    /* *******************************************************************
+    **********************************************************************
+    ********************************************************
+    *************************************************************
+    ***********************
+    ********************************************************
+    ***************************************** */
+
+    .msgbox{
+        position: absolute;
+        top: 20px;
+        left: 100px;
+        font-size: 20px;
+        color: gray;
+    }
+    /* .msgbox  :hover{
+        color: white;
+
+    } */
+    /* .msgbox ul .mos{
+        font-size: 30px;
+        position:  absolute;
+        top: 20px ;
+        left: 10px;
+        color: white;
+    } */
+
+    .company{
+        position: absolute;
+        top: 20px;
+        left: 600px;
+        font-size: 20px;
+        color: white;
+    }
+    .learn{
+        position: absolute;
+        top: 20px;
+        left: 850px;
+        font-size: 20px;
+        color: white;
+    }
+
+    .need{
+        position: absolute;
+        top: 20px;
+        left: 1100px;
+        font-size: 20px;
+        color: white;
+    }
+    .need1{
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        font-size: 20px;
+        color: white;
+    }
+    .need2{
+        position: absolute;
+        top: 160px;
+        left: 100px;
+        font-size: 20px;
+        color: white;
+    }
+    .h{
+        position:  absolute;
+        top: 70px;
+        left: 600px;
+        font-size: 17px;
+        color: gray;
+    }
+    .h :hover{
+        color: white;
+    }
+
+    .p{
+        position:  absolute;
+        top: 70px;
+        left: 850px;
+        font-size: 17px;
+        color: gray;
+    }
+    .p :hover{
+        color: white;
+    }
+
+    .c{
+        position:  absolute;
+        top: 70px;
+        left: 1100px;
+        font-size: 17px;
+        color: gray;
+    }
+    .c :hover{
+        color: white;
+    }
+    .au{
+        position:  absolute;
+        top: 100px;
+        left: 600px;
+        font-size: 17px;
+        color: gray; 
+    }
+    .au :hover{
+        color: white;
+    }
+    .l{
+        position:  absolute;
+        top: 100px;
+        left: 850px;
+        font-size: 17px;
+        color: gray;
+    }
+    .l :hover{
+        color: white;
+    }
+    .s{
+        position:  absolute;
+        top: 100px;
+        left: 1100px;
+        font-size: 17px;
+        color: gray;
+    }
+    .s :hover{
+        color: white;
+    }
+    .t{
+        position:  absolute;
+        top: 130px;
+        left: 600px;
+        font-size: 17px;
+        color: gray; 
+    }
+    .t :hover{
+        color: white;
+    }
+    .to{
+        position:  absolute;
+        top: 130px;
+        left: 850px;
+        font-size: 17px;
+        color: gray;
+    }
+    .to :hover{
+        color: white;
+    }
+    .f{
+        position:  absolute;
+        top: 130px;
+        left: 1100px;
+        font-size: 17px;
+        color: gray;
+    }
+    .f :hover{
+        color: white;
+    }
+    .ir{
+        position:  absolute;
+        top: 160px;
+        left: 600px;
+        font-size: 17px;
+        color: gray; 
+    }
+    .ir :hover{
+        color: white;
+    }
+    .pp{
+        position:  absolute;
+        top: 160px;
+        left: 850px;
+        font-size: 17px;
+        color: gray;
+    }
+    .pp :hover{
+        color: white;
+    }
+
+    .tec{
+        position:  absolute;
+        top: 160px;
+        left: 1100px;
+        font-size: 17px;
+        color: gray;
+    }
+    .tec :hover{
+        color: white;
+    }
+    .follow{
+        position:  absolute;
+        top: 220px;
+        left: 100px;
+        font-size: 20px;
+        color: white;
+    }
+    .facebook12{
+        position:  absolute;
+        top: 250px;
+        left: 100px;
+        font-size: 50px;
+        color:white;
+    }
+      .linkdin12{
+        position:  absolute;
+        top: 250px;
+        left: 180px;
+        font-size: 50px;
+        color:white;
+    }
+       .twitter12{
+        position:  absolute;
+        top: 250px;
+        left: 260px;
+        font-size: 50px;
+        color:white;
+    }
+    .https{
+        position:  absolute;
+        top: 320px;
+        left: 350px;
+        font-size: 20px;
+        color:white;
+    }
+    .terms{
+        position:  absolute;
+        top: 370px;
+        left: 320px;
+        font-size: 15px;
+        color:gray;
+    }
+    .terms:hover{
+        color: white;
+    }
+    .image1{
+        position:  absolute;
+        top: 370px;
+        left: 650px;
+        font-size: 15px;
+        color:gray;
+    }
+     .image2{
+        position:  absolute;
+        top: 370px;
+        left: 740px;
+        font-size: 15px;
+        color:gray;
+    }
+       .image3{
+        position:  absolute;
+        top: 370px;
+        left: 840px;
+        font-size: 15px;
+        color:gray;
+    }
+      .image4{
+        position:  absolute;
+        top: 370px;
+        left: 940px;
+        font-size: 15px;
+        color:gray;
+    }
+    .fixe{
+         position:  fixed;
+        top: 370px;
+        left: 1240px;
+        font-size: 15px;
+        color:gray;
+        font-size: 50px; 
+    }
+
+
+
+
+ </style>
+</head>
+<body>
+    <div class="main2"> </div>
+   
+         
+            <div class="browse"> 
+                 <ul>   <i class="fa-solid fa-bars  bar1" ></i>      <b>Browse Categories</b> </ul>
+            </div>
+            <div class="imagebazar">
+                <b> images</b><font color="gray"><b>bazaar</b></font>
+            </div>
+            <div class="price">
+                <b>Pricing</b> 
+            </div>
+            <div class="btn">
+                <button class="sign"> Sign In</button>
+            </div>
+
+           <i class="fa-solid fa-magnifying-glass   search"></i>
+            <input type="text" name="" id="" size="60" style="height: 80px;width: 900px;" class="box1" placeholder="                     Search the largest collection of Indian images">
+            <div class="imagebar">
+                <select  style="height: 50px; width: 80px;"> 
+                    <option> <b>Images</b></option>
+                    <option> <b>Vedio</b></option>
+                </select>
+                
+            </div>
+           
+
+            <!-- *********************************** 
+            ************************************* -->
+
+            <div class="container">
+                <div class="box">
+                    <div class="text">
+                      <font size="10"><strong> <i>Largest Collection of Images </i> </strong></font>
+                     </div>
+        
+                </div>
+            </div>
+
+<div class="first">
+    <div class="new">
+                <img src="/imagebazar/1719832003563item.jpg" alt="">
+        <div class="darklay">
+            <div class="text">
+                <i>Health Environment</i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ****************************************
+**************************************** -->
+
+<div class="space">
+    <ul>
+        <li>
+            <a href=""> <b>Popular Collections</b></a>
+        </li>
+    </ul>
+</div>
+
+<div class="second">
+    <div class="newb">
+             <img src="300-PD1051020.jpg" alt="">
+        <div class="darklay2"> 
+            <div class="text2">
+                  <i>Beauty of Nature </i>
+            </div> 
+        </div>
+    </div>
+</div>
+
+<!-- *************************************************
+************************************************ -->
+
+<div class="third">
+    <div class="newc">
+             <img src="19-SM961147.jpg" alt="">
+        <div class="darklay3"> 
+            <div class="text3">
+               <i>Show Time</i>
+            </div> 
+        </div>
+    </div>
+</div>
+
+<!-- ********************************************************************
+******************************************************************************* -->
+
+<div class="fourth">
+    <div class="newd">
+             <img src="/imagebazar/300-SM1074464.jpg" alt="">
+        <div class="darklay4"> 
+            <div class="text4">
+                <i>Learning & Education</i>
+            </div> 
+        </div>
+    </div>
+</div>
+
+<!-- ********************************************************************
+*********************************************************************** -->
+
+<div class="fifth">
+    <div class="newe">
+          <img src="300-SM1072462.jpg" alt="">  
+        <div class="darklay5"> 
+            <div class="text5">
+              <i>Wedding Images</i>
+            </div> 
+        </div>
+    </div>
+</div>
+
+<!-- ******************************************************************************
+************************************************************************************* -->
+
+<div class="eleveen">
+    <div class="newf">
+             <img src="300-TJ1085152.jpg" alt="">
+        <div class="darklay6"> 
+            <div class="text6">
+               <i>Family Times </i>
+            </div> 
+        </div>
+    </div>
+</div>
+
+<!-- ****************************************************************
+******************************************************************** -->
+
+<div class="eight">
+    <div class="newg">
+             <img src="300-TJ1076431.jpg" alt="">
+        <div class="darklay7"> 
+            <div class="text7">
+                <i>Shanskarti Of India Images</i> 
+            </div> 
+        </div>
+    </div>
+</div>
+
+<!-- **********************************************************************
+******************************************************************************** -->
+
+<div class="nine">
+    <div class="newh">
+             <img src="300-SM1075700.jpg" alt="">
+        <div class="darklay8"> 
+            <div class="text8">
+              <i>Friend Goals</i>
+            </div> 
+        </div>
+    </div>
+</div>
+
+<!-- ****************************************************************************
+********************************************************************************** -->
+
+
+<div class="ten">
+    <div class="newi">
+             <img src="300-SM1074919.jpg" alt="">
+        <div class="darklay9"> 
+            <div class="text9">
+              <i>Health Environment</i>
+            </div> 
+        </div>
+    </div>
+</div>
+<!-- 
+*****************************************************************************************
+*************************************************************************************************** -->
+
+
+<div class="elv">
+    <div class="newj">
+             <img src="300-SM1073292.jpg" alt="">
+        <div class="darklay10"> 
+            <div class="text10">
+              <i>Health Environment</i>
+            </div> 
+        </div>
+    </div>
+</div>
+<!-- 
+*********************************************************************
+************************************************************************ -->
+
+<div class="tw">
+    <div class="newk">
+             <img src="300-SM1077314.jpg" alt="">
+        <div class="darklay11"> 
+            <div class="text11">
+              <i>Health Environment</i>
+            </div> 
+        </div>
+    </div>
+</div>
+
+<!-- **************************************************************************************
+******************************************************************************************************* -->
+
+<div class="th">
+    <div class="newl">
+             <img src="300-SM1074013.jpg" alt="">
+        <div class="darklay12"> 
+            <div class="text12">
+              <i>Friends  Goals</i>
+            </div> 
+        </div>
+    </div>
+</div>
+<!-- 
+********************************************************************************
+************************************************************************************ -->
+
+<div class="thir">
+    <div class="newm">
+             <img src="300-SM1072866.jpg" alt="">
+        <div class="darklay13"> 
+            <div class="text13">
+              <i>Friends  Goals</i>
+            </div> 
+        </div>
+    </div>
+</div>
+<!-- 
+*****************************************************************************
+************************************************************************************ -->
+
+<div class="foir">
+    <div class="newn">
+             <img src="/imagebazar/300-SM1085721.jpg" alt="">
+        <div class="darklay14"> 
+            <div class="text14">
+              <i>Friends  Goals</i>
+            </div> 
+        </div>
+    </div>
+</div>
+<!-- 
+**************************************************************************************
+*************************************************************************************** -->
+
+
+<div class="fif">
+    <div class="newz">
+             <img src="/imagebazar/300-SM1077807.jpg" alt="">
+        <div class="darklay15"> 
+            <div class="text15">
+              <i>Friends  Goals</i>
+            </div> 
+        </div>
+    </div>
+</div>
+
+<!-- 
+************************************************************************************************
+***************************************************************************************************** -->
+<div class="textbox">
+     <ul>
+        <li><a href=""> WHY IMAGESBAZAAR? <br>
+        <br>
+        <font size="5"> India's diversit and complexity can be witnessed through its people, traditions and values associated with distinctive regional customs,habits,lifestyle and festivals. That's why our content reflects the innate expressions of deep-rooted feelings of individuals through which spring their day-to-day actions.From contemporary concepts and ideas to the broadest range of categories despicting Indians in virtually all walks of life, age groups and expressions -you will find it all here! <font size="7">KNOW MORE</font></font>
+     </a></li>
+     </ul> 
+</div>
+
+<!-- ********************************************************************
+**************************************************************************** -->
+
+<div class="space2">
+    <ul>
+        <li>
+            <a href=""> <b>Popular Searches</b></a>
+        </li>
+    </ul>
+</div>
+<!-- 
+***********************************************************
+***************************************************************************** -->
+
+<div class="button1">
+    <button class="btn1"> <b>Family</b></button>
+    <button class="btn2"> <b>Diwali</b></button>
+    <button class="btn3"> <b>Business</b></button>
+    <button class="btn4"> <b>Jewellery</b></button>
+    <button class="btn5"> <b>Couples</b></button>
+    <button class="btn6"> <b>Wedding</b></button>
+    <button class="btn7"> <b>Farmer</b></button>
+    <button class="btn8"> <b>Kitchen</b></button>
+    <button class="btn9"> <b>Doctor</b></button>
+    <button class="btn10"> <b>Celebration</b></button>
+    <button class="btn11"> <b>Office</b></button>
+    <button class="btn12"> <b>Travel</b></button>
+    <button class="btn13"> <b>Shopping</b></button>
+    <button class="btn14"> <b>Education</b></button>
+    <button class="btn15"> <b>Students</b></button>
+    <button class="btn16"> <b>Insurance</b></button>
+    <button class="btn17"> <b>Mobile</b></button>
+    <button class="btn18"> <b>Computer</b></button>
+    <button class="btn19"> <b>Food</b></button>
+    <button class="btn20"> <b>Festivals</b></button>
+
+</div>
+
+<div class="blackbox">
+    <div class="msgbox">
+       <ul><i class="fa-solid fa-message   mos"></i>  info@imagebazaar.com</ul>  
+    </div>
+    <div class="company">
+        company
+    </div>
+    <div class="learn">
+        Learn More
+    </div>
+    <div class="need">
+        Need Help?
+    </div>
+    <div class="need1">
+      <ul> <i class="fa-solid fa-phone"></i> <font color="white"> All India Toll Free: </font>  <font color="gray">1800-11-6899</font></ul>  
+    </div>
+
+    <div class="need2">
+      <ul> <i class="fa-brands fa-whatsapp"></i> <font color="white">  Whatsapp Us: </font>  <font color="gray"> +91991136666</font></ul>  
+    </div>
+    <div class="h">
+        <ul> Home</ul>
+    </div>
+    <div class="p">
+         <ul>Pricing</ul>
+    </div>
+    <div class="c">
+        <ul> Contact Us</ul> 
+    </div>
+    <div class="au">
+        <ul> About Us</ul>
+    </div>
+    <div class="l">
+        <ul> Licensing</ul>
+    </div>
+    <div class="s">
+         <ul>Search Tips</ul>
+    </div>
+    <div class="t">
+        <ul> Testimonials</ul>
+    </div>
+    <div class="to">
+            <ul> Terms of Use</ul>
+    </div>
+    <div class="f">
+        <ul> FAQ</ul>
+    </div>
+    <div class="im">
+        <ul> Image Research</ul>
+    </div>
+    <div class="pp">
+        <ul> Privacy Policy</ul>
+    </div>
+    <div class="te">
+         <ul>Technical </ul>
+    </div>
+    <div class="ir">
+        <ul> Image Research </ul>
+    </div>
+    <div class="pp">
+             <ul> Privacy Policy</ul>
+    </div> 
+    <div class="tec">
+                <ul> Technical</ul>
+    </div>
+
+    <div class="follow">
+        <b> Follow Us</b>
+    </div>
+    <div class="facebook12">
+        <i class="fa-brands fa-square-facebook"></i>
+    </div>
+    <div class="linkdin12">
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <div class="twitter12">
+        <i class="fa-brands fa-square-twitter"></i>
+    </div>
+    <div class="https">
+        <b> @https://www.imagebazaar.com.A division of Mash Audio Visuals Pvt.Ltd.All rights reserved.</b>
+    </div>
+    <div class="terms">
+        Terms of use | Privacy Policy | FAQs
+    </div>
+    <div class="image1">
+        <img src="/imagebazar/download.png" alt=""   style="height: 40px;width: 80px;">
+    </div>
+     <div class="image2">
+        <img src="/imagebazar/download.jpg" alt=""   style="height: 40px;width: 80px;">
+    </div>
+      <div class="image3">
+        <img src="/imagebazar/images.jpg" alt=""   style="height: 40px;width: 80px;">
+    </div>
+      <div class="image4">
+        <img src="/imagebazar/images.png
+        " alt=""   style="height: 40px;width: 80px;">
+    </div>
+    <div class="fixe">
+         <i class="fa-brands fa-facebook-messenger" ></i>
+    </div>
+
+
+
+
+
+
+    
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

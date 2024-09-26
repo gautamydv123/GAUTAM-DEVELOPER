@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/2409013c9b.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .back{
+            cursor: pointer;
+            background-color: black;
+            height: auto;
+            width: 100%;
+            box-shadow: 0 0 4rem #fff,inset 0 0 1rem #fff ,0 0  2rem #3877ff,inset 0 0 2rem #3877ff,0 0 4rem #3877ff,inset 0 0 4rem #3877ff;
+        }
+        .main{
+            background-image: url(/images/images.jpg);
+            height: 600px;
+            width:  80%;
+            background-size: cover;
+            margin-left: 130px;
+        }
+        .pl p{
+            color: white;
+            position: absolute;
+            top:40px;
+            margin-left: 20px;
+        }   
+        .text{
+            display: flex;
+            margin-left:  300px;
+            position: absolute;
+            top: 40px;
+            font-size: 20px;
+            color:white;
+           
+        }
+        .text p{
+            padding: 15px;
+        }
+
+        .btn button{
+            height: 40px;
+            background-color: rgba(233, 135, 8, 0.808);
+            border-radius: 10px;
+            margin-left: 850px;
+            position: absolute;
+            top: 40px;
+        }
+        .text2{
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 80px;
+            color: white;
+        }
+        .text3{
+            position: absolute;
+            margin-top: 330px;
+            margin-left: 80px;
+            color: white;
+        }
+        .btn2{
+            position: absolute;
+            margin-top: 400px;
+            margin-left: 80px;
+        }
+        .btn2 button {
+            height: 50px;
+            border-radius: 10px;
+            background-color: rgba(233, 135, 8, 0.808) ;
+        }
+        .text4{
+            position: absolute;
+            margin-top: 410px;
+            margin-left: 220px;
+            color: white;
+        }
+        .num{
+            position: absolute;
+            margin-top: 470px;
+            margin-left: 80px;
+            color: white;
+            font-size: 60px;
+        }
+        .text5{
+            position: absolute;
+            margin-top: 480px;
+            margin-left: 160px;
+            color: white;
+            font-size: 30px;
+        }  
+        .text6{
+            position: absolute;
+            margin-top: 530px;
+            margin-left: 160px;
+            color: white;
+            font-size: 15px;
+        }
+        .container{
+            height: 430px;
+            width: 400px;
+            background: rgba(216, 110, 60, 0.486);
+            position:  absolute;
+            margin-left: 600px;
+            margin-top: 100px;
+            border: 2px solid gray;
+        }
+        .name{
+            position: absolute;
+            font-size: 10px;
+            color: white;
+            font-size: 30px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .input1{
+            position: absolute;
+            margin-top: 60px;
+            margin-left: 20px;
+             
+        }
+        .input1 input{
+            background-color:rgba(63, 96, 117, 0.87);
+             
+        }
+
+        .mail{
+            position: absolute;
+            font-size: 10px;
+            color: white;
+            font-size: 30px;
+            margin-top: 120px;
+            margin-left: 20px;
+        }
+        .input2{
+            position: absolute;
+            margin-top: 160px;
+            margin-left: 20px;
+             
+        }
+        .input2 input{
+            background-color: rgba(63, 96, 117, 0.87);
+             
+        }
+       
+
+        
+        .mssg{
+            position: absolute;
+            font-size: 10px;
+            color: white;
+            font-size: 30px;
+            margin-top: 220px;
+            margin-left: 20px;
+        }
+        .input3{
+            position: absolute;
+            margin-top: 260px;
+            margin-left: 20px;
+             
+        }
+        .input3 input{
+            background-color: rgba(80, 163, 214, 0.87);
+             
+        }
+        .btne{
+            position: absolute;
+            margin-top: 360px;
+            margin-left: 130px;
+
+        }
+        .btne button{
+            height: 50px;
+            background-color:  rgba(233, 135, 8, 0.808);
+            border-radius: 10px;
+        }
+        .box01{
+           background-color: white;
+            height: 600px;
+            width:  80%;
+            background-size: cover;
+            margin-left: 130px;
+            border: 2 px solid black;
+        }
+        .box01 .text01{
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 80px;
+            color: black;
+            font-size:40px;
+        }
+         .box01 .text02{
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 80px;
+            color:rgba(29, 23, 23, 0.897);
+            font-size: 10px;
+        }
+
+        .box01 .btn1{
+            position: absolute;
+            margin-top: 270px;
+            margin-left: 80px;
+        } 
+         .box01 .btn1 button{
+            height: 40px;
+            border-radius: 10px;
+            background-color: rgba(233, 135, 8, 0.808) ;
+
+         }
+         .image01{
+                
+                position: absolute;
+                margin-top: 100px;
+                margin-left: 460px;
+                box-sizing: border-box;
+         }
+         .image01 img{
+            height: 400px;
+            width: 550px;
+         }
+         .img{
+            position: absolute;
+            margin-top: 150px;
+            margin-left: 420px;
+
+         }
+         .img img{
+            height: 80px;
+            width: 100px;
+         }
+         .box001{
+            background-color: rgb(142, 184, 201);
+            height: 500px;
+            width:  80%;
+            background-size: cover;
+            margin-left: 130px;
+            border: 2 px solid black;
+            box-shadow: 0 0 4rem #fff,inset 0 0 1rem #fff ,0 0  2rem #3877ff,inset 0 0 2rem #3877ff,0 0 4rem #3877ff,inset 0 0 4rem #3877ff;
+         }
+          .box001 .msg01{
+            position: absolute;
+            font-size: 40px;
+            margin-top: 80px;
+            margin-left: 280px;
+            color: black;
+          }
+          .mibox1{
+            position: absolute;
+            height: 250px;
+            width: 250px;
+            margin-top: 170px;
+            margin-left: 70px;
+            background-color:white;
+          }
+
+           .mibox2{
+            position: absolute;
+            height: 250px;
+            width: 250px;
+            margin-top: 170px;
+            margin-left: 390px;
+            background-color: white;
+          }
+
+           .mibox3{
+            position: absolute;
+            height: 250px;
+            width: 250px;
+            margin-top: 170px;
+            margin-left: 710px;
+            background-color: white;
+          }
+          .mibox1 .c1{
+            font-size: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+          }
+
+            .mibox2 .c2{
+            font-size: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+          }
+
+            .mibox3 .c3{
+            font-size: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+          }
+          .mibox1 .bt1{
+            font-size: 20px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+          }
+
+            .mibox2 .bt2{
+            font-size: 20px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+          }
+
+            .mibox3 .bt3{
+            font-size: 20px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+          }
+
+          .mibox1 .st1{
+            display: flex;
+            justify-content: center;
+            font-size: 10px;
+            margin-top: 20px;
+          }
+
+          .mibox2 .st2{
+            display: flex;
+            justify-content: center;
+            font-size: 10px;
+            margin-top: 20px;
+          }
+
+          .mibox3 .st3{
+            display: flex;
+            justify-content: center;
+            font-size: 10px;
+            margin-top: 20px;
+          }
+
+          .mibox1 .d1{
+            display: flex;
+            justify-content: center;
+            font-size: 15px;
+            margin-top: 30px;
+            color: navy;
+          }
+
+          .mibox2 .d2{
+            display: flex;
+            justify-content: center;
+            font-size: 15px;
+            margin-top: 30px;
+            color: navy;
+          }
+
+          .mibox3 .d3{
+            display: flex;
+            justify-content: center;
+            font-size: 15px;
+            margin-top: 30px;
+            color: navy;
+          }
+          .box04{
+            
+            background-color: white;
+            height: 400px;
+            width:  80%;
+            background-size: cover;
+            margin-left: 130px;
+            border: 2 px solid black;
+            
+          }
+          .box04 .image{
+            position: absolute;
+            margin-top: 50px;
+            margin-left: 100px;
+ 
+          }
+          .box04 .image img{
+            height: 300px;
+            width: 400px;
+            border-radius: 20px;
+          }
+
+          .box04 .mbox1{
+            height: 40px;
+            width: 280px;
+            background-color: rgba(240, 230, 230, 0.774);
+            border-radius: 20px;
+        }
+         
+         .box04 .mbox1 .c02{
+           margin-top: 10px;
+         }
+         .box04 .mbox1{
+            position: absolute;
+            margin-top: 150px;
+            margin-left: 380px;
+         }
+         .box04 .mbox2{
+            height: 40px;
+            width: 280px;
+            background-color:rgba(240, 230, 230, 0.774);
+            border-radius: 20px;
+        }
+         
+         .box04 .mbox2 .c01{
+           margin-top: 10px;
+         }
+         .box04 .mbox2{
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 380px;
+         }
+
+         .box04 .mbox3{
+            height: 40px;
+            width: 280px;
+            background-color:rgba(240, 230, 230, 0.774);
+            border-radius: 20px;
+        }
+         
+         .box04 .mbox3 .c03{
+           margin-top: 10px;
+         }
+         .box04 .mbox3{
+            position: absolute;
+            margin-top: 250px;
+            margin-left: 380px;
+         }
+         .box04 .text04{
+            font-size: 40px;
+            color: black;
+            position: absolute;
+            margin-top: 50px;
+            margin-left: 650px;
+         }
+
+         .box04 .lo{
+            font-size: 15px;
+            color: black;
+            position: absolute;
+            margin-top: 160px;
+            margin-left: 720px;
+         }
+         .btun1{
+            position: absolute;
+            margin-top: 300px;
+            margin-left: 800px;
+         }
+         .btun1 button{
+            background-color: rgba(233, 135, 8, 0.808);
+            height: 40px;
+         }
+
+         .body001{
+            width: 40%;
+            height: 300px;
+            display: grid;
+            place-items: center;
+            position: absolute;
+            margin-top: 20px;
+           
+        }
+        .imgslider{
+            width: 70%;
+            height: 300px;
+            background-image: url(/images/1-SM477970.jpg);
+            background-size: 50%;
+            animation: changeimage 15s linear infinite;
+            border-radius: 50px;
+        }
+        @keyframes  changeimage {
+            0%{
+                background-image: url(/images/120-SM477966.jpg);
+            }
+            25%{
+                background-image: url(/images/120-SM675661.jpg);
+            }
+            50%{
+                background-image: url(/images/16-SM675800.jpg);
+            }
+            75%{
+                background-image: url(/images/18-SM691478.jpg);
+            }
+           100%{
+                background-image: url(/images/Untitled-design-1.png);
+            }
+        }
+
+        .box05{
+            background-color:rgba(11, 11, 180, 0.808);
+            height: 600px;
+            width:  80%;
+            background-size: cover;
+            margin-left: 130px;
+            border: 2 px solid black;
+        }
+        .texti{
+            font-size: 40px;
+            color: white;
+            position: absolute;
+             margin-left: 170px;
+            margin-top: 30px;
+
+        }
+        .photo{
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 20px;
+           
+        }
+        .photo img{
+            height: 250px;
+            width: 300px;
+            border-radius: 20px;
+        }
+
+        .photo2{
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 360px;
+           
+        }
+        .photo2 img{
+            height: 250px;
+            width: 300px;
+            border-radius: 20px;
+        }
+
+        .photo3{
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 700px;
+           
+        }
+        .photo3 img{
+            height: 250px;
+            width: 300px;
+            border-radius: 20px;
+        }
+         .textt{
+            position: absolute;
+            font-size: 20px;
+            margin-top: 380px;
+             margin-left: 30px;
+            color: white;
+        }
+
+        .textt2{
+            position: absolute;
+            font-size: 20px;
+            margin-top: 380px;
+             margin-left: 370px;
+            color: white;
+        }
+
+        .textt3{
+            position: absolute;
+            font-size: 20px;
+            margin-top: 380px;
+             margin-left: 710px;
+            color: white;
+        }
+        .message1{
+            position: absolute;
+            font-size: 13px;
+            margin-top: 420px;
+            margin-left: 30px;
+            color: white;
+        }
+
+          .message2{
+            position: absolute;
+            font-size: 13px;
+            margin-top: 420px;
+            margin-left: 380px;
+            color: white;
+        }
+
+          .message3{
+            position: absolute;
+            font-size: 13px;
+            margin-top: 420px;
+            margin-left: 710px;
+            color: white;
+        }
+
+           .cover1{
+            position: absolute;
+            font-size: 15px;
+            margin-top: 470px;
+            margin-left: 30px;
+            color: white;
+        }
+
+
+        
+           .cover2{
+            position: absolute;
+            font-size: 15px;
+            margin-top: 470px;
+            margin-left: 380px;
+            color: white;
+        }
+
+        
+           .cover3{
+            position: absolute;
+            font-size: 15px;
+            margin-top: 470px;
+            margin-left: 710px;
+            color: white;
+        }
+        .switch{
+            position: absolute;
+            margin-top: 530px;
+            margin-left: 450px;
+            
+        }
+        .switch button{
+            background-color: yellow;
+            height: 50px;
+            border-radius: 20px ;
+             box-shadow: 0 0 4rem #fff,inset 0 0 1rem #fff ,0 0  2rem #3877ff,inset 0 0 2rem #3877ff,0 0 4rem #3877ff,inset 0 0 4rem #3877ff;
+        }
+        .box06{
+            background-color:white;
+            height: 600px;
+            width:  80%;
+            background-size: cover;
+            margin-left: 130px;
+            border: 2 px solid black;
+            
+
+        }
+        .box06 .mssge1{
+            position: absolute;
+            margin-top: 40px;
+            margin-left: 200px;
+            font-size: 40px;
+            color: black;
+        }
+
+         .box06 .mssge2{
+            position: absolute;
+            margin-top: 90px;
+            margin-left: 320px;
+            font-size: 40px;
+            color: white;
+        }
+        .check1{
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            margin-top: 240px;
+            margin-left: 50px;
+            background-color: white;
+            border-radius: 20px;
+            border: 2px solid gray;
+            box-shadow: 0 0 4rem #fff,inset 0 0 1rem #fff ,0 0  2rem #3877ff,inset 0 0 2rem #3877ff,0 0 4rem #3877ff,inset 0 0 4rem #3877ff;
+        }
+        .check2{
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            margin-top: 240px;
+            margin-left: 370px;
+            background-color: white;
+            border-radius: 20px;
+            border: 2px solid gray;
+            box-shadow: 0 0 4rem #fff,inset 0 0 1rem #fff ,0 0  2rem #3877ff,inset 0 0 2rem #3877ff,0 0 4rem #3877ff,inset 0 0 4rem #3877ff;
+        }
+        .check3{
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            margin-top: 240px;
+            margin-left: 690px;
+            background-color:white;
+            border-radius: 20px;
+            border: 2px solid gray;
+            box-shadow: 0 0 4rem #fff,inset 0 0 1rem #fff ,0 0  2rem #3877ff,inset 0 0 2rem #3877ff,0 0 4rem #3877ff,inset 0 0 4rem #3877ff;
+        }
+        .tick1{
+           position: absolute;
+            font-size: 60px;
+            color: blue;
+            margin-top: 30px;
+            margin-left: 130px;
+
+        }
+
+         .date1{
+           position: absolute;
+            font-size: 60px;
+            color: blue;
+            margin-top: 30px;
+            margin-left: 130px;
+
+        }
+
+        .msg1{
+           position: absolute;
+            font-size: 60px;
+            color: blue;
+            margin-top: 30px;
+            margin-left: 130px;
+
+        }
+        .check1 a{
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 30px;
+            font-size: 30px;
+            color: black;
+        }
+
+        .check2 a{
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 30px;
+            font-size: 30px;
+            color: black;
+        }
+
+        .check3 a{
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 30px;
+            font-size: 30px;
+            color: black;
+        }
+
+        .check1 p{
+            position: absolute;
+            margin-top: 150px;
+            margin-left: 30px;
+            font-size: 15px;
+            color: black;
+        }
+
+        .check2 p{
+            position: absolute;
+            margin-top: 150px;
+            margin-left: 30px;
+            font-size: 15px;
+            color: black;
+        }
+
+        .check3 p{
+            position: absolute;
+            margin-top: 150px;
+            margin-left: 30px;
+            font-size: 15px;
+            color: black;
+        }
+        .box07{
+            background-color:rgb(181, 217, 231);
+            height: 500px;
+            width:  80%;
+            background-size: cover;
+            margin-left: 130px;
+            border: 2 px solid black;
+        }
+        .img101{
+            position: absolute;
+            margin-top: 55px;
+            margin-left: 600px;
+
+        }
+        .img101 img{
+            height: 300px;
+            width: 400px;
+            border-radius: 20px;
+            box-shadow: 0 0 4rem #fff,inset 0 0 1rem #fff ,0 0  2rem #3877ff,inset 0 0 2rem #3877ff,0 0 4rem #3877ff,inset 0 0 4rem #3877ff;
+        } 
+        .start {
+            position: absolute;
+            margin-top: 390px;
+            margin-left: 600px;
+        }
+        .start img{
+            height: 50px;
+            width: 100px;
+            background-color:transparent;
+            box-shadow: 0 0 4rem #fff,inset 0 0 1rem #fff ,0 0  2rem #3877ff,inset 0 0 2rem #3877ff,0 0 4rem #3877ff,inset 0 0 4rem #3877ff;
+            border-radius: 30px;
+        }
+        .name01{
+            position: absolute;
+            margin-top: 360px;
+            margin-left: 600px;
+            font-size: 20px;
+            color: black;
+        }
+        .box07 p{
+            position: absolute;
+            margin-top: 450px;
+            margin-left: 600px;
+            font-size: 10px;
+            color: black;
+        }
+        .box07 a{
+            position: absolute;
+            margin-top: 50px;
+            margin-left: 100px;
+            font-size: 50px;
+            color: black;
+        }
+        .tb{
+            position: absolute;
+            margin-top: 180px;
+            margin-left: 100px;
+            font-size: 15px;
+            color: black;
+        }
+        .box07 button{
+            position: absolute;
+            margin-top: 240px;
+            margin-left: 100px;
+            background-color: yellow;
+           height: 40px;
+           border-radius: 20px;
+           box-shadow: 0 0 4rem #3c6e6ada,inset 0 0 1rem #fff ,0 0  2rem #3877ff,inset 0 0 2rem #3877ff,0 0 4rem #3877ff,inset 0 0 4rem #3877ff;
+        }
+        .question{
+            background-color: white;
+            height: 250px;
+            width:  80%;
+            background-size: cover;
+            margin-left: 130px;
+            border: 2 px solid black;
+        }
+        .question input{
+            display: flex;
+            padding: 10px;
+            /* margin: 10px; */
+            margin-left: 300px;
+            border-radius: 20px;
+            box-shadow: 0 0 4rem #fff,inset 0 0 1rem #fff ,0 0  2rem #3877ff,inset 0 0 2rem #3877ff,0 0 4rem #3877ff,inset 0 0 4rem #3877ff; 
+        }
+        .last{
+            background-color:navy;
+            height: 400px;
+            width:  80%;
+            background-size: cover;
+            margin-left: 130px;
+            border: 2 px solid black;
+        }
+        .im{
+            position: absolute;
+            margin-top: 60px;
+            margin-left: 600px;
+
+        }
+        .im img{
+            height: 300px;
+            width: 400px;
+            border-radius: 20px;
+        }
+        .tt{
+            position: absolute;
+            margin-top: 30px;
+            margin-left: 60px;
+            font-size: 40px;
+            color: white;
+        }
+        .last p{
+            position: absolute;
+            margin-top: 150px;
+            margin-left: 60px;
+            font-size: 15px;
+            color: white;
+        }
+        .last button{
+            height: 50px;
+            background-color: yellow;
+            border-radius: 20px;
+            position: absolute;
+            margin-top: 240px;
+            margin-left: 60px;
+        }
+        .last1{
+            background-color: white;
+            height: 40px;
+            width:  80%;
+            background-size: cover;
+            margin-left: 130px;
+            border: 2 px solid black; 
+            box-shadow: 0 0 4rem #fff,inset 0 0 1rem #fff ,0 0  2rem #3877ff,inset 0 0 2rem #3877ff,0 0 4rem #3877ff,inset 0 0 4rem #3877ff; 
+        }
+
+        .last1 p{
+            position: absolute;
+            margin-left: 320px;
+            margin-top: 10px;
+        }
+
+
+
+            
+
+       
+    
+       
+             
+            
+             
+        
+        
+       
+    </style>
+</head>
+<body>
+     <div class="back">
+        <div class="main">
+             
+              <div class="pl">
+                <p>
+                    <font size="5" > <b> PlumbFix</b> </font>
+                </p>
+              </div>
+                <div class="text">
+                    <p>About </p>
+                    <p>WhyChoose </p>
+                    <p>Services </p>
+                    <p>Reviews </p>
+                </div>
+               
+                <div class="btn">
+                    <button> Request Services</button>
+                </div>
+            <div class="text2">
+                    <p>
+                        <font size="20"><b> Plumbing Eminence</b></font> <br>
+                        <font size="15"><b> Jump Right In</b></font> <br>
+                        
+                    </p>
+            </div>
+            <div class="text3">
+                <p>
+                    We take pride in out attention and commitent to <br>
+                    customer satisfaction. Whether you require maintenance. 
+                </p>
+            </div>
+            <div class="btn2">
+                <button>Request Services</button>
+            </div>
+            <div class="text4">
+                 <a >Discover More</a>
+            </div>
+            <div class="num">
+                <p>66</p>
+            </div>
+           <div class="text5">
+            <p>Outstanding results every time!</p>
+           </div>
+           <div class="text6">
+            <p>
+                I've been using PlumbFix for my home cleaning <br>
+                needs.
+            </p>
+           </div>
+           <div class="container">
+            <div class="name">
+                Name**
+            </div>
+            <div class="input1">
+                <input type="text" name="" id="" placeholder="Your Name" size="40" style="height: 40px;">
+            </div>
+            <div class="mail">
+                Email**
+            </div>
+            <div class="input2">
+                <input type="text" name="" id="" placeholder="@gamil.com" size="40" style="height: 40px;">
+            </div>
+            
+            <div class="mssg">
+                 Your Message**
+            </div>
+            <div class="input3">
+                <input type="text" name="" id="" placeholder="Your Message Here"   style="height: 70px;width: 300px;">
+            </div>
+            <div class="btne">
+                <button>
+                    Get A Free Quote
+                </button>
+            </div>
+
+            
+        </div>
+            
+        </div>
+            <div class="box01">
+                <div class="text01">
+                    <p>Behind the PlumbFix <br>
+                    Company Stories.</p>
+                </div>
+                <font color="black">
+                     <div class="text02">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
+                    Voluptas nam amet aut earum obcaecati accusantium <br>
+                    consequuntur vero laboriosam repudiandae? Eligendi fuga <br>
+                    distinctio deleniti autem? Dolorum temporibus animi odio! <br>
+                    Voluptatem, animi?
+                </div>
+                </font>
+                <div class="btn1">
+                    <button>Learn More</button>
+                </div>
+                <div class="image01">
+                    <img src="/images/Untitled-design-1.png" alt="">
+                </div>
+                <div class="img">
+                    <img src="/images/WhatsApp Image 2024-07-12 at 15.02.43_5938fe7c.jpg" alt="">
+                </div>
+
+            </div>
+            <div class="box001">
+                <div class="msg01">
+                    Why Choose PlumbFix?
+                </div>
+                <div class="mibox1">
+                     <i class="fa-solid fa-check  c1"></i>
+                     <div class="bt1">
+                        Experienced Proffessionals
+                        </div>
+                        <div class="st1">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing <br>
+                             elit. Consequatur voluptates facilis saepe, <br>
+                              enim ex est delectus officia suscipit <br>
+                                 nihil, voluptatum eligendi molestias.  
+                        </div>
+                        <div class="d1">
+                            Discover More
+                        </div>
+                      
+                </div>
+
+
+                  <div class="mibox2">
+                    <i class="fa-solid fa-star c2"></i> 
+                     <div class="bt2">
+                        24/7 Emergency services
+                     </div>
+                     <div class="st2">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing <br>
+                         elit. Consequatur voluptates facilis saepe, <br>
+                          enim ex est delectus officia suscipit <br>
+                             nihil, voluptatum eligendi molestias.  
+                    </div>
+                    <div class="d2">
+                        Discover More
+                    </div>
+                </div>
+
+
+                  <div class="mibox3">
+                     <i class="fa-solid fa-thumbs-up c3"></i>
+                      <div class="bt3">
+                        Affordable pricing
+                     </div>
+                     <div class="st3">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing <br>
+                         elit. Consequatur voluptates facilis saepe, <br>
+                          enim ex est delectus officia suscipit <br>
+                             nihil, voluptatum eligendi molestias.  
+                    </div>
+                    <div class="d3">
+                        Discover More
+                    </div>
+                </div>
+            </div>
+            <div class="box04">
+
+                <div class="body001">
+                    <div class="imgslider"></div>
+                   </div>
+                 <!-- <div class="image">
+                    <img src="/images/120-SM477966.jpg" alt="">
+                </div>  -->
+                 <div class="mbox1">
+                    <i class="fa-solid fa-star c02">24/7 Emergency Services</i> 
+                     
+                </div>
+                <div class="mbox2">
+                    <i class="fa-solid fa-check  c01">Satisfaction Guarantee</i>
+                </div>
+
+                <div class="mbox3">
+                    <i class="fa-solid fa-wand-magic-sparkles  c03">Experienced Technicians</i>
+                </div>
+                <div class="text04">
+                    Dive into Our Signature  <br>
+                    Plumbing Services
+                </div>
+                <div class="lo">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing  <br>
+                    elit. Id accusantium veritatis, fuga  <br>
+                    architecto, recusandae earum animi aspernatur  <br>
+                    itaque molestiae consectetur eaque <br>
+                    expedita dolorum nihil?  
+                </div>
+                <div class="btun1">
+                    <button>Explore Services</button>
+                </div>
+            </div>
+            <div class="box05">
+                 <div class="texti">
+                    Where We Provide Our Plumbing Services
+                 </div>
+                 <div class="photo">
+                    <img src="/images//8-SM966463.jpg" alt="">
+                 </div>
+
+                 <div class="photo2">
+                    <img src="/images/16-SM254882.jpg" alt="">
+                 </div>
+
+                 <div class="photo3">
+                    <img src="/images/17-SM315323.jpg" alt="">
+                 </div>
+                 <div class="textt">
+                    Leak Detection and Repair
+                 </div>
+
+
+                 <div class="textt2">
+                    Water Heater Installation & Repair
+                 </div>
+
+                 <div class="textt3">
+                    Drain Cleaning
+                 </div>
+
+                 <div class="message1">
+                    Conducting  all cleaning tasks with Proffessionalism, <br>
+                    including arriving on time.
+                 </div>
+
+                 
+                 <div class="message2">
+                     Conducting  all cleaning tasks with Proffessionalism, <br>
+                    including arriving on time.
+                 </div>
+
+                 
+                 <div class="message3">
+                     Conducting  all cleaning tasks with Proffessionalism, <br>
+                    including arriving on time.
+                 </div>
+                 <div class="cover1">
+                    Discover More
+                 </div>
+
+                  <div class="cover2">
+                    Discover More
+                 </div>
+
+                  <div class="cover3">
+                    Discover More
+                 </div>
+                 <div class="switch">
+                    <button>Explore More Services</button>
+                 </div>
+
+            </div>
+
+            <div class="box06">
+                    <div class="mssge1">
+                        Easy BOOKING in 3 Simple Steps to <br>
+                        
+                    </div>
+                    <div class="mssge2">
+                         a Plumbing Services
+                    </div>
+
+                    <div class="check1">
+                        <i class="fa-solid fa-check  tick1"></i>
+                         <a>Select Your Service </a>
+                         <p>Our team consits of hadling trained and ceritfication <br>
+                        plumber who have years of experienced handling  <br>
+                    all types's of plumbing problems.</p>
+                        
+
+                    </div>
+                      
+                    <div class="check2">
+                        <i class="fa-solid fa-calendar-days  date1"></i>
+                         <a>Choose Your Date </a>
+                         <p>Our team consits of hadling trained and ceritfication <br>
+                            plumber who have years of experienced handling  <br>
+                        all types's of plumbing problems.</p>
+                    </div>
+
+                    <div class="check3">
+                        <i class="fa-solid fa-message  msg1"></i>
+                         <a>Coniform and Relax </a>
+                         <p>Our team consits of hadling trained and ceritfication <br>
+                            plumber who have years of experienced handling  <br>
+                        all types's of plumbing problems.</p>
+                    </div>
+
+            </div>
+            <div class="box07">
+                    <div class="img101">
+                        <img src="/images/18-SM931564.jpg" alt="">
+                    </div>
+                    <div class="name01">
+                        <b> Jhon Deo</b>
+                    </div>
+                    <div class="start">
+                        <img src="/images/download.png" alt="">
+                    </div>
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                        Suscipit enim cum porro delectus quos. Cupiditate animi <br>
+                        repellendus hic vero, quo, quia reiciendis eos corrupti  <br>
+                        sed, id aperiam quod voluptatibus necessitatibus!"</p>
+                <a>Hear What Our <br>
+                Customer Have to say</a>
+                <div class="tb">
+                    Whether its's leaky fauceet a clogged drain, or a major pipe repair, our  <br>
+                    team of a experienced plumber is here to help.
+                </div>
+                <button>Read More Review</button>
+
+            </div>
+            <div class="question">
+                <ul>
+                    <input type="text"  class="1" placeholder=" What areas do you serve?">
+                    <input type="text"  class="2" placeholder="Do you offer emergency plumbing?">
+                    <input type="text"  class="3" placeholder="How quickly can you respond to a plumbing empergency?">
+                    <input type="text"  class="4" placeholder=" What types of plumbing services do you provide?">
+                    <input type="text"  class="5" placeholder="How much do your services cost?">
+                    <input type="text"  class="6" placeholder="Do you offer free estimates?">
+                     
+                    
+                </ul>
+            </div>
+            <div class="last">
+                <div class="im">
+                    <img src="/images/18-SM675659.jpg" alt="">
+                </div>
+                <div class="tt">
+                    Ready to experience the best <br>
+                    in plumbing services?
+                </div>
+                <p>Call us at [Your Phone Number ] or fill out our online contact form to scheadule to <br>
+                appointment or request a free quote. Let PlumbFix take care of our of plumbing needs,so <br>
+            you can get back to what matters most.</p>
+            <button>let's Drive In</button>
+            </div>
+            <div class="last1">
+               <p> <FONt> <b> Copyright @ 2024 ALL Rights Reserved bY</b></FONt> <FONT><B> WPRISECO</B></FONT></p>
+            </div>
+
+
+    </div>
+</body>
+</html>

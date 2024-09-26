@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Document</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        :active, :hover, :focus {
+            outline: 0 !important;
+            outline-offset: 0;
+        }
+        a, a:hover {
+            text-decoration: none;
+        }
+        a:hover {
+            color: var(--primary-color) !important;
+        }
+        ul, ol {
+            margin: 0;
+            padding: 0;
+        }
+        :root {
+            --primary-color: #ffc222;
+            --secondary-color: #00a149;
+            --white-color: #fff;
+            --text-color: #b0b0b0;
+            --black-color: #1e1d23;
+            --primary-font: 'Roboto', sans-serif;
+            --secondary-font: 'Quicksand', sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: var(--primary-font);
+            font-size: 100%;
+            font-weight: 400;
+        }
+        ::-webkit-scrollbar {
+            width: 0.625rem;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--white-color);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--secondary-color);
+        }
+        h1 {
+            font-size: 58px;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            color: var(--white-color);
+            text-shadow: 1px 0 6px #000;
+        }
+        h1 span {
+            color: var(--primary-color);
+        }
+        h2 {
+            font-weight: 700;
+            font-size: 2rem;
+            text-transform: capitalize;
+            font-family: var(--secondary-font);
+            color: var(--secondary-color);
+            line-height: 3rem;
+        }
+        p {
+            font-size: 1rem;
+            color: var(--text-color);
+            font-weight: 400;
+            line-height: 1.75rem;
+            letter-spacing: 1px;
+        }
+        .main-btn {
+            display: inline-block;
+            padding: 0.625rem 1.875rem;
+            line-height: 1.5625rem;
+            background-color: var(--primary-color);
+            border: 0.1875rem solid var(--primary-color);
+            color: var(--black-color);
+            font-size: 0.9375rem;
+            text-transform: capitalize;
+            border-radius: 0.5rem;
+            box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+            transition: all .4s ease-out 0s;
+        }
+        .main-btn:hover {
+            background-color: transparent;
+            color: var(--primary-color);
+        }
+        .navigation-wrap {
+            position: fixed;
+            width: 100%;
+            left: 0;
+            z-index: 1000;
+            transition: all 0.3s ease-out;
+        }
+        .navigation-wrap .nav-item {
+            padding: 0 0.625rem;
+            transition: all 0.3s linear;
+        }
+        .navbar-toggler:focus {
+            outline: unset;
+            border: unset;
+            box-shadow: none;
+        }
+        .nav-link {
+            font-size: 0.9375rem;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: var(--white-color);
+        }
+        .nav-link:hover, .nav-link.active {
+            color: var(--primary-color) !important;
+        }
+        .navigation-wrap .main-btn {
+            padding: 0.3125rem 1.4375rem;
+            box-shadow: none;
+            margin-left: 0.625rem;
+        }
+        .navbar-brand img {
+            height: 100px;
+            width: 100px;
+        }
+        .navigation-wrap.scroll-on {
+            position: fixed;
+            background-color: var(--white-color);
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: 0.0125rem 1.75rem 0rgb(0,0,0,0.09);
+            transition: all 0.15s ease-in-out;
+        }
+        .navigation-wrap.scroll-on .nav-link {
+            color: var(--black-color);
+        }
+        .navigation-wrap.scroll-on .nav-link:hover,
+        .navigation-wrap.scroll-on .nav-link.active {
+            color: var(--primary-color);
+        }
+        .top-banner {
+            width: 100%;
+            background: url(/image/bg-1.jpg) no-repeat center;
+            background-size: cover;
+            padding: 9.875rem 0 5.375rem;
+        }
+        .top-banner p {
+            color: var(--white-color);
+        }
+        @media (max-width: 991px) {
+            .text-content {
+                width: 100%;
+            }
+            .navigation-wrap .navbar-brand img {
+                height: 3.8125rem;
+            }
+            .navigation-wrap {
+                text-align: center;
+                background-color: var(--white-color);
+            }
+            .navigation-wrap .nav-link {
+                line-height: 1.875rem;
+                color: var(--black-color);
+            }
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navigation-wrap">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="/image/download.jpg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#explore">Explore Foods</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonial">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq">FAQ</a>
+                        </li>
+                        <li>
+                            <button class="main-btn">1200 345 123</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Section 1: Top Banner -->
+    <section id="home">
+        <div class="container-fluid px-0 top-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6">
+                        <h1>UNLIMITED <br> MEDIUM <span>PIZZAS</span> </h1>
+                        <h2>Medium 2-topping* pizza</h2>
+                        <p>*Additional charge for premium toppings. Minimum of 2 required.</p>
+                        <div class="mt-4">
+                            <button class="main-btn">Order now <i class="fas fa-shopping-basket ps-3"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript Bundle with Popper CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

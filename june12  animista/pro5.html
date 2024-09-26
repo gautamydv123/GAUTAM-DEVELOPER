@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flip-horizontal-top {
+	 
+	        animation: flip-horizontal-top 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            height: 800px;
+            width: 800px;
+            background-color: springgreen;
+
+}
+ 
+  
+@keyframes flip-horizontal-top {
+  0% {
+    
+            transform: rotateX(0);
+            background-color: yellow;
+  }
+  100% {
+    
+            transform: rotateX(180deg);
+            background-color: blue;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="flip-horizontal-top">
+
+    </div>
+</body>
+</html>

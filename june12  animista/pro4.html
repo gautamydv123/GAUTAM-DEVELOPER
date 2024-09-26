@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flip-horizontal-bottom {
+	 
+	        animation: flip-horizontal-bottom 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            height: 600px;
+            width: 600px;
+            background-color: brown;
+}
+ 
+@keyframes flip-horizontal-bottom {
+  0% {
+    
+            transform: rotateX(0);
+            background-color: blue;
+  }
+  100% {
+    
+            transform: rotateX(-180deg);
+            background-color: aqua;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="flip-horizontal-bottom">
+
+    </div>
+</body>
+</html>

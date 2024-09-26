@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/2409013c9b.js" crossorigin="anonymous"></script>
+    <style>
+         *{
+            padding: 0;
+            margin: 0;
+        }
+        .main2{
+            height: 20px;
+            width: 100%;
+            background-color: skyblue;
+            box-shadow: 20px 30px 40px 50px skyblue;
+           
+        }
+        /* .main2 ul li {
+            font-size: 30px;
+            position: absolute;
+
+        } */
+        .browse{
+            position: absolute;
+            margin-top: 30px;
+            margin-left: 60px;
+            font-size: 30px;
+        }
+        .imagebazar{
+            position: absolute;
+            margin-top: 30px;
+            margin-left: 600px;
+            font-size: 30px;
+        }
+        .price{
+            position: absolute;
+            margin-top: 30px;
+            margin-left:1030px;
+            font-size: 30px;
+        }
+        /* .btn{
+            height: 100px;
+            width: 300px;
+            position: absolute;
+            margin-top: 30px;
+            margin-left:1200px;
+            font-size: 30px;
+           
+        } */
+        .sign{
+            width:100px;
+            height: 40px;
+            font-size:20px;
+            position: absolute;
+            margin-left: 1150px;
+            margin-top:30px ;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+        }
+        .box1{
+            position: sticky;
+            top: 0px;
+            background-color: transparent;
+            left: 200px;
+        }
+      
+        .bx1{
+            font-size: 30px;
+            position:sticky;
+            top: 0px;
+            margin-top: 100px;
+            
+            margin-left: 200px; 
+        }
+        .bx2{
+            font-size: 30px;
+            position:absolute;
+            top: 20px;
+            margin-left: 600px; 
+            font-size: 10 px;
+        }
+        .text{
+            font-size: 20px;
+            text-align: center;
+            margin-top: 30px;
+            left: 350px;
+            font-weight: 100px;
+             
+        }
+        .filter{
+            width:100px;
+            height: 40px;
+            font-size:30px;
+            position: absolute;
+            margin-left: 1150px;
+            margin-top:40px ;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+        }
+        .image1{
+         
+            height: 430px;
+            width: 470px;
+            overflow: hidden;
+            border: 5px solid white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 120px;
+            left: 0px;
+            background-image: url(/imagecarnature/12-BM1076282.jpg);
+            
+        }
+        .box2{
+            height: 50px;
+            width: 740px;
+            display: none;
+            margin-top: 400px;
+            background-color:transparent;
+            
+        }
+        .image1:hover .box2{
+            display: block;
+           
+            
+        }
+        .ca{
+            font-size: 30px;
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+        .ca:hover{
+            background-color: white;
+            
+        }
+        .fa{
+            font-size: 30px;
+            margin-left: 25px;
+            margin-top: 5px;  
+        }
+        .fa:hover{
+            background-color: white;
+            
+        }
+        .da{
+            font-size: 30px;
+            margin-left: 30px;
+            margin-top: 5px;  
+        }
+        .da:hover{
+            background-color: white;
+            
+        }
+        .comm{
+            font-size: 15px;
+            margin-left: 30px;
+            margin-top: 5px;  
+        }
+        .ct{
+            font-size: 30px;
+            margin-left: 25px;
+            margin-top: 5px;  
+        }
+        .ct:hover{
+            background-color: white;
+            
+        }
+        .dil{
+            font-size: 30px;
+            margin-left: 20px;
+            margin-top: 5px;  
+        }
+        .dil:hover{
+            background-color: white;
+            
+        }
+        .tik{
+            font-size: 30px;
+            margin-left: 25px;
+            margin-top: 5px;  
+        }
+        .tik:hover{
+            background-color: white;
+            
+        }
+       
+        .image2{
+        
+         height: 430px;
+         width: 470px;
+         overflow: hidden;
+         border: 5px solid white;
+         border-radius: 20px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         top: 300px;
+        
+         margin-left: 500px;
+         background-image: url(/imagecarnature/20-TD1065832.jpg);
+         
+     }
+     .image2.box2{
+         height: 50px;
+         width: 740px;
+         display: none;
+         margin-top: 400px;
+         background-color:transparent;
+         
+     }
+     .image2:hover .box2{
+         display: block;
+        
+         
+     }
+     .image2.ca{
+         font-size: 30px;
+         margin-left: 20px;
+         margin-top: 5px;
+     }
+     .image2.ca:hover{
+         background-color: white;
+         
+     }
+     .image2.fa{
+         font-size: 30px;
+         margin-left: 25px;
+         margin-top: 5px;  
+     }
+     .image2.fa:hover{
+         background-color: white;
+         
+     }
+     .image2.da{
+         font-size: 30px;
+         margin-left: 30px;
+         margin-top: 5px;  
+     }
+     .image2.da:hover{
+         background-color: white;
+         
+     }
+     .image2.comm{
+         font-size: 15px;
+         margin-left: 30px;
+         margin-top: 5px;  
+     }
+     .image2.ct{
+         font-size: 30px;
+         margin-left: 25px;
+         margin-top: 5px;  
+     }
+     .image2.ct:hover{
+         background-color: white;
+         
+     }
+     .image2.dil{
+         font-size: 30px;
+         margin-left: 20px;
+         margin-top: 5px;  
+     }
+     .image2.dil:hover{
+         background-color: white;
+         
+     }
+     .image2.tik{
+         font-size: 30px;
+         margin-left: 25px;
+         margin-top: 5px;  
+     }
+     .image2.tik:hover{
+         background-color: white;
+         
+     }
+    
+   
+    </style>
+</head>
+<body>
+    <div class="main2"> </div>
+   
+         
+    <div class="browse"> 
+         <ul>   <i class="fa-solid fa-bars  bar1" ></i>      <b>Browse Categories</b> </ul>
+    </div>
+    <div class="imagebazar">
+        <b> images</b><font color="gray"><b>bazaar</b></font>
+    </div>
+    <div class="price">
+        <b>Pricing</b> 
+    </div>
+    <div class="btn">
+        <button class="sign"> Sign In</button>
+    </div>
+ 
+    
+
+    <div class="bx1">
+        <input type="text" name="" id="" size="60" style="height: 80px;width: 900px;" placeholder="                     search the largest collection of indain images" >
+        <DEtails class="bx2">
+            <summary size="4">IMAGE </summary>
+            <p size="4" style="background-color: blue;">Image</p>
+            <p size="4" style="background-color: navy;">Vedio</p>
+        </DEtails>
+    </div>
+    <div class="text">
+        1,00,000+I mages For "Concepts & Ideas >> View All "
+    </div>
+    <div class="btn1">
+        <button class="filter"> Filters</button>
+    </div>
+    <div class="image1">
+        <div class="box2">
+            <i class="fa-solid fa-camera  ca"></i>
+            <i class="fa-solid fa-dice-four  fa"></i>
+            <i class="fa-solid fa-download  da"></i>
+            <i class="comm">BM1076282</i>
+            <i class="fa-solid fa-cart-plus ct"></i>
+            <i class="fa-solid fa-heart dil"></i>
+            <i class="fa-solid fa-check   tik"></i>
+        </div>
+    </div>
+    <div class="image2">
+        <div class="box2">
+            <i class="fa-solid fa-camera  ca"></i>
+            <i class="fa-solid fa-dice-four  fa"></i>
+            <i class="fa-solid fa-download  da"></i>
+            <i class="comm">BM1076282</i>
+            <i class="fa-solid fa-cart-plus ct"></i>
+            <i class="fa-solid fa-heart dil"></i>
+            <i class="fa-solid fa-check   tik"></i>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+</body>
+</html>

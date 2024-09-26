@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: relative;
+            height: 400px;
+            width: 400px;
+            overflow: hidden;
+            border: 5px solid green;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+       
+       
+        
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        
+        img:hover {
+            width: 120%;
+            height: 120%;
+        }
+        
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        
+        .box:hover .overlay {
+            opacity: 1;
+        }
+        
+        .text {
+            text-align: center;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="image-container">
+            <img src="300-PA1050849.jpg" alt="">
+            <div class="overlay">
+                <div class="text">Your Text Here</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

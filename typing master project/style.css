@@ -1,0 +1,22 @@
+ .container{
+    height: 500px;
+    width: 50%;
+    background-color: gray;
+    border-radius: 40px;
+    text-align: center;
+    
+}
+.box button{
+    border-radius: 40px;
+}
+.text{
+   display: inline-block;
+   background-color: white;
+   border: 2px solid black;
+}
+.typing-area  textarea{
+    height: 200px;
+    width: 50%;
+    background-color: rgba(182, 196, 211, 0.938);
+
+}

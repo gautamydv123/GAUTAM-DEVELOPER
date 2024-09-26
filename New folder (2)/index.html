@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+         .main {
+            height: auto;
+            width: 100%;
+            border: 2px solid black;
+            position: relative;
+         }
+        .frist {
+            height: 80px;
+            width: 100%;
+            background-color: black;
+            border: 2px solid black;
+            position:fixed; 
+        }
+        .frist ul {
+            list-style: none;
+            position: absolute;
+            bottom: 35px;
+            left: 0;
+            width: 100%;
+        }
+        .frist ul li {
+            display: inline;
+        }
+        .frist ul li a {
+            font-size: 20px;
+            color: white;
+            padding: 35px;
+            text-decoration: none;
+        }
+       .frist a:hover{
+            background-color: brown;
+        }
+         .new-box {
+            position:absolute;
+            bottom: -477px; 
+            left: 0;
+            width: 100%;
+            height: 400px; 
+            background-color: lightgray;
+            border: 2px solid black;
+            transition: bottom 0.3s ease; 
+            display: none; 
+        }
+        .frist ul li:nth-child(2):hover .new-box,  
+        .frist ul li:nth-child(3):hover .new-box,  
+        .frist ul li:nth-child(4):hover .new-box,  
+        .frist ul li:nth-child(5):hover .new-box, 
+        .frist ul li:last-child:hover .new-box  
+        {
+            display: block;  
+        }
+        .second{
+            height: 60px;
+            width: 100%;
+            background-color:white;
+            position:fixed;
+            top: 60px;
+        }
+        .second ul li {
+            display: inline;
+        }
+        .second ul li a{
+            font-size: 30px;
+            color:black;
+            padding: 50px;
+            text-decoration: none;
+        }
+        .second ul {
+            list-style: none;
+            position: absolute;
+            bottom: 10px;}
+        .second li:hover{
+                background-color: sienna;
+        }
+        
+        .third{
+            height: 50px;
+            width: 100%;
+            background-color:lightslategray;
+            position: absolute;
+            top: 118px;
+        }
+        .third ul li{
+            display: inline-block;
+        }
+        .third ul li a{
+            font-size: 25px;
+            color:black;
+            padding: 40px;
+            text-decoration: none;
+        }
+        .third ul{
+            list-style: none;
+            position: absolute;
+            bottom: 10px;
+            left: 400px;
+        }
+        .third li:hover{
+            background-color: yellow;
+        }
+        .fourth{
+            height:80px;
+            width: 100%;
+           background-color:lightslategray;
+           position: absolute;
+           top: 168px;
+            
+        
+        }
+        .fourth ul li{
+            display: inline-block;
+
+        }
+        .fourth ul{
+            position:  absolute;
+             top: 0px;
+             left: 50px;
+        }
+        .fourth ul li {
+            padding: 30px;
+        }
+        .container{ 
+            width: 100%;
+        }
+        .box{
+            height: 80px;
+            width: 100%;
+            border-radius: 7%;
+            background: radial-gradient(red,green,yellow,blue,skyblue);
+            transition: all 5s;
+            position: absolute;
+            top: 248px;
+        }
+        
+
+             
+        
+       .text{
+        position: fixed;
+        top: 265px;
+        
+        display: none;
+        color:black;
+        font-size: 100px;
+        left: 400px;
+
+       }
+       .container:hover .box:hover .text{
+       
+        display: block;
+       }
+        
+       
+        .container:hover .box{
+            margin-left: 1000px;
+        }
+        .fifth{
+            height: 10px;
+            width: 100%;
+            background-color:yellowgreen;
+            position: absolute;
+            top: 320px;
+        }
+       
+        .sixth{
+            position: relative;
+            height: 350px;
+            width: 350px;
+            overflow: hidden;
+            border: 5px solid green;
+            border-radius: 20px;
+            display: flex;
+            align-items
+            : center;
+            justify-content: center;
+            top: 330px;
+        }
+         
+        .new {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .sixth .new img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        .new:hover img {
+            transform: scale(1.2);  
+        }
+        .darklay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+         
+        .new:hover .darklay {
+            opacity: 1;
+        }
+        
+        .text { 
+            text-align: center;
+            font-size: 24px;
+        }
+        .seven{
+            position:absolute;
+            height: 350px;
+            width: 350px;
+            overflow: hidden;
+            border: 5px solid green;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 330px;
+            left: 355px;
+        }
+        .newb {
+            position:relative;
+            width: 100%;
+            height: 100%;
+        }
+    
+        .seven .newb img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        .newb:hover img {
+            transform: scale(1.2);  
+        }
+        .darklay2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+         
+        .newb:hover .darklay2 {
+            opacity: 1;
+        }
+        
+        .text2 {
+            text-align: center;
+            font-size: 24px;
+        }
+        .eight{
+            position:absolute;
+            height: 500px;
+            width: 380px;
+            overflow: hidden;
+            border: 5px solid green;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 330px;
+            left: 714px;
+        }
+        .newc {
+            position:relative;
+            width: 100%;
+            height: 100%;
+        }
+        .eight .newc img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        .newc:hover img {
+            transform: scale(1.2);  
+        }
+        .darklay3 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+         
+        .newc:hover .darklay3 {
+            opacity: 1;
+        }
+        
+        .text3 {
+            text-align: center;
+            font-size: 24px;
+        }
+        .ninth{
+            position:absolute;
+            height: 350px;
+            width: 350px;
+            overflow: hidden;
+            border: 5px solid green;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 330px;
+            left: 1100px;
+        }
+        .newd {
+            position:relative;
+            width: 100%;
+            height: 100%;
+        }
+        .ninth .newd img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        .newd:hover img {
+            transform: scale(1.2);  
+        }
+        .darklay4 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+         
+        .newd:hover .darklay4 {
+            opacity: 1;
+        }
+        
+        .text4 {
+            text-align: center;
+            font-size: 24px;
+        }
+        .ten{
+            position:absolute;
+            height: 350px;
+            width: 355px;
+            overflow: hidden;
+            border: 5px solid green;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 688px;
+            left: 0px;
+        }
+        .newe{
+            position:relative;
+            width: 100%;
+            height: 100%;
+        }
+        .ten .newe img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        .newe:hover img {
+            transform: scale(1.2);  
+        }
+        .darklay5{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+         
+        .newe:hover .darklay5{
+            opacity: 1;
+        }
+        
+        .text5 {
+            text-align: center;
+            font-size: 24px;
+        }
+        .eleveen{
+            position:absolute;
+            height: 220px;
+            width: 350px;
+            overflow: hidden;
+            border: 5px solid green;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 688px;
+            left: 360px;
+        }
+        .newf{
+            position:relative;
+            width: 100%;
+            height: 100%;
+        }
+        .eleveen .newf img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        .newf:hover img {
+            transform: scale(1.2);  
+        }
+        .darklay6{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+         
+        .newf:hover .darklay6{
+            opacity: 1;
+        }
+        
+        .text6 {
+            text-align: center;
+            font-size: 24px;
+        }
+        .twelve{
+            position:absolute;
+            height: 350px;
+            width: 350px;
+            overflow: hidden;
+            border: 5px solid green;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 688px;
+            left: 1100px;
+        }
+        .newg                           {
+            position:relative;
+            width: 100%;
+            height: 100%;
+        }
+        .twelve .newg img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        .newg:hover img {
+            transform: scale(1.2);  
+        }
+        .darklay7{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+         
+        .newg:hover .darklay7{
+            opacity: 1;
+        }
+        
+        .text7 {
+            text-align: center;
+            font-size: 24px;
+        }
+        .thirteen{
+            position:absolute;
+            height: 200px;
+            width: 350px;
+            overflow: hidden;
+            border: 5px solid green;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 910px;
+            left: 360px;
+        }
+        .newh {
+            position:relative;
+            width: 100%;
+            height: 100%;
+        }
+        .thirteen .newh img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        .newh:hover img {
+            transform: scale(1.2);  
+        }
+        .darklay8{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+         
+        .newh:hover .darklay8{
+            opacity: 1;
+        }
+        
+        .text8 {
+            text-align: center;
+            font-size: 24px;
+        }
+        .fourteen{
+            position:absolute;
+            height: 205px;
+            width: 378px;
+            overflow: hidden;
+            border: 5px solid green;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 830px;
+            left: 719px;
+        }
+        .newi {
+            position:relative;
+            width: 100%;
+            height: 100%;
+        }
+        .fourteen .newi img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        .newi:hover img {
+            transform: scale(1.2);  
+        }
+        .darklay9{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+         
+        .newi:hover .darklay9{
+            opacity: 1;
+        }
+        
+        .text9 {
+            text-align: center;
+            font-size: 24px;
+        }
+        .fifteen{
+            position:absolute;
+            height: 350px;
+            width: 350px;
+            overflow: hidden;
+            border: 5px solid green;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 1042px;
+            left: 0px;
+        }
+        .newj {
+            position:relative;
+            width: 100%;
+            height: 100%;
+        }
+        .fifteen .newj img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        .newj:hover img {
+            transform: scale(1.2);  
+        }
+        .darklay10{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+         
+        .newj:hover .darklay10{
+            opacity: 1;
+        }
+        
+        .text10 {
+            text-align: center;
+            font-size: 24px;
+        }
+        .sixteen{
+            position:absolute;
+            height: 350px;
+            width: 720px;
+            overflow: hidden;
+            border: 5px solid green;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 1042px;
+            left: 715px;
+        }
+        .newk {
+            position:relative;
+            width: 100%;
+            height: 100%;
+        }
+         .sixteen .newk img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        .newk:hover img {
+            transform: scale(1.2);  
+        }
+        .darklay11{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+         
+        .newk:hover .darklay11{
+            opacity: 1;
+        }
+        
+        .text11 {
+            text-align: center;
+            font-size: 24px;
+        }
+        .seventeen{
+            position:absolute;
+            height: 277px;
+            width: 350px;
+            overflow: hidden;
+            border: 5px solid green;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 1118px;
+            left: 360px;
+        }
+        .newl {
+            position:relative;
+            width: 100%;
+            height: 100%;
+        }
+         .seventeen .newl img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        .newl:hover img {
+            transform: scale(1.2);  
+        }
+        .darklay12{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+         
+        .newl:hover .darklay12{
+            opacity: 1;
+        }
+        
+        .text12 {
+            text-align: center;
+            font-size: 24px;
+        }
+        
+    
+        .box04 {
+        height: 100px;
+        width: 100px;
+        background:linear-gradient(yellow,red,darkblue,skyblue);
+        animation: anime 2s linear  infinite;
+        position: absolute;
+        top: 1410px;
+        border-radius: 20%;
+        }
+
+       @keyframes anime {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+        }
+        .box05 {
+        height: 100px;
+        width: 100px;
+        background:linear-gradient(yellow,red,darkblue,skyblue);
+        animation: anime 2s linear  infinite;
+        position: absolute;
+        top: 1410px;
+        border-radius: 20%;
+        left: 100px;
+        }
+
+       @keyframes anime {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+        }
+        .box06 {
+        height: 100px;
+        width: 100px;
+        background:linear-gradient(yellow,red,darkblue,skyblue);
+        animation: anime 2s linear  infinite;
+        position: absolute;
+        top: 1410px;
+        border-radius: 20%;
+        left: 200px;
+        }
+
+       @keyframes anime {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+        }
+        .box07 {
+        height: 100px;
+        width: 100px;
+        background:linear-gradient(yellow,red,darkblue,skyblue);
+        animation: anime 2s linear  infinite;
+        position: absolute;
+        top: 1410px;
+        border-radius: 20%;
+        left: 300px;
+        }
+
+       @keyframes anime {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+        }
+        .box08 {
+        height: 100px;
+        width: 100px;
+        background:linear-gradient(yellow,red,darkblue,skyblue);
+        animation: anime 2s linear  infinite;
+        position: absolute;
+        top: 1410px;
+        border-radius: 20%;
+        left: 500px;
+        }
+
+       @keyframes anime {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+        }
+        .box09{
+        height: 100px;
+        width: 100px;
+        background:linear-gradient(yellow,red,darkblue,skyblue);
+        animation: anime 2s linear  infinite;
+        position: absolute;
+        top: 1410px;
+        border-radius: 20%;
+        left: 600px;
+        }
+
+       @keyframes anime {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+        }
+        .box10{
+        height: 100px;
+        width: 100px;
+        background:linear-gradient(yellow,red,darkblue,skyblue);
+        animation: anime 2s linear  infinite;
+        position: absolute;
+        top: 1410px;
+        border-radius: 20%;
+        left: 700px;
+        }
+
+       @keyframes anime {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+        }
+        .box11{
+        height: 100px;
+        width: 100px;
+        background:linear-gradient(yellow,red,darkblue,skyblue);
+        animation: anime 2s linear  infinite;
+        position: absolute;
+        top: 1410px;
+        border-radius: 20%;
+        left: 800px;
+        }
+
+       @keyframes anime {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+        }
+        .box12{
+        height: 100px;
+        width: 100px;
+        background:linear-gradient(yellow,red,darkblue,skyblue);
+        animation: anime 2s linear  infinite;
+        position: absolute;
+        top: 1410px;
+        border-radius: 20%;
+        left: 1000px;
+        }
+
+       @keyframes anime {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+        }
+        .box13{
+        height: 100px;
+        width: 100px;
+        background:linear-gradient(yellow,red,darkblue,skyblue);
+        animation: anime 2s linear  infinite;
+        position: absolute;
+        top: 1410px;
+        border-radius: 20%;
+        left: 1100px;
+        }
+
+       @keyframes anime {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+        }
+        .box14{
+        height: 100px;
+        width: 100px;
+        background:linear-gradient(yellow,red,darkblue,skyblue);
+        animation: anime 2s linear  infinite;
+        position: absolute;
+        top: 1410px;
+        border-radius: 20%;
+        left: 1200px;
+        }
+
+       @keyframes anime {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+        }
+        .box15{
+        height: 100px;
+        width: 100px;
+        background:linear-gradient(yellow,red,darkblue,skyblue);
+        animation: anime 2s linear  infinite;
+        position: absolute;
+        top: 1410px;
+        border-radius: 20%;
+        left: 1300px;
+        }
+
+       @keyframes anime {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+        }
+      
+         
+    
+    </style>
+</head>
+<body>
+   
+<div class="main"> 
+    <div class="frist">
+        <ul>
+            <li><a href=""><img src="/shopping icon/WhatsApp Image 2024-06-10 at 22.35.23_07684ff6.jpg" alt=""></a></li>
+            <li><a href="">Video</a>
+                <div class="new-box">
+                    a
+                </div> 
+            </li>
+        <li><a href="">Photos</a>
+                <div class="new-box">
+                    d
+                </div>  
+            </li>
+            <li><a href="">lllustrations</a>
+                <div class="new-box">
+                    ab
+                </div>  
+            </li>
+            <li><a href=""> <img src="WhatsApp Image 2024-06-11 at 20.46.56_6e152be7.jpg" alt="">AI Generator</a>
+                <div class="new-box">
+                    fs
+                </div>  
+            </li>
+            <li><a href="">More...</a>
+                <div class="new-box">
+                    
+                </div> 
+            </li>
+            <li><a href=""><input type="search" name="" id="" placeholder="Search Here "></a></li>
+        </ul>
+    </div>
+    <div class="second">
+        <ul>
+            <li ><a href=""><img src="WhatsApp Image 2024-06-11 at 21.44.38_35867529.jpg" alt="">Refine</a></li>
+            <li><a href=""> <img src="WhatsApp Image 2024-06-11 at 20.46.30_85750c2c.jpg" alt="">All Content</a></li>
+            <li><a href="">Online Shopping</a></li>
+        </ul>
+    </div>
+    <div class="third">
+        <ul>
+            <li><a href="">All</a></li>
+            <li><a href="">Essentials </a></li>
+            <li><a href="">Signature  </a></li>
+        </ul>
+    </div>
+    <div class="fourth">
+        <ul>
+            <li><a href=""><input type="text" name="" id="" size="6" placeholder="ecommerce"></a></li>
+            <li><a href=""><input type="text" name="" id="" size="14" placeholder="online shopping icon"></a></li>
+            <li><a href=""><input type="text" name="" id="" size="5" placeholder="shopping"></a></li>
+            <li><a href=""><input type="text" name="" id="" size="14" placeholder="online shopping cart"></a></li>
+            <li><a href=""><input type="text" name="" id="" size="4" placeholder="internet"></a></li>
+            <li><a href=""><input type="text" name="" id="" size="15" placeholder="woman online shopping"></a></li>
+            <li><a href=""><input type="text" name="" id="" size="15" placeholder="man online shopping"></a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div class="text">
+              <font size="10"><strong> <i>Largest Collection of Images </i> </strong></font>
+             </div>
+
+        </div>
+    </div>
+    <div class="fifth">
+        <ul>
+            <li><a href=""></a></li>
+        </ul>
+    </div>
+    <div class="sixth">
+         <div class="new">
+                 <img src="300-SM1073292.jpg" alt="">
+            <div class="darklay">
+                <div class="text">
+                    <i>Health Environment</i>
+                </div>
+            </div>
+         </div>
+    </div>
+    <div class="seven">
+        <div class="newb">
+                 <img src="300-PD1051020.jpg" alt="">
+            <div class="darklay2"> 
+                <div class="text2">
+                      <i>Beauty of Nature </i>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="eight">
+        <div class="newc">
+                 <img src="19-SM961147.jpg" alt="">
+            <div class="darklay3"> 
+                <div class="text3">
+                   <i>Show Time</i>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="ninth">
+        <div class="newd">
+                 <img src="300-SM1077314.jpg" alt="">
+            <div class="darklay4"> 
+                <div class="text4">
+                    <i>Learning & Education</i>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="ten">
+        <div class="newe">
+              <img src="300-SM1072462.jpg" alt="" >  
+            <div class="darklay5"> 
+                <div class="text5">
+                  <i>Wedding Images</i>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="eleveen">
+        <div class="newf">
+                 <img src="300-TJ1085152.jpg" alt="">
+            <div class="darklay6"> 
+                <div class="text6">
+                   <i>Family Times </i>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="twelve">
+        <div class="newg">
+                 <img src="300-SM1075700.jpg" alt="">
+            <div class="darklay7"> 
+                <div class="text7">
+                  <i>Friend Goals</i>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="thirteen">
+        <div class="newh">
+                 <img src="300-SM1074919.jpg" alt="">
+            <div class="darklay8"> 
+                <div class="text8">
+                  <i>Health Environment</i>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="fourteen">
+        <div class="newi">
+                 <img src="300-SM1072866.jpg" alt="">
+            <div class="darklay9"> 
+                <div class="text9">
+                   
+                    <i>Health Checkup </i>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="fifteen">
+        <div class="newj">
+                 <img src="300-SM1074013.jpg" alt="">
+            <div class="darklay10"> 
+                <div class="text10">
+                   <i>Stuent Goals</i>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="sixteen">
+        <div class="newk">
+                 <img src="1718007132484item.jpg" alt="">
+            <div class="darklay11"> 
+                <div class="text11">
+                  <i>Ready to FLY</i>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="seventeen">
+        <div class="newl">
+                 <img src="300-TJ1076431.jpg" alt="">
+            <div class="darklay12"> 
+                <div class="text12">
+                    <i>Shanskarti Of India Images</i> 
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="box04"></div>  
+    <div class="box05"></div>  
+     <div class="box06"></div>  
+     <div class="box07"></div>  
+     <div class="box08"></div>  
+     <div class="box09"></div>  
+     <div class="box10"></div>  
+    <div class="box11"></div>  
+     <div class="box12"></div> 
+     <div class="box13"></div> 
+     <div class="box14"></div> 
+     <div class="box15"></div> 
+</div>
+</body>
+</html>

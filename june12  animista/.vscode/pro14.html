@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slide-fwd-center {
+	 
+	        animation: slide-fwd-center 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            height: 600px;
+            width: 600px;
+}
+ 
+@keyframes slide-fwd-center {
+  0% {
+    
+            transform: translateZ(0);
+            background-color: yellow;
+  }
+  100% {
+    
+            transform: translateZ(160px);
+            background-color: red;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="slide-fwd-centerpr">
+
+    </div>
+</body>
+</html>

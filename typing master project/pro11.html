@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Master</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            max-width: 600px;
+            background-color: blue;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        #text-display {
+            font-size: 18px;
+            margin-bottom: 20px;
+            white-space: pre-wrap; /* Preserve whitespace formatting */
+        }
+        .highlight {
+            background-color: yellow;
+        }
+        .incorrect {
+            background-color: red;
+        }
+        #text-input {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        #timer {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        select {
+            font-size: 16px;
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+        #restart-btn {
+            display: none;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #restart-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Master</h1>
+        <select id="time-limit">
+            <option value="30">30 seconds</option>
+            <option value="60" selected>1 minute</option>
+            <option value="120">2 minutes</option>
+        </select>
+        <select id="lesson-option">
+            <option value="0">Lesson 1</option>
+            <option value="1">Lesson 2</option>
+            <option value="2">Lesson 3</option>
+        </select>
+        <select id="highlight-toggle">
+            <option value="on" selected>Highlight words on</option>
+            <option value="off">Highlight words off</option>
+        </select>
+        <p id="timer">Time left: <span id="time">60</span>s</p>
+        <p id="text-display"></p>
+        <textarea id="text-input" placeholder="Start typing here..."></textarea>
+        <div id="result"></div>
+        <button id="restart-btn" onclick="restartTest()">Restart</button>
+    </div>
+
+    <script>
+        const textDisplay = document.getElementById('text-display');
+        const textInput = document.getElementById('text-input');
+        const result = document.getElementById('result');
+        const timerElement = document.getElementById('time');
+        const timeLimitSelect = document.getElementById('time-limit');
+        const lessonOptionSelect = document.getElementById('lesson-option');
+        const highlightToggle = document.getElementById('highlight-toggle');
+        const restartBtn = document.getElementById('restart-btn');
+
+        const lessons = [
+            ['Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint doloribus esse quos quidem natus! Accusantium nesciunt voluptatum magni eveniet. Dolor illo illum incidunt ab enim, quos iste quasi sit libero.', 
+            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores repudiandae, quia voluptatibus dolorem aliquid sunt fuga, in ullam, praesentium nihil dolor. Voluptas esse nisi eius quaerat quae accusamus id voluptate.'],
+            ['The quick brown fox jumps over the lazy dog. This sentence contains every letter in the English alphabet at least once. It is often used for typing practice and keyboard testing.', 
+            'Mastering this sentence can significantly improve your typing speed and accuracy. Keep practicing and soon you will be able to type it quickly and accurately.'],
+            ['A journey of a thousand miles begins with a single step. This famous quote by Lao Tzu reminds us that even the longest and most challenging ventures have a starting point.', 
+            'It encourages us to take that first step, no matter how daunting it may seem. With each step, we move closer to our goal and gain the strength to continue our journey.']
+        ];
+
+        let timeLeft = parseInt(timeLimitSelect.value);  
+        let timer;
+        let timerStarted = false;
+
+        function updateTextDisplay() {
+            const selectedLessonIndex = parseInt(lessonOptionSelect.value);
+            textDisplay.textContent = lessons[selectedLessonIndex][0]; // Display the first paragraph of the selected lesson
+            restartTest(); // Restart the test when the text is changed
+        }
+
+        timeLimitSelect.addEventListener('change', () => {
+            timeLeft = parseInt(timeLimitSelect.value);
+            timerElement.textContent = timeLeft;
+              restartTest(); // Restart the test when the time limit is changed
+        });
+
+        lessonOptionSelect.addEventListener('change', updateTextDisplay);
+  
+        function startTimer() {
+            clearInterval(timer); // Clear any existing timer
+            timer = setInterval(() => {
+                timeLeft--;
+                timerElement.textContent = timeLeft;
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                    endTest();
+                }
+            }, 1000);   
+        }
+
+        function endTest() {
+            textInput.disabled = true;
+            restartBtn.style.display = 'block';
+            const inputText = textInput.value;
+            const accuracy = calculateAccuracy(inputText, textDisplay.textContent);
+            result.innerHTML = `Time's up!<br>Accuracy: ${accuracy}%`;
+            result.style.color = 'blue';
+        }
+
+        function calculateAccuracy(input, sample) {
+            const inputLength = input.length;
+            const sampleLength = sample.length;
+            let correctChars = 0;
+            for (let i = 0; i < Math.min(inputLength, sampleLength); i++) {
+                if (input[i] === sample[i]) {
+                    correctChars++;
+                }
+            }
+            return ((correctChars / sampleLength) * 100).toFixed(2);
+        }
+
+        function speakWord(word) {
+            const utterance = new SpeechSynthesisUtterance(word);
+            speechSynthesis.speak(utterance);
+        }
+
+        textInput.addEventListener('input', () => {
+            if (!timerStarted) {
+                timerStarted = true;
+                startTimer();
+            }
+            if (highlightToggle.value === 'on') {
+                highlightNextWord();
+            } else {
+                textDisplay.innerHTML = textDisplay.textContent;
+            }
+            const inputText = textInput.value;
+            const words = inputText.split(' ');
+            if (words.length > 1 && inputText.endsWith(' ')) {
+                speakWord(words[words.length - 2]);
+            }
+            if (inputText === textDisplay.textContent) {
+                clearInterval(timer);
+                result.textContent = 'Well done! You typed it correctly.';
+                result.style.color = 'green';
+                const accuracy = calculateAccuracy(inputText, textDisplay.textContent);
+                result.innerHTML += `<br>Accuracy: ${accuracy}%`;
+                restartBtn.style.display='block';
+        
+                
+            }
+        });
+
+        function highlightNextWord() {
+            const inputText = textInput.value;
+            const sampleText = textDisplay.textContent;
+            const words = sampleText.split(' ');
+            const inputWords = inputText.split(' ');
+            let highlightedText = '';
+
+            for (let i = 0; i < words.length; i++) {
+                if (i < inputWords.length && words[i] === inputWords[i]) {
+                    highlightedText += `<span class="highlight">${words[i]}</span> `;
+                } else if (i < inputWords.length && words[i] !== inputWords[i]) {
+                    highlightedText += `<span class="incorrect">${words[i]}</span> `;
+                } else {
+                    highlightedText += `${words[i]} `;
+                }
+            }
+
+            textDisplay.innerHTML = highlightedText.trim();
+        }
+
+        function restartTest() {
+            clearInterval(timer);
+            timerStarted = false;
+            textInput.disabled = false;
+            textInput.value = '';
+            result.textContent = '';
+            restartBtn.style.display = 'none';
+            timeLeft = parseInt(timeLimitSelect.value);
+            timerElement.textContent = timeLeft;
+            const selectedLessonIndex = parseInt(lessonOptionSelect.value);
+            textDisplay.textContent = lessons[selectedLessonIndex][0]; // Reset the text display to the first paragraph of the selected lesson
+        }
+
+        // Initialize the text display
+        updateTextDisplay();
+    </script>  
+</body>
+</html>

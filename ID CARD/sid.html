@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+        background: linear-gradient(pink,blue,black,red);
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid red;
+            border-radius: 5px;
+            background-color: rgb(160, 120, 120);
+            margin: 10px;
+           
+        }
+        .container input{
+            border: none;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .container img {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            position: relative;
+            margin-left: 220px;
+        }
+        .container2 {
+            max-width: 600px;
+            padding: 20px;
+            border: 1px solid red;
+            border-radius: 5px;
+            background-color: rgb(167, 146, 146);
+            margin-left: 1000px;
+            position: absolute;
+            top: 10px;
+        }
+        .container2 input {
+            height: 50px;
+            width: 400px;
+            display: block;
+            margin: 20px;
+        }
+        button {
+            height: 50px;
+            width: 150px;
+            border-radius: 10px;
+            background-color: navy;
+            color: white;
+            position: absolute;
+            top: 20px;
+            left: 90%;
+        }
+         button:hover{
+            background-color: rgb(20, 166, 224);
+            color: black;
+            
+         }
+        #clearbtn{
+            height: 50px;
+            width: 150px;
+            border-radius: 10px;
+            background-color: navy;
+            color: white;
+            position: absolute;
+            top: 100px;
+            left: 90%;
+        }
+         #clearbtn:hover{
+            background-color: rgb(20, 166, 224);
+            color: black;
+          
+         }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>IDENTITY CARD</h1>
+        </div>
+        <div class="">
+            <img src="/WhatsApp Image 2024-09-10 at 15.57.55_5613eae9.jpg" alt="">
+        </div>
+        <form id="idcard">
+            <div class="form-group">
+                <label for="name">NAME</label>
+                <input type="text" id="name">
+            </div>
+            <div class="form-group">
+                <label for="father">Father's Name</label>
+                <input type="text" id="father">
+            </div>
+            <div class="form-group">
+                <label for="dob">D.O.B</label>
+                <input type="text" id="dob">
+            </div>
+            <div class="form-group">
+                <label for="class">Class</label>
+                <input type="number" id="class">
+            </div>
+            <div class="form-group">
+                <label for="sec">Section</label>
+                <input type="text" id="sec">
+            </div>
+            <div class="form-group">
+                <label for="roll">Roll</label>
+                <input type="number" id="roll">
+            </div>
+            <div class="form-group">
+                <label for="mobile">Phone</label>
+                <input type="number" id="mobile">
+            </div>
+        </form>
+    </div>
+    <div class="container2">
+        STUDENT-NAME <input type="text" id="sname">
+        STUDENT-FATHER-NAME <input type="text" id="sfather">
+        STUDENT-DOB <input type="number" id="sdob">
+        STUDENT-CLASS <input type="number" id="sclass">
+        STUDENT-SECTION <input type="text" id="ssec">
+        STUDENT-ROLL.NO <input type="number" id="sroll">
+        STUDENT-PHONE <input type="number" id="sphone">
+    </div>
+    <div>
+        <button id="btn">Submit Information</button>
+        <button id="clearbtn">Clear Information</button>
+    </div>
+    <script>
+        const button = document.getElementById('btn');
+        button.addEventListener('click', () => {
+            // Get values from the container2 inputs
+            let fillname = document.getElementById('sname').value;
+            let fillfather = document.getElementById('sfather').value;
+            let filldob = document.getElementById('sdob').value;
+            let fillclass = document.getElementById('sclass').value;
+            let fillsec = document.getElementById('ssec').value;
+            let fillroll = document.getElementById('sroll').value;
+            let fillphone = document.getElementById('sphone').value;
+ 
+
+            const stuname=document.getElementById('name');
+                  stuname.value=fillname
+
+            const stufather=document.getElementById('father');
+                  stufather.value=fillfather
+            
+            const studob=document.getElementById('dob');
+                  studob.value=filldob
+            
+            const stuclass=document.getElementById('class');
+                  stuclass.value=fillclass
+            
+            const stusec=document.getElementById('sec');
+                  stusec.value=fillsec
+            
+            const sturoll=document.getElementById('roll');
+                  sturoll.value=fillroll
+
+            const stuphone=document.getElementById('mobile');
+                 stuphone.value=fillphone;
+
+                 alert('Are you sure fill the information right ')
+        });
+
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flip-horizontal-bck {
+	 
+	        animation: flip-horizontal-bck 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            height: 600px;
+            width: 600px;
+            background-color: violet;
+}
+ 
+@keyframes flip-horizontal-bck {
+  0% {
+    
+            transform: translateZ(0) rotateX(0);
+            background-color: aqua;
+  }
+  100% {
+     
+            transform: translateZ(-260px) rotateX(180deg);
+            background-color: brown;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="flip-horizontal-bck">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         
+            .rotate-scale-up {
+	
+	        animation: rotate-scale-up 3s linear both;
+            height: 300px;
+            width: 300px;
+            background-color:red;
+            
+}
+            
+    
+
+ 
+@keyframes rotate-scale-up {
+  0% {
+    
+            transform: scale(1) rotateZ(0);
+            background-image: url(/images/300-SM1072546.jpg);
+          
+
+  }
+  50% {
+    
+            transform: scale(2) rotateZ(180deg);
+            background-color: yellow;
+            background-image: url(/images/300-SM1072502.jpg);
+  }
+  100% {
+     
+            transform: scale(1) rotateZ(360deg);
+            background-color: violet;
+            background-image: url(/images/300-SM1072581.jpg);
+  }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="  rotate-scale-up "></div>
+
+   
+    
+ </body>
+</html>

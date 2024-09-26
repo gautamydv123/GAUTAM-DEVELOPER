@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box{
+        height: 100px;
+        width: 100px;
+        background:linear-gradient(yellow,red,darkblue,skyblue);
+        animation: anime 2s linear  infinite;
+        border-radius: 2%;
+        position: absolute;
+      }
+
+      @keyframes anime {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .box2{
+        height: 100px;
+        width: 100px;
+        background:linear-gradient(yellow,red,darkblue,skyblue);
+        animation: anime 2s linear  infinite;
+        position: absolute;
+        border-radius: 2%;
+        top: 0px;
+        left: 80px;
+      }
+
+      @keyframes anime {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box2"></div>
+  </body>
+</html>
